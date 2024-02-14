@@ -120,10 +120,12 @@ class TaoTree(BaseEstimator):
             self.feature_names_ = feature_names
         if self.model_type == 'CART':
             if isinstance(self, ClassifierMixin):
+                print('model _args', self.model_args)
                 self.model = DecisionTreeClassifier(**self.model_args)
             elif isinstance(self, RegressorMixin):
                 self.model = DecisionTreeRegressor(**self.model_args)
             self.model.fit(X, y, sample_weight=sample_weight)
+            print((self.model.predict(X) == y).sum() / y.shape[0])
             # plot_tree(self.model)
             # plt.savefig('/Users/chandan/Desktop/tree.png', dpi=300)
             # plt.show()
@@ -320,8 +322,8 @@ class TaoTree(BaseEstimator):
                     threshold[node_id] = np.inf
                 continue
                 
-            m = LogisticRegression(**self.node_model_args)
-            # m = LinearSVC(penalty="l1", dual=False)
+            # m = LogisticRegression(**self.node_model_args)
+            m = LinearSVC(penalty="l1", dual=False)
             m.fit(X_node, y_node_target)
             prev_score = np.mean((np.dot(X_node, self.weights[node_id]) >= threshold[node_id]) == y_node_target)
             cur_score = m.score(X_node, y_node_target)
