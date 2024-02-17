@@ -13,6 +13,7 @@ if __name__ == '__main__':
         task = openml.tasks.get_task(task_id)
         print(task)
         dataset = task.get_dataset()
+        print(f"Current Dataset:{dataset.name}")
         X, y, _, _ = dataset.get_data(target=task.target_name)
         np.random.seed(42)
         rng = np.random.permutation(X.shape[0])

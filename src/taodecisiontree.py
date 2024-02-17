@@ -140,8 +140,8 @@ class TaoTree(BaseEstimator):
             print('starting score', self.model.score(X, y))
         for i in range(self.n_iters):
             num_updates = self._tao_iter_cart(X, y, self.model.tree_, sample_weight=sample_weight)
-            # if num_updates == 0:
-                # break
+            if num_updates == 0:
+                break
 
         return self
 
@@ -323,11 +323,13 @@ class TaoTree(BaseEstimator):
                 continue
                 
             # m = LogisticRegression(**self.node_model_args)
-            m = LinearSVC(penalty="l1", dual=False)
+            m = LinearSVC(penalty="l1", loss="squared_hinge", dual=False, tol=1e-2, max_iter=3000)
+            # print(X_node.shape, y_node_target.shape)
             m.fit(X_node, y_node_target)
             prev_score = np.mean((np.dot(X_node, self.weights[node_id]) >= threshold[node_id]) == y_node_target)
             cur_score = m.score(X_node, y_node_target)
             if cur_score > prev_score:
+                num_updates+=1
                 self.weights[node_id] = m.coef_[0]
                 threshold[node_id] = -m.intercept_[0]
 
