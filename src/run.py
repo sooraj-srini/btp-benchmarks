@@ -9,8 +9,16 @@ SUITE_ID = 337
 benchmark_suite = openml.study.get_suite(SUITE_ID)  
 
 if __name__ == '__main__':
-    for task_id in benchmark_suite.tasks[3:]:
+    count = 5
+    def get_task_size(id):
+        task = openml.tasks.get_task(id)
+        return task.get_X_and_y()[0].shape[1]
+    arr = benchmark_suite.tasks.copy()
+    arr.sort(key=lambda x: get_task_size(x))
+    for task_id in arr[5:]:
         task = openml.tasks.get_task(task_id)
+        count += 1
+        print("Current task: ", count)
         print(task)
         dataset = task.get_dataset()
         print(f"Current Dataset:{dataset.name}")

@@ -261,7 +261,7 @@ class trainDLGN:
 		# with open(filename,'a') as f:
 			# sys.stdout = f
 		test_error = np.sum(test_data_labels != (np.sign(test_preds[:,0])+1)//2 )
-		test_error_acc = (test_error/len(test_data_labels))*100
+		test_error_acc = 100 - (test_error/len(test_data_labels))*100
 		print("Test error=",np.sum(test_data_labels != (np.sign(test_preds[:,0])+1)//2 ))
 		print("Num_test_data=",len(test_data_labels))
 		print("Test accuracy=", test_error_acc)

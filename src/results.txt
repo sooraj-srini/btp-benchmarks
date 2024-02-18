@@ -1,49 +1,6 @@
 4_50_3_1.0e-03
 cpu
-OpenML Classification Task
-==========================
-Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
-Task ID..............: 361055
-Task URL.............: https://www.openml.org/t/361055
-Estimation Procedure.: crossvalidation
-Evaluation Measure...: predictive_accuracy
-Target Feature.......: SeriousDlqin2yrs
-# of Classes.........: 2
-Cost Matrix..........: Available
-DLGN performance
-Setup:
-Num neurons :  [10, 50, 50, 50, 50, 1]
- Beta : 3.0
- lr : 0.001
-=======================
-[0.7, 0.6892640173435212, 0.6703642904758453, 0.6527506291866303, 0.6372362315654755, 0.6127771079540253, 0.5645565509796142, 0.5373980045318604, 0.5342530190944672, 0.5287429869174958, 0.5245630621910096, 0.521521919965744, 0.5195552229881286, 0.5179897725582123, 0.5169425010681152, 0.5161235332489014, 0.5152257442474365, 0.5078061401844025, 0.5023073226213455, 0.49220943748950957, 0.45928891003131866, 0.3973087131977081, 0.31107324957847593]
-==========Best validated model=============
-Train error= 2708
-Train loss =  tensor(0.4828, grad_fn=<NllLossBackward0>)
-Num_train_data= 11699
-Test error= 883
-Num_test_data= 3511
-LCN performance
-Best train score: 0.6238140011966835
-Best valid score: 0.6083776595744681
-Best test score: 0.6092281401310168
-Latent Tree performance
-Current depth: 5
-0.7599734042553191 0.753631444033039
-Best depth: 5
-Train acc 0.7575861184716642
-Test acc 0.753631444033039
-TAO performance
-Current height: 6
-model _args {'max_depth': 6}
-0.7710060688947773
-starting score 0.7710060688947773
-Train acc 0.7841695871442004
-Valid acc 0.7779255319148937
-Test acc 0.7630304756479636
-Best height: 6
-Train acc 0.7841695871442004
-Test acc 0.7630304756479636
+Current task:  1
 OpenML Classification Task
 ==========================
 Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
@@ -54,40 +11,409 @@ Evaluation Measure...: predictive_accuracy
 Target Feature.......: class
 # of Classes.........: 2
 Cost Matrix..........: Available
+Current Dataset:electricity
 DLGN performance
 Setup:
 Num neurons :  [7, 50, 50, 50, 50, 1]
  Beta : 3.0
  lr : 0.001
 =======================
-[0.7, 0.6859840095043183, 0.6432182848453522, 0.5679134130477905, 0.5198998272418975, 0.5095469564199447, 0.5048332452774048, 0.5014126926660538, 0.49762151539325716, 0.4944449782371521, 0.490973299741745, 0.4876222640275955, 0.48446460962295534, 0.48194062411785127, 0.48005491197109224, 0.47822279930114747, 0.47649250626564027, 0.4543908566236496, 0.41259546875953673, 0.37573444843292236, 0.34607361555099486, 0.3081212848424911, 0.2510880962014198]
+[0.7, 0.6859840095043183, 0.6432182848453522, 0.567913419008255, 0.5198998272418975, 0.5095469683408738, 0.5048332422971725, 0.5014126896858215, 0.49762152433395385, 0.4944449752569199, 0.4909733057022095, 0.4876222550868988, 0.48446460962295534, 0.48194063305854795, 0.4800549030303955, 0.47822279036045073, 0.47649248540401457, 0.4543908596038818, 0.41259547770023347, 0.3757344424724579, 0.346073591709137, 0.3081213593482971, 0.25108727961778643]
 ==========Best validated model=============
-Train error= 2538
-Train loss =  tensor(0.2131, grad_fn=<NllLossBackward0>)
+Train error= 2487
+Train loss =  tensor(0.2094, grad_fn=<NllLossBackward0>)
 Num_train_data= 26931
-Test error= 1568
+Test error= 1558
 Num_test_data= 8081
+Test accuracy= 19.279792104937506
 LCN performance
 Best train score: 0.6906167613530875
 Best valid score: 0.6868861929520509
 Best test score: 0.6918698180918204
 Latent Tree performance
 Current depth: 5
-0.766897746967071 0.7721816606855587
+0.7660311958405546 0.766118054696201
 Best depth: 5
-Train acc 0.7745349225799265
-Test acc 0.7721816606855587
+Train acc 0.7704875422375701
+Test acc 0.766118054696201
 TAO performance
+Current height: 4
+model _args {'max_depth': 4}
+0.7348408896810367
+starting score 0.7348408896810367
+Train acc 0.7565630685826742
+Valid acc 0.7538994800693241
+Test acc 0.7579507486697191
+Current height: 5
+model _args {'max_depth': 5}
+0.7606847127845234
+starting score 0.7606847127845234
+Train acc 0.7964798930600423
+Valid acc 0.7891392258809936
+Test acc 0.790372478653632
 Current height: 6
 model _args {'max_depth': 6}
 0.7656232594407931
 starting score 0.7656232594407931
-Train acc 0.7992647877910215
+Train acc 0.7984107534068545
+Valid acc 0.791161178509532
+Test acc 0.8000247494122015
+Current height: 7
+model _args {'max_depth': 7}
+0.796442761130296
+starting score 0.796442761130296
+Train acc 0.8018268909435223
 Valid acc 0.7908723281340265
-Test acc 0.8001484964732087
+Test acc 0.7968073258260117
+Current height: 8
+model _args {'max_depth': 8}
+0.8173851695072593
+starting score 0.8173851695072593
+Train acc 0.8254427982622257
+Valid acc 0.8180242634315424
+Test acc 0.8166068555871798
+Current height: 9
+model _args {'max_depth': 9}
+0.8311982473729159
+starting score 0.8311982473729159
+Train acc 0.8394786677063607
+Valid acc 0.8217793183131138
+Test acc 0.8152456379160995
+Best height: 9
+Train acc 0.8394786677063607
+Test acc 0.8152456379160995
+Current task:  2
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361066
+Task URL.............: https://www.openml.org/t/361066
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: Class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:bank-marketing
+DLGN performance
+Setup:
+Num neurons :  [7, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6870537459850311, 0.6446442902088165, 0.5406644195318222, 0.5102058470249176, 0.4951002299785614, 0.48352012038230896, 0.47685345709323884, 0.4722017586231232, 0.46911526918411256, 0.46718152761459353, 0.464959517121315, 0.4628850966691971, 0.46082892417907717, 0.45890496373176576, 0.4572479009628296, 0.4557206630706787, 0.43963058292865753, 0.41639656126499175, 0.3293571054935455, 0.2338172525167465, 0.15411393940448762, 0.19472163915634155]
+==========Best validated model=============
+Train error= 1477
+Train loss =  tensor(0.4390, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 495
+Num_test_data= 2222
+Test accuracy= 22.277227722772277
+LCN performance
+Best train score: 0.7308211777417613
+Best valid score: 0.7216386554621849
+Best test score: 0.7295229522952296
+Latent Tree performance
+Current depth: 5
+0.7794117647058824 0.7781278127812782
+Best depth: 5
+Train acc 0.796191247974068
+Test acc 0.7781278127812782
+TAO performance
+Current height: 4
+model _args {'max_depth': 4}
+0.7706645056726094
+starting score 0.7706645056726094
+Train acc 0.7872771474878444
+Valid acc 0.7815126050420168
+Test acc 0.7704770477047704
+Current height: 5
+model _args {'max_depth': 5}
+0.7891680172879525
+starting score 0.7891680172879525
+Train acc 0.7986223662884927
+Valid acc 0.7878151260504201
+Test acc 0.774077407740774
+Current height: 6
+model _args {'max_depth': 6}
+0.8069962182603998
+starting score 0.8069962182603998
+Train acc 0.8091572123176661
+Valid acc 0.7762605042016807
+Test acc 0.7781278127812782
+Current height: 7
+model _args {'max_depth': 7}
+0.8178011885467315
+starting score 0.8178011885467315
+Train acc 0.8203673689897353
+Valid acc 0.7762605042016807
+Test acc 0.7758775877587759
+Current height: 8
+model _args {'max_depth': 8}
+0.8317125877903836
+starting score 0.8317125877903836
+Train acc 0.8338735818476499
+Valid acc 0.7804621848739496
+Test acc 0.7646264626462647
+Current height: 9
+model _args {'max_depth': 9}
+0.8467044840626688
+starting score 0.8467044840626688
+Train acc 0.8507563479200432
+Valid acc 0.773109243697479
+Test acc 0.7664266426642664
+Best height: 5
+Train acc 0.7986223662884927
+Test acc 0.774077407740774
+Current task:  3
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361273
+Task URL.............: https://www.openml.org/t/361273
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: readmitted
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:Diabetes130US
+DLGN performance
+Setup:
+Num neurons :  [7, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6899417161941528, 0.6756474077701569, 0.6639583945274353, 0.6617452442646027, 0.6606659770011902, 0.6602837264537811, 0.6596332907676696, 0.6592973113059998, 0.6590044021606445, 0.6588275611400605, 0.6586429536342621, 0.6584562838077546, 0.6582695305347442, 0.658118999004364, 0.658001309633255, 0.6579085469245911, 0.6569965004920959, 0.6553717911243438, 0.6442176222801208, 0.6189372122287751, 0.5815207779407501, 0.5388653874397278]
+==========Best validated model=============
+Train error= 19553
+Train loss =  tensor(0.6557, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 5836
+Num_test_data= 14929
+Test accuracy= 39.09170071672584
+LCN performance
+Best train score: 0.585736390490927
+Best valid score: 0.5828383869959363
+Best test score: 0.5887199410543238
+Latent Tree performance
+Current depth: 5
+0.6094091903719913 0.6066045950833947
+Best depth: 5
+Train acc 0.609046882221731
+Test acc 0.6066045950833947
+TAO performance
+Current height: 4
+model _args {'max_depth': 4}
+0.6058115467315074
+starting score 0.6058115467315074
+Train acc 0.6061129755038884
+Valid acc 0.6058143169740544
+Test acc 0.6074083997588586
+Current height: 5
+model _args {'max_depth': 5}
+0.6083435484195084
+starting score 0.6083435484195084
+Train acc 0.6089062154612865
+Valid acc 0.6047202250703345
+Test acc 0.6094848951704736
+Current height: 6
+model _args {'max_depth': 6}
+0.6102525973112554
+starting score 0.6102525973112554
+Train acc 0.6122018367059864
+Valid acc 0.6037824320100031
+Test acc 0.607475383481814
+Current height: 7
+model _args {'max_depth': 7}
+0.6127243132447803
+starting score 0.6127243132447803
+Train acc 0.6159395534835118
+Valid acc 0.6078462019381057
+Test acc 0.6076763346506799
+Current height: 8
+model _args {'max_depth': 8}
+0.6166428872857344
+starting score 0.6166428872857344
+Train acc 0.620119365793863
+Valid acc 0.6084713973116599
+Test acc 0.6050639694554223
+Current height: 9
+model _args {'max_depth': 9}
+0.621807366919197
+starting score 0.621807366919197
+Train acc 0.6260474649840243
+Valid acc 0.5992497655517349
+Test acc 0.6003081251255945
+Best height: 8
+Train acc 0.620119365793863
+Test acc 0.6050639694554223
+Current task:  4
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361277
+Task URL.............: https://www.openml.org/t/361277
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: price_above_median
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:california
+DLGN performance
+Setup:
+Num neurons :  [8, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6872034192085266, 0.647052663564682, 0.5274463385343552, 0.45420249104499816, 0.41452995240688323, 0.38026246428489685, 0.3658460110425949, 0.35956945419311526, 0.3539388865232468, 0.35002884864807127, 0.3471116602420807, 0.3445861041545868, 0.34217671751976014, 0.34009200632572173, 0.3383181273937225, 0.3366946309804916, 0.3075974643230438, 0.27064910233020784, 0.23336139619350432, 0.19386374056339264, 0.1444518595933914, 0.08850755915045738]
+==========Best validated model=============
+Train error= 1238
+Train loss =  tensor(0.1992, grad_fn=<NllLossBackward0>)
+Num_train_data= 14443
+Test error= 533
+Num_test_data= 4334
+Test accuracy= 12.29810798338717
+LCN performance
+Best train score: 0.6875302914906876
+Best valid score: 0.6892837910608508
+Best test score: 0.6774342408860176
+Latent Tree performance
+Current depth: 5
+0.8578352180936996 0.8592524227041993
+Best depth: 5
+Train acc 0.8627016547808627
+Test acc 0.8592524227041993
+TAO performance
+Current height: 4
+model _args {'max_depth': 4}
+0.7846707747697846
+starting score 0.7846707747697846
+Train acc 0.8481617392508481
+Valid acc 0.8352180936995154
+Test acc 0.8465620673742501
+Current height: 5
+model _args {'max_depth': 5}
+0.8093193934778093
+starting score 0.8093193934778093
+Train acc 0.8613169009208613
+Valid acc 0.8449111470113085
+Test acc 0.8539455468389479
+Current height: 6
+model _args {'max_depth': 6}
+0.825036349788825
+starting score 0.825036349788825
+Train acc 0.8807726926538808
+Valid acc 0.8605277329025309
+Test acc 0.8645592985694509
+Current height: 7
+model _args {'max_depth': 7}
+0.8491310669528491
+starting score 0.8491310669528491
+Train acc 0.8912968219898912
+Valid acc 0.8529886914378029
+Test acc 0.8747115828334102
+Current height: 8
+model _args {'max_depth': 8}
+0.8835422003738835
+starting score 0.8835422003738835
+Train acc 0.897943640517898
+Valid acc 0.8519116855142703
+Test acc 0.8675588371019843
+Current height: 9
+model _args {'max_depth': 9}
+0.8996745828428997
+starting score 0.8996745828428997
+Train acc 0.9121373675829121
+Valid acc 0.8524501884760366
+Test acc 0.8624826949700046
 Best height: 6
-Train acc 0.7992647877910215
-Test acc 0.8001484964732087
+Train acc 0.8807726926538808
+Test acc 0.8645592985694509
+Current task:  5
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361055
+Task URL.............: https://www.openml.org/t/361055
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: SeriousDlqin2yrs
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:credit
+DLGN performance
+Setup:
+Num neurons :  [10, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6892640173435212, 0.6703642964363098, 0.6527506232261657, 0.637236225605011, 0.6127770960330963, 0.5645565569400788, 0.5373980045318604, 0.5342530131340026, 0.5287429869174958, 0.5245630621910096, 0.521521919965744, 0.5195552229881286, 0.5179897665977478, 0.5169425010681152, 0.5161235153675079, 0.5152257561683655, 0.5078061282634735, 0.5023056387901306, 0.4922215938568115, 0.459331551194191, 0.3992517203092575, 0.30878793597221377]
+==========Best validated model=============
+Train error= 2745
+Train loss =  tensor(0.4863, grad_fn=<NllLossBackward0>)
+Num_train_data= 11699
+Test error= 878
+Num_test_data= 3511
+Test accuracy= 25.00712047849615
+LCN performance
+Best train score: 0.6238140011966835
+Best valid score: 0.6083776595744681
+Best test score: 0.6092281401310168
+Latent Tree performance
+Current depth: 5
+0.5139627659574468 0.5132440900028482
+Best depth: 5
+Train acc 0.49935891956577483
+Test acc 0.5132440900028482
+TAO performance
+Current height: 4
+model _args {'max_depth': 4}
+0.7527993845627832
+starting score 0.7527993845627832
+Train acc 0.7583554149927344
+Valid acc 0.7559840425531915
+Test acc 0.7456565081173455
+Current height: 5
+model _args {'max_depth': 5}
+0.7619454654243952
+starting score 0.7619454654243952
+Train acc 0.7821181297546799
+Valid acc 0.7805851063829787
+Test acc 0.7641697522073483
+Current height: 6
+model _args {'max_depth': 6}
+0.7710060688947773
+starting score 0.7710060688947773
+Train acc 0.7797247628002394
+Valid acc 0.7779255319148937
+Test acc 0.7601822842495015
+Current height: 7
+model _args {'max_depth': 7}
+0.7775023506282588
+starting score 0.7775023506282588
+Train acc 0.7900675271390717
+Valid acc 0.7752659574468085
+Test acc 0.7644545713471945
+Current height: 8
+model _args {'max_depth': 8}
+0.7886998888793914
+starting score 0.7886998888793914
+Train acc 0.7980169245234635
+Valid acc 0.773936170212766
+Test acc 0.7542010823127314
+Current height: 9
+model _args {'max_depth': 9}
+0.8028036584323447
+starting score 0.8028036584323447
+Train acc 0.8084451662535259
+Valid acc 0.7672872340425532
+Test acc 0.7513528909142695
+Best height: 5
+Train acc 0.7821181297546799
+Test acc 0.7641697522073483
+
+4_50_3_1.0e-03
+cpu
+Current task:  6
 OpenML Classification Task
 ==========================
 Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
@@ -98,53 +424,160 @@ Evaluation Measure...: predictive_accuracy
 Target Feature.......: Y
 # of Classes.........: 2
 Cost Matrix..........: Available
-DLGN performance
-4_50_3_1.0e-03
-cpu
-OpenML Classification Task
-==========================
-Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
-Task ID..............: 361062
-Task URL.............: https://www.openml.org/t/361062
-Estimation Procedure.: crossvalidation
-Evaluation Measure...: predictive_accuracy
-Target Feature.......: binaryClass
-# of Classes.........: 2
-Cost Matrix..........: Available
+Current Dataset:covertype
 DLGN performance
 Setup:
-Num neurons :  [26, 50, 50, 50, 50, 1]
+Num neurons :  [10, 50, 50, 50, 50, 1]
  Beta : 3.0
  lr : 0.001
 =======================
-[0.7, 0.6845609426498414, 0.6105777442455291, 0.41227166950702665, 0.3223254978656769, 0.2811435580253601, 0.2539918377995491, 0.21691514253616334, 0.17886455804109574, 0.14706773981451987, 0.12282879054546356, 0.10699202343821526, 0.09596292451024055, 0.0868849016726017, 0.07919773310422898, 0.07308070659637451, 0.06748405955731869, 0.017221782915294172, 0.011003662552684545, 0.008376679243519902, 0.024051748448982835, 0.0014005064935190604, 0.0003320244810311124]
+[0.7, 0.690324318408966, 0.6730649948120118, 0.6338152468204499, 0.5699588656425476, 0.5415230453014374, 0.523501205444336, 0.5136991262435913, 0.507852828502655, 0.5028004795312881, 0.4979280650615692, 0.49386827647686005, 0.49112043976783754, 0.4887775659561157, 0.48629420399665835, 0.48351845145225525, 0.4803168773651123, 0.4189024120569229, 0.3541481107473373, 0.318273138999939, 0.28962173163890836, 0.259578600525856, 0.2277175948023796]
 ==========Best validated model=============
-Train error= 9
-Train loss =  tensor(0.0048, grad_fn=<NllLossBackward0>)
-Num_train_data= 7057
-Test error= 25
-Num_test_data= 2118
+Train error= 31775
+Train loss =  tensor(0.1898, grad_fn=<NllLossBackward0>)
+Num_train_data= 396621
+Test error= 10593
+Num_test_data= 118987
+Test accuracy= 8.902653231025239
 LCN performance
-Best train score: 0.8404421142128383
-Best valid score: 0.836824696802646
-Best test score: 0.8389990557129368
+Best train score: 0.6662229181006553
+Best valid score: 0.6665490057653841
+Best test score: 0.6664677653861346
 Latent Tree performance
 Current depth: 5
-0.9867695700110254 0.9881964117091596
+0.7889751735498294 0.7883466261020111
 Best depth: 5
-Train acc 0.9982995607198526
-Test acc 0.9881964117091596
+Train acc 0.7893707090648251
+Test acc 0.7883466261020111
 TAO performance
+Current height: 4
+model _args {'max_depth': 4}
+0.7417786753601044
+starting score 0.7417786753601044
+Train acc 0.7600454842280162
+Valid acc 0.7617562850531435
+Test acc 0.7592089892173095
+Current height: 5
+model _args {'max_depth': 5}
+0.7479281228175009
+starting score 0.7479281228175009
+Train acc 0.7650401768943147
+Valid acc 0.7652468917911911
+Test acc 0.7638901728760285
 Current height: 6
 model _args {'max_depth': 6}
-0.9601813801898824
-starting score 0.9601813801898824
-Train acc 0.9914978035992631
-Valid acc 0.9845644983461963
-Test acc 0.9792256846081209
-Best height: 6
-Train acc 0.9914978035992631
-Test acc 0.9792256846081209
+0.7573527372479016
+starting score 0.7573527372479016
+Train acc 0.7818395899359842
+Valid acc 0.7818566890222379
+Test acc 0.7810769243698892
+Current height: 7
+model _args {'max_depth': 7}
+0.7683783763340821
+starting score 0.7683783763340821
+Train acc 0.7898774900975994
+Valid acc 0.7885241400949131
+Test acc 0.7890609898560347
+Current height: 8
+model _args {'max_depth': 8}
+0.7777752564791073
+starting score 0.7777752564791073
+Train acc 0.803666472526669
+Valid acc 0.8003098403733773
+Test acc 0.801448897778749
+Current height: 9
+model _args {'max_depth': 9}
+0.7868040270182366
+starting score 0.7868040270182366
+Train acc 0.8220240481467194
+Valid acc 0.8175863827116916
+Test acc 0.8185516064780186
+Best height: 9
+Train acc 0.8220240481467194
+Test acc 0.8185516064780186
+Current task:  7
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361065
+Task URL.............: https://www.openml.org/t/361065
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:MagicTelescope
+DLGN performance
+Setup:
+Num neurons :  [10, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6879661202430725, 0.6508366167545319, 0.5489618122577667, 0.4722820818424225, 0.4489713817834854, 0.44452048242092135, 0.4388259947299957, 0.43462623953819274, 0.430308535695076, 0.42395749092102053, 0.41536182165145874, 0.4044373452663422, 0.3935786604881287, 0.3854952841997147, 0.37915308475494386, 0.37353759407997134, 0.32902910113334655, 0.3010884314775467, 0.24918869137763977, 0.1516950935125351, 0.0755747452378273, 0.028283520508557557]
+==========Best validated model=============
+Train error= 933
+Train loss =  tensor(0.2334, grad_fn=<NllLossBackward0>)
+Num_train_data= 9363
+Test error= 439
+Num_test_data= 2810
+Test accuracy= 15.622775800711745
+LCN performance
+Best train score: 0.6847164370394104
+Best valid score: 0.6683291770573566
+Best test score: 0.6804270462633452
+Latent Tree performance
+Current depth: 5
+0.8162926018287614 0.8245551601423488
+Best depth: 5
+Train acc 0.8467371568941578
+Test acc 0.8245551601423488
+TAO performance
+Current height: 4
+model _args {'max_depth': 4}
+0.7964327672754459
+starting score 0.7964327672754459
+Train acc 0.8330663248958667
+Valid acc 0.8229426433915212
+Test acc 0.8241992882562278
+Current height: 5
+model _args {'max_depth': 5}
+0.8172594253978426
+starting score 0.8172594253978426
+Train acc 0.8455623197693047
+Valid acc 0.8379052369077307
+Test acc 0.8348754448398576
+Current height: 6
+model _args {'max_depth': 6}
+0.8417173982697853
+starting score 0.8417173982697853
+Train acc 0.8687386521414077
+Valid acc 0.8362427265170407
+Test acc 0.8384341637010676
+Current height: 7
+model _args {'max_depth': 7}
+0.8526113425184236
+starting score 0.8526113425184236
+Train acc 0.8711951297661006
+Valid acc 0.8137988362427265
+Test acc 0.8302491103202847
+Current height: 8
+model _args {'max_depth': 8}
+0.8650005340168749
+starting score 0.8650005340168749
+Train acc 0.8819822706397522
+Valid acc 0.8212801330008312
+Test acc 0.8284697508896797
+Current height: 9
+model _args {'max_depth': 9}
+0.8815550571398056
+starting score 0.8815550571398056
+Train acc 0.8967211363879098
+Valid acc 0.8154613466334164
+Test acc 0.8241992882562278
+Best height: 5
+Train acc 0.8455623197693047
+Test acc 0.8348754448398576
+Current task:  8
 OpenML Classification Task
 ==========================
 Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
@@ -155,6 +588,7 @@ Evaluation Measure...: predictive_accuracy
 Target Feature.......: binaryClass
 # of Classes.........: 2
 Cost Matrix..........: Available
+Current Dataset:house_16H
 DLGN performance
 Setup:
 Num neurons :  [16, 50, 50, 50, 50, 1]
@@ -168,115 +602,474 @@ Train loss =  tensor(0.2277, grad_fn=<NllLossBackward0>)
 Num_train_data= 9441
 Test error= 387
 Num_test_data= 2834
+Test accuracy= 13.65561044460127
 LCN performance
 Best train score: 0.7258764961338842
 Best valid score: 0.720527617477329
 Best test score: 0.7191249117854622
 Latent Tree performance
 Current depth: 5
-0.830997526793075 0.8475652787579393
+0.841714756801319 0.8493295695130557
 Best depth: 5
-Train acc 0.8860290223493275
-Test acc 0.8475652787579393
+Train acc 0.8885711259400487
+Test acc 0.8493295695130557
 TAO performance
+Current height: 4
+model _args {'max_depth': 4}
+0.8329626098930198
+starting score 0.8329626098930198
+Train acc 0.8691875860607986
+Valid acc 0.8524319868095631
+Test acc 0.8517995765702188
+Current height: 5
+model _args {'max_depth': 5}
+0.8490625993009215
+starting score 0.8490625993009215
+Train acc 0.880838894184938
+Valid acc 0.8474855729596042
+Test acc 0.855681016231475
 Current height: 6
 model _args {'max_depth': 6}
 0.8677046922995445
 starting score 0.8677046922995445
-Train acc 0.8950323058997988
-Valid acc 0.8499587798845837
-Test acc 0.8627381792519407
-Best height: 6
-Train acc 0.8950323058997988
-Test acc 0.8627381792519407
+Train acc 0.8929138862408643
+Valid acc 0.8524319868095631
+Test acc 0.8563867325335215
+Current height: 7
+model _args {'max_depth': 7}
+0.8846520495710201
+starting score 0.8846520495710201
+Train acc 0.9075309818875119
+Valid acc 0.8474855729596042
+Test acc 0.8493295695130557
+Current height: 8
+model _args {'max_depth': 8}
+0.8996928291494545
+starting score 0.8996928291494545
+Train acc 0.9260671539031882
+Valid acc 0.8549051937345424
+Test acc 0.8553281580804517
+Current height: 9
+model _args {'max_depth': 9}
+0.9167461074038767
+starting score 0.9167461074038767
+Train acc 0.9386717508738481
+Valid acc 0.8392415498763397
+Test acc 0.844742413549753
+Best height: 8
+Train acc 0.9260671539031882
+Test acc 0.8553281580804517
+Current task:  9
 OpenML Classification Task
 ==========================
 Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
-Task ID..............: 361065
-Task URL.............: https://www.openml.org/t/361065
+Task ID..............: 361070
+Task URL.............: https://www.openml.org/t/361070
 Estimation Procedure.: crossvalidation
 Evaluation Measure...: predictive_accuracy
-Target Feature.......: class
+Target Feature.......: label
 # of Classes.........: 2
 Cost Matrix..........: Available
+Current Dataset:eye_movements
 DLGN performance
 Setup:
-Num neurons :  [10, 50, 50, 50, 50, 1]
+Num neurons :  [20, 50, 50, 50, 50, 1]
  Beta : 3.0
  lr : 0.001
 =======================
-[0.7, 0.6879661202430725, 0.6508366167545319, 0.5489618122577667, 0.47228207290172575, 0.4489713728427887, 0.44452048242092135, 0.4388260006904602, 0.43462623953819274, 0.43030852675437925, 0.42395749092102053, 0.41536182463169097, 0.40443735420703886, 0.39357866942882536, 0.3854952841997147, 0.37915307879447935, 0.3735375881195068, 0.32902910709381106, 0.30108841955661775, 0.2491886854171753, 0.15171560943126677, 0.06784289889037609, 0.0019259829190559686]
+[0.7, 0.6922903299331665, 0.6874311745166779, 0.6786466479301453, 0.6748811423778533, 0.6714472055435181, 0.6685801029205323, 0.6664547204971314, 0.6636242628097534, 0.6602014839649201, 0.6568987727165222, 0.6541256844997406, 0.651613712310791, 0.6489757657051086, 0.6461709320545197, 0.6432280957698822, 0.6402314126491546, 0.5945512294769287, 0.45140676498413085, 0.23435551822185516, 0.07324380874633789, 0.0016315054264850915, 1.9716623864951543e-05]
 ==========Best validated model=============
-Train error= 933
-Train loss =  tensor(0.2334, grad_fn=<NllLossBackward0>)
-Num_train_data= 9363
-Test error= 439
-Num_test_data= 2810
+Train error= 1873
+Train loss =  tensor(0.6024, grad_fn=<NllLossBackward0>)
+Num_train_data= 5325
+Test error= 685
+Num_test_data= 1599
+Test accuracy= 42.839274546591625
 LCN performance
-Best train score: 0.6847164370394104
-Best valid score: 0.6683291770573566
-Best test score: 0.6804270462633452
+Best train score: 0.5513615023474179
+Best valid score: 0.5394736842105263
+Best test score: 0.5234521575984991
 Latent Tree performance
 Current depth: 5
-0.8320864505403158 0.8288256227758007
+0.5526315789473685 0.5340838023764853
 Best depth: 5
-Train acc 0.8484460108939442
-Test acc 0.8288256227758007
+Train acc 0.700093896713615
+Test acc 0.5340838023764853
 TAO performance
+Current height: 4
+model _args {'max_depth': 4}
+0.6026291079812206
+starting score 0.6026291079812206
+Train acc 0.624225352112676
+Valid acc 0.5847953216374269
+Test acc 0.5647279549718575
+Current height: 5
+model _args {'max_depth': 5}
+0.6193427230046948
+starting score 0.6193427230046948
+Train acc 0.6460093896713615
+Valid acc 0.5672514619883041
+Test acc 0.5647279549718575
 Current height: 6
 model _args {'max_depth': 6}
-0.8417173982697853
-starting score 0.8417173982697853
-Train acc 0.8671366015166079
-Valid acc 0.8329177057356608
-Test acc 0.8395017793594306
-Best height: 6
-Train acc 0.8671366015166079
-Test acc 0.8395017793594306
+0.6405633802816901
+starting score 0.6405633802816901
+Train acc 0.67981220657277
+Valid acc 0.5657894736842105
+Test acc 0.5791119449656035
+Current height: 7
+model _args {'max_depth': 7}
+0.6642253521126761
+starting score 0.6642253521126761
+Train acc 0.7263849765258216
+Valid acc 0.5614035087719298
+Test acc 0.5772357723577236
+Current height: 8
+model _args {'max_depth': 8}
+0.6989671361502348
+starting score 0.6989671361502348
+Train acc 0.7532394366197183
+Valid acc 0.5818713450292398
+Test acc 0.5816135084427767
+Current height: 9
+model _args {'max_depth': 9}
+0.731830985915493
+starting score 0.731830985915493
+Train acc 0.7838497652582159
+Valid acc 0.5833333333333334
+Test acc 0.5822388993120701
+Best height: 4
+Train acc 0.624225352112676
+Test acc 0.5647279549718575
+Current task:  10
 OpenML Classification Task
 ==========================
 Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
-Task ID..............: 361066
-Task URL.............: https://www.openml.org/t/361066
+Task ID..............: 361275
+Task URL.............: https://www.openml.org/t/361275
 Estimation Procedure.: crossvalidation
 Evaluation Measure...: predictive_accuracy
-Target Feature.......: Class
+Target Feature.......: y
 # of Classes.........: 2
 Cost Matrix..........: Available
+Current Dataset:default-of-credit-card-clients
 DLGN performance
 Setup:
-Num neurons :  [7, 50, 50, 50, 50, 1]
+Num neurons :  [20, 50, 50, 50, 50, 1]
  Beta : 3.0
  lr : 0.001
 =======================
-[0.7, 0.6870537459850311, 0.6446442842483521, 0.5406644254922867, 0.5102058440446854, 0.49510024189949037, 0.48352012038230896, 0.4768534690141678, 0.4722017526626587, 0.46911526620388033, 0.46718153953552244, 0.4649595141410828, 0.4628850996494293, 0.46082891523838043, 0.458904966711998, 0.45724789798259735, 0.45572066605091094, 0.43963058590888976, 0.4163965702056885, 0.32935585677623747, 0.23404314368963242, 0.1669464647769928, 0.08295574821531773]
+[0.7, 0.6868529200553894, 0.6472698986530304, 0.604317820072174, 0.5930085241794586, 0.584240984916687, 0.5788367688655853, 0.5752377212047577, 0.5725891709327697, 0.5706216812133789, 0.5689111709594726, 0.5674142599105835, 0.5660671770572663, 0.5647722005844116, 0.5635455310344696, 0.5623822331428527, 0.5612732410430908, 0.5469898402690887, 0.5161680459976197, 0.4508458524942398, 0.34991151094436646, 0.24131401926279067, 0.17072678059339524]
 ==========Best validated model=============
-Train error= 1477
-Train loss =  tensor(0.4390, grad_fn=<NllLossBackward0>)
-Num_train_data= 7404
-Test error= 495
-Num_test_data= 2222
+Train error= 2773
+Train loss =  tensor(0.5659, grad_fn=<NllLossBackward0>)
+Num_train_data= 9290
+Test error= 858
+Num_test_data= 2788
+Test accuracy= 30.774748923959827
 LCN performance
-Best train score: 0.7308211777417613
-Best valid score: 0.7216386554621849
-Best test score: 0.7295229522952296
+Best train score: 0.6602798708288482
+Best valid score: 0.661641541038526
+Best test score: 0.6413199426111909
 Latent Tree performance
 Current depth: 5
-0.7878151260504201 0.7763276327632763
+0.6884422110552764 0.6753945480631277
 Best depth: 5
-Train acc 0.7965964343598055
-Test acc 0.7763276327632763
+Train acc 0.7367061356297093
+Test acc 0.6753945480631277
 TAO performance
+Current height: 4
+model _args {'max_depth': 4}
+0.7088266953713671
+starting score 0.7088266953713671
+Train acc 0.7219590958019376
+Valid acc 0.7160804020100503
+Test acc 0.6979913916786227
+Current height: 5
+model _args {'max_depth': 5}
+0.7159311087190527
+starting score 0.7159311087190527
+Train acc 0.7319698600645855
+Valid acc 0.7060301507537688
+Test acc 0.6940459110473458
 Current height: 6
 model _args {'max_depth': 6}
-0.8069962182603998
-starting score 0.8069962182603998
-Train acc 0.8095623987034035
-Valid acc 0.7752100840336135
-Test acc 0.779027902790279
-Best height: 6
-Train acc 0.8095623987034035
-Test acc 0.779027902790279
+0.7270182992465016
+starting score 0.7270182992465016
+Train acc 0.7433799784714747
+Valid acc 0.7077051926298158
+Test acc 0.6979913916786227
+Current height: 7
+model _args {'max_depth': 7}
+0.7402583423035523
+starting score 0.7402583423035523
+Train acc 0.7608180839612486
+Valid acc 0.7068676716917923
+Test acc 0.6918938307030129
+Current height: 8
+model _args {'max_depth': 8}
+0.7567276641550054
+starting score 0.7567276641550054
+Train acc 0.7779332615715824
+Valid acc 0.6917922948073701
+Test acc 0.6750358680057389
+Current height: 9
+model _args {'max_depth': 9}
+0.7717976318622174
+starting score 0.7717976318622174
+Train acc 0.7952637244348763
+Valid acc 0.7001675041876047
+Test acc 0.6775466284074605
+Best height: 4
+Train acc 0.7219590958019376
+Test acc 0.6979913916786227
+Current task:  11
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361278
+Task URL.............: https://www.openml.org/t/361278
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: RiskPerformance
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:heloc
+DLGN performance
+Setup:
+Num neurons :  [22, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6864156663417816, 0.6409798562526703, 0.5851406753063202, 0.5723786532878876, 0.5649431467056274, 0.5605024456977844, 0.5573586344718933, 0.5549913227558136, 0.5534064412117005, 0.5524820625782013, 0.5515133321285248, 0.5506447434425354, 0.5498398274183274, 0.5491389691829681, 0.548525482416153, 0.5479475855827332, 0.5376920163631439, 0.510073047876358, 0.3176899641752243, 0.06144942194223404, 0.03932167962193489, 0.03837607409805059]
+==========Best validated model=============
+Train error= 1901
+Train loss =  tensor(0.5343, grad_fn=<NllLossBackward0>)
+Num_train_data= 7000
+Test error= 596
+Num_test_data= 2100
+Test accuracy= 28.38095238095238
+LCN performance
+Best train score: 0.6702857142857143
+Best valid score: 0.6988888888888889
+Best test score: 0.6823809523809524
+Latent Tree performance
+Current depth: 5
+0.7077777777777777 0.6895238095238095
+Best depth: 5
+Train acc 0.7401428571428571
+Test acc 0.6895238095238095
+TAO performance
+Current height: 4
+model _args {'max_depth': 4}
+0.7117142857142857
+starting score 0.7117142857142857
+Train acc 0.7351428571428571
+Valid acc 0.7177777777777777
+Test acc 0.710952380952381
+Current height: 5
+model _args {'max_depth': 5}
+0.7251428571428571
+starting score 0.7251428571428571
+Train acc 0.7568571428571429
+Valid acc 0.7177777777777777
+Test acc 0.6980952380952381
+Current height: 6
+model _args {'max_depth': 6}
+0.7312857142857143
+starting score 0.7312857142857143
+Train acc 0.7634285714285715
+Valid acc 0.7166666666666667
+Test acc 0.6938095238095238
+Current height: 7
+model _args {'max_depth': 7}
+0.7505714285714286
+starting score 0.7505714285714286
+Train acc 0.7825714285714286
+Valid acc 0.7211111111111111
+Test acc 0.6995238095238095
+Current height: 8
+model _args {'max_depth': 8}
+0.7682857142857142
+starting score 0.7682857142857142
+Train acc 0.814
+Valid acc 0.6822222222222222
+Test acc 0.6861904761904762
+Current height: 9
+model _args {'max_depth': 9}
+0.7881428571428571
+starting score 0.7881428571428571
+Train acc 0.8362857142857143
+Valid acc 0.6688888888888889
+Test acc 0.6695238095238095
+Best height: 7
+Train acc 0.7825714285714286
+Test acc 0.6995238095238095
+Current task:  12
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361069
+Task URL.............: https://www.openml.org/t/361069
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: target
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:Higgs
+DLGN performance
+Setup:
+Num neurons :  [24, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6912001430988312, 0.6758001983165741, 0.6489877521991729, 0.6370392799377441, 0.6307183086872101, 0.6225333690643311, 0.6123421013355255, 0.6036356329917908, 0.5959721386432648, 0.5893754363059998, 0.5829378366470337, 0.5778517842292785, 0.5740574061870575, 0.5707863509654999, 0.5684362828731537, 0.5667040348052979, 0.5458837449550629, 0.5220069110393524, 0.5086121141910553, 0.49827672839164733, 0.490189191699028, 0.481877338886261]
+==========Best validated model=============
+Train error= 154273
+Train loss =  tensor(0.4764, grad_fn=<NllLossBackward0>)
+Num_train_data= 658112
+Test error= 49317
+Num_test_data= 197434
+Test accuracy= 24.97898031747318
+LCN performance
+Best train score: 0.5328834605659827
+Best valid score: 0.5310586900512917
+Best test score: 0.5333579829208748
+Latent Tree performance
+Current depth: 5
+0.7130853050322642 0.709984095951052
+Best depth: 5
+Train acc 0.7130017383059418
+Test acc 0.709984095951052
+TAO performance
+Current height: 4
+model _args {'max_depth': 4}
+0.656833487309151
+starting score 0.656833487309151
+Train acc 0.6898871316736361
+Valid acc 0.6890585482307893
+Test acc 0.6895418215707527
+Current height: 5
+model _args {'max_depth': 5}
+0.6649020227560051
+starting score 0.6649020227560051
+Train acc 0.7042707016434893
+Valid acc 0.7044106176282885
+Test acc 0.7028525988431578
+Current height: 6
+model _args {'max_depth': 6}
+0.6829369469026548
+starting score 0.6829369469026548
+Train acc 0.7080694471457746
+Valid acc 0.7057933675278323
+Test acc 0.7060637985352067
+Current height: 7
+model _args {'max_depth': 7}
+0.6909826898764951
+starting score 0.6909826898764951
+Train acc 0.7151609452494408
+Valid acc 0.7109107239936654
+Test acc 0.7116099557320421
+Current height: 8
+model _args {'max_depth': 8}
+0.697568195079257
+starting score 0.697568195079257
+Train acc 0.7205825148303024
+Valid acc 0.71277802727681
+Test acc 0.7124963278867875
+Current height: 9
+model _args {'max_depth': 9}
+0.7045457308178548
+starting score 0.7045457308178548
+Train acc 0.7288698580180881
+Valid acc 0.717162644479637
+Test acc 0.7156973976113536
+Best height: 9
+Train acc 0.7288698580180881
+Test acc 0.7156973976113536
+Current task:  13
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361062
+Task URL.............: https://www.openml.org/t/361062
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: binaryClass
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:pol
+DLGN performance
+Setup:
+Num neurons :  [26, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6845609426498414, 0.6105777382850647, 0.41227166056632997, 0.32232548892498014, 0.28114356100559235, 0.25399183481931686, 0.21691513955593109, 0.17886456698179246, 0.14706773683428764, 0.12282879203557968, 0.10699202343821526, 0.09596292227506638, 0.08688490316271782, 0.07919773384928704, 0.07308070622384548, 0.06748406291007995, 0.01722178440541029, 0.011003548419103027, 0.008351033041253685, 0.003894858923740685, 0.00044003048387821766, 0.0034410826774546877]
+==========Best validated model=============
+Train error= 15
+Train loss =  tensor(0.0076, grad_fn=<NllLossBackward0>)
+Num_train_data= 7057
+Test error= 23
+Num_test_data= 2118
+Test accuracy= 1.0859301227573182
+LCN performance
+Best train score: 0.8404421142128383
+Best valid score: 0.836824696802646
+Best test score: 0.8389990557129368
+Latent Tree performance
+Current depth: 5
+0.9790518191841234 0.9825306893295562
+Best depth: 5
+Train acc 0.9975910443531245
+Test acc 0.9825306893295562
+TAO performance
+Current height: 4
+model _args {'max_depth': 4}
+0.9241887487600964
+starting score 0.9241887487600964
+Train acc 0.9810117613716877
+Valid acc 0.9735391400220507
+Test acc 0.9796978281397545
+Current height: 5
+model _args {'max_depth': 5}
+0.9545132492560578
+starting score 0.9545132492560578
+Train acc 0.9859713759387841
+Valid acc 0.9680264608599779
+Test acc 0.9773371104815864
+Current height: 6
+model _args {'max_depth': 6}
+0.9601813801898824
+starting score 0.9601813801898824
+Train acc 0.9907892872325351
+Valid acc 0.9746416758544653
+Test acc 0.97780925401322
+Current height: 7
+model _args {'max_depth': 7}
+0.9712342355108403
+starting score 0.9712342355108403
+Train acc 0.9905058806858439
+Valid acc 0.9790518191841234
+Test acc 0.9806421152030217
+Current height: 8
+model _args {'max_depth': 8}
+0.9797364319115771
+starting score 0.9797364319115771
+Train acc 0.9933399461527561
+Valid acc 0.9867695700110254
+Test acc 0.9782813975448537
+Current height: 9
+model _args {'max_depth': 9}
+0.9862547824854754
+starting score 0.9862547824854754
+Train acc 0.9930565396060649
+Valid acc 0.9845644983461963
+Test acc 0.9796978281397545
+Best height: 8
+Train acc 0.9933399461527561
+Test acc 0.9782813975448537
+Current task:  14
 OpenML Classification Task
 ==========================
 Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
@@ -287,4 +1080,238 @@ Evaluation Measure...: predictive_accuracy
 Target Feature.......: signal
 # of Classes.........: 2
 Cost Matrix..........: Available
+Current Dataset:MiniBooNE
 DLGN performance
+Setup:
+Num neurons :  [50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6867496371269226, 0.6264742732048034, 0.45866978764533994, 0.41122157871723175, 0.3838168680667877, 0.36953087747097013, 0.3539476811885834, 0.3340992569923401, 0.3197057068347931, 0.30880911350250245, 0.29920235872268675, 0.29176231324672697, 0.28672621548175814, 0.2826970487833023, 0.2792265921831131, 0.2759702682495117, 0.2318518117070198, 0.2092212989926338, 0.19252478927373887, 0.17361654341220856, 0.1535489097237587, 0.12912723273038865]
+==========Best validated model=============
+Train error= 2648
+Train loss =  tensor(0.1353, grad_fn=<NllLossBackward0>)
+Num_train_data= 51098
+Test error= 1014
+Num_test_data= 15331
+Test accuracy= 6.614049964124975
+LCN performance
+Best train score: 0.6914556342714001
+Best valid score: 0.6924950525194093
+Best test score: 0.6955841106255299
+Latent Tree performance
+Current depth: 5
+0.8949611813061349 0.8996803861457179
+Best depth: 5
+Train acc 0.8982347645700419
+Test acc 0.8996803861457179
+TAO performance
+Current height: 4
+model _args {'max_depth': 4}
+0.8714431093193471
+starting score 0.8714431093193471
+Train acc 0.9109749892363693
+Valid acc 0.9051606028314813
+Test acc 0.910442893483791
+Current height: 5
+model _args {'max_depth': 5}
+0.8837723589964382
+starting score 0.8837723589964382
+Train acc 0.9218364710947591
+Valid acc 0.9179479372811691
+Test acc 0.9198356271606549
+Current height: 6
+model _args {'max_depth': 6}
+0.8970801205526635
+starting score 0.8970801205526635
+Train acc 0.9222278758464127
+Valid acc 0.917795707109149
+Test acc 0.9199660817950558
+Current height: 7
+model _args {'max_depth': 7}
+0.9098986261693217
+starting score 0.9098986261693217
+Train acc 0.9267877412031782
+Valid acc 0.9141421829806667
+Test acc 0.9153349422738243
+Current height: 8
+model _args {'max_depth': 8}
+0.9205448354143019
+starting score 0.9205448354143019
+Train acc 0.9317977220243454
+Valid acc 0.9120109605723854
+Test acc 0.9152044876394234
+Current height: 9
+model _args {'max_depth': 9}
+0.9337743160201964
+starting score 0.9337743160201964
+Train acc 0.9381971897138831
+Valid acc 0.9028771502511798
+Test acc 0.9082903920161763
+Best height: 5
+Train acc 0.9218364710947591
+Test acc 0.9198356271606549
+Current task:  15
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361274
+Task URL.............: https://www.openml.org/t/361274
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:jannis
+DLGN performance
+Setup:
+Num neurons :  [54, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6831418216228485, 0.6158116340637207, 0.5675107002258301, 0.5448051631450653, 0.5316663444042206, 0.5234959304332734, 0.5179167866706849, 0.5129260838031768, 0.5086382925510406, 0.5047616809606552, 0.5014030069112778, 0.4982890158891678, 0.495205220580101, 0.4922444611787796, 0.48935273587703704, 0.48640038073062897, 0.4436250805854797, 0.3943159908056259, 0.3123682975769043, 0.21308173090219498, 0.09349980130791664, 0.014441815670579672]
+==========Best validated model=============
+Train error= 8191
+Train loss =  tensor(0.4347, grad_fn=<NllLossBackward0>)
+Num_train_data= 40306
+Test error= 2642
+Num_test_data= 12092
+Test accuracy= 21.849156467085677
+LCN performance
+Best train score: 0.648017664863792
+Best valid score: 0.6377846391354689
+Best test score: 0.6428217002977175
+Latent Tree performance
+Current depth: 5
+0.7365881898880741 0.7495865034733709
+Best depth: 5
+Train acc 0.7882449263137002
+Test acc 0.7495865034733709
+TAO performance
+Current height: 4
+model _args {'max_depth': 4}
+0.7253510643576638
+starting score 0.7253510643576638
+Train acc 0.7805785739095916
+Valid acc 0.7664994210729448
+Test acc 0.7680284485610321
+Current height: 5
+model _args {'max_depth': 5}
+0.7380042673547362
+starting score 0.7380042673547362
+Train acc 0.7806530045154567
+Valid acc 0.7537630258587418
+Test acc 0.7652993714852795
+Current height: 6
+model _args {'max_depth': 6}
+0.7489455664169107
+starting score 0.7489455664169107
+Train acc 0.7986155907309086
+Valid acc 0.7553068313392513
+Test acc 0.764555077737347
+Current height: 7
+model _args {'max_depth': 7}
+0.7654939711209249
+starting score 0.7654939711209249
+Train acc 0.814717411799732
+Valid acc 0.7526051717483597
+Test acc 0.7548792590142243
+Current height: 8
+model _args {'max_depth': 8}
+0.7792884434079294
+starting score 0.7792884434079294
+Train acc 0.8402471096114722
+Valid acc 0.7394828251640293
+Test acc 0.7466920277869666
+Current height: 9
+model _args {'max_depth': 9}
+0.7998312906267057
+starting score 0.7998312906267057
+Train acc 0.8721282191237036
+Valid acc 0.7259745272095716
+Test acc 0.7423089646046973
+Best height: 4
+Train acc 0.7805785739095916
+Test acc 0.7680284485610321
+Current task:  16
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361276
+Task URL.............: https://www.openml.org/t/361276
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: target
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:Bioresponse
+DLGN performance
+Setup:
+Num neurons :  [419, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6712025165557861, 0.5758001625537872, 0.5202670931816101, 0.48557759523391725, 0.4580483496189117, 0.42616809010505674, 0.392144039273262, 0.35583715736865995, 0.3212407141923904, 0.28880073577165605, 0.26153346598148347, 0.24744542837142944, 0.2751194566488266, 0.2970624268054962, 0.2728347063064575, 0.21182772070169448, 0.06703204996883869, 0.009273870522156358, 0.0003567148000001907, 2.5360586369060913e-05, 2.647675444222841e-06]
+==========Best validated model=============
+Train error= 71
+Train loss =  tensor(0.0942, grad_fn=<NllLossBackward0>)
+Num_train_data= 2403
+Test error= 175
+Num_test_data= 722
+Test accuracy= 24.238227146814403
+LCN performance
+Best train score: 0.6325426550145651
+Best valid score: 0.5954692556634305
+Best test score: 0.590027700831025
+Latent Tree performance
+Current depth: 5
+0.6796116504854369 0.6966759002770083
+Best depth: 5
+Train acc 0.9970869746150645
+Test acc 0.6966759002770083
+TAO performance
+Current height: 4
+model _args {'max_depth': 4}
+0.7282563462338744
+starting score 0.7282563462338744
+Train acc 0.9895963379109447
+Valid acc 0.686084142394822
+Test acc 0.7160664819944599
+Current height: 5
+model _args {'max_depth': 5}
+0.7569704535996671
+starting score 0.7569704535996671
+Train acc 0.9950062421972534
+Valid acc 0.6828478964401294
+Test acc 0.7146814404432132
+Current height: 6
+model _args {'max_depth': 6}
+0.7935913441531419
+starting score 0.7935913441531419
+Train acc 0.997919267582189
+Valid acc 0.686084142394822
+Test acc 0.7022160664819944
+Current height: 7
+model _args {'max_depth': 7}
+0.8318768206408655
+starting score 0.8318768206408655
+Train acc 0.9987515605493134
+Valid acc 0.6213592233009708
+Test acc 0.6883656509695291
+Current height: 8
+model _args {'max_depth': 8}
+0.8668331252600916
+starting score 0.8668331252600916
+Train acc 0.997919267582189
+Valid acc 0.6440129449838188
+Test acc 0.6911357340720221
+Current height: 9
+model _args {'max_depth': 9}
+0.8868081564710778
+starting score 0.8868081564710778
+Train acc 0.9983354140657511
+Valid acc 0.6990291262135923
+Test acc 0.6925207756232687
+Best height: 9
+Train acc 0.9983354140657511
+Test acc 0.6925207756232687
