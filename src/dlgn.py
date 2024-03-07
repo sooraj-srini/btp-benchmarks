@@ -264,7 +264,7 @@ class trainDLGN:
 		test_error_acc = 100 - (test_error/len(test_data_labels))*100
 		print("Test error=",np.sum(test_data_labels != (np.sign(test_preds[:,0])+1)//2 ))
 		print("Num_test_data=",len(test_data_labels))
-		print("Test accuracy=", test_error_acc)
+		print("DLGN Test accuracy=", test_error_acc)
 		sys.stdout = original_stdout
 
 		# w_list = np.concatenate((w_list_old,-w_list_old),axis=0)
