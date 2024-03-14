@@ -3,7 +3,7 @@ import torch
 import numpy as np
 
 import sys
-sys.path.append('/workspaces/btp-benchmarks/src/LatentTrees') # replace with the actual path to the LatentTrees package
+sys.path.append('/home/sooraj/sem/btp/btp-benchmarks/src/LatentTrees') # replace with the actual path to the LatentTrees package
 from LatentTrees.src.LT_models import LTBinaryClassifier
 from LatentTrees.src.monitors import MonitorTree
 from LatentTrees.src.optimization import train_batch

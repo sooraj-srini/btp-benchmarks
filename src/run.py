@@ -2,7 +2,7 @@ import dlgn
 from data_gen import Args, data_gen_decision_tree 
 import openml
 import numpy as np
-import dlgn, lcn, latent, tao, kernel
+import dlgn, dlgn_vt, lcn, latent, tao, kernel
 from sklearn.preprocessing import StandardScaler
 
 SUITE_ID = 337
@@ -15,14 +15,14 @@ if __name__ == '__main__':
         return task.get_X_and_y()[0].shape[1]
     arr = benchmark_suite.tasks.copy()
     arr.sort(key=lambda x: get_task_size(x))
-    for task_id in arr[5:]:
+    for task_id in arr:
         task = openml.tasks.get_task(task_id)
         count += 1
-        print("Current task: ", count)
-        print(task)
+        # print("Current task: ", count)
+        # print(task)
         dataset = task.get_dataset()
-        print(f"Current Dataset:{dataset.name}")
         X, y, _, _ = dataset.get_data(target=task.target_name)
+        print(f"{dataset.name},{X.shape[0]},{X.shape[1]}")
         np.random.seed(42)
         rng = np.random.permutation(X.shape[0])
         scaler = StandardScaler()
@@ -52,18 +52,22 @@ if __name__ == '__main__':
 
         print("DLGN performance")
         model = dlgn.trainDLGN(args)
-        model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
+        # model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
+        
+        print("DLGN Value Tensor performance")
+        model = dlgn.trainDLGN(args)
+        # model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
 
         print("LCN performance")
         model = lcn.trainLCN(args)
-        model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
+        # model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
 
 
         print("Latent Tree performance")
         model = latent.trainLatentTree(args)
-        model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
+        # model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
 
 
         print("TAO performance")
         model = tao.trainTAO(args)
-        model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
+        # model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
