@@ -15,7 +15,7 @@ if __name__ == '__main__':
         return task.get_X_and_y()[0].shape[1]
     arr = benchmark_suite.tasks.copy()
     arr.sort(key=lambda x: get_task_size(x))
-    for task_id in arr:
+    for task_id in arr[12:]:
         task = openml.tasks.get_task(task_id)
         count += 1
         print("Current task: ", count)
