@@ -95,7 +95,9 @@ class DLGN_FC(nn.Module):
                 cp = gate_score
             else:
                 cp = cp*gate_score 
-        return torch.sum(cp*self.value_layers, dim=(1,2,3,4))
+
+        layers = tuple(range(1, self.num_hidden_layers + 1))
+        return torch.sum(cp*self.value_layers, dim=layers)
 
 #@title Train DLGN model
 class trainDLGN:
@@ -104,9 +106,10 @@ class trainDLGN:
         self.num_layer = args.numlayer
         self.num_neuron = args.numnodes
         self.beta = args.beta
-        self.no_of_batches=10 
+        self.no_of_batches=32 
         self.weight_decay=0.0
         self.num_hidden_nodes=[self.num_neuron]*self.num_layer
+        # self.num_hidden_nodes=[12]*4
         filename_suffix = str(self.num_layer)
         filename_suffix += "_"+str(self.num_neuron)
         filename_suffix += "_"+str(int(self.beta))
@@ -116,93 +119,8 @@ class trainDLGN:
         self.saved_epochs = list(range(0,300,1)) + list(range(300,10001,50))
         self.update_value_epochs = list(range(0,10001,100))# 
 
-
-    def train_dlgn (self, DLGN_obj, train_data_curr,vali_data_curr,test_data_curr,
-                    train_labels_curr,test_labels_curr,vali_labels_curr,num_epoch=1,
-                    parameter_mask=dict()):
-        
-        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        DLGN_obj.to(device)
-
-        criterion = nn.CrossEntropyLoss()
-
-
-
-
-        optimizer = optim.Adam(DLGN_obj.parameters(), lr=self.lr)
-
-
-
-        train_data_torch = torch.Tensor(train_data_curr)
-        vali_data_torch = torch.Tensor(vali_data_curr)
-        test_data_torch = torch.Tensor(test_data_curr)
-
-        train_labels_torch = torch.tensor(train_labels_curr, dtype=torch.int64)
-        test_labels_torch = torch.tensor(test_labels_curr, dtype=torch.int64)
-        vali_labels_torch = torch.tensor(vali_labels_curr, dtype=torch.int64)
-
-        num_batches = self.no_of_batches
-        batch_size = len(train_data_curr)//num_batches
-        losses=[]
-        DLGN_obj_store = []
-        best_vali_error = len(vali_labels_curr)
-        
-
-        # print("H3")
-        # print(DLGN_params)
-        train_losses = []
-        running_loss = 0.7*num_batches # initial random loss = 0.7 
-        self.saved_epochs = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16, 32,64,128,256,512,1024,2048]
-        for epoch in tqdm(range(self.saved_epochs[-1])):  # loop over the dataset multiple times
-            if epoch in self.saved_epochs:
-                DLGN_obj_copy = deepcopy(DLGN_obj)
-                DLGN_obj_copy.to(torch.device('cpu'))
-                DLGN_obj_store.append(DLGN_obj_copy)
-                train_losses.append(running_loss/num_batches)
-                if running_loss/num_batches < 1e-5:
-                    break
-            running_loss = 0.0
-            for batch_start in range(0,len(train_data_curr),batch_size):
-                if (batch_start+batch_size)>len(train_data_curr):
-                    break
-                optimizer.zero_grad()
-                inputs = train_data_torch[batch_start:batch_start+batch_size]
-                targets = train_labels_torch[batch_start:batch_start+batch_size].reshape(batch_size)
-                inputs = inputs.to(device)
-                targets = targets.to(device)
-                values,gate_scores = DLGN_obj(inputs)
-                outputs = torch.cat((-1*values[-1], values[-1]), dim=1)
-                loss = criterion(outputs, targets)            
-                loss.backward()
-                for name,param in DLGN_obj.named_parameters():
-                    parameter_mask[name] = parameter_mask[name].to(device)
-                    param.grad *= parameter_mask[name]   
-                optimizer.step()
-                running_loss += loss.item()    
-            losses.append(running_loss/num_batches)
-            inputs = vali_data_torch.to(device)
-            targets = vali_labels_torch.to(device)
-            values,gate_scores =DLGN_obj(inputs)
-            vali_preds = torch.cat((-1*values[-1], values[-1]), dim=1)
-            vali_preds = torch.argmax(vali_preds, dim=1)
-            vali_error= torch.sum(targets!=vali_preds)
-            if vali_error < best_vali_error:
-                DLGN_obj_return = deepcopy(DLGN_obj)
-                best_vali_error = vali_error
-        plt.figure()
-        plt.title("DLGN loss vs epoch")
-        plt.plot(losses)
-        if not os.path.exists('figures'):
-            os.mkdir('figures')
-
-        filename = 'figures/'+self.filename_suffix +'.pdf'
-        plt.savefig(filename)
-        DLGN_obj_return.to(torch.device('cpu'))
-        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
-        return train_losses, DLGN_obj_return, DLGN_obj_store
     
-    def train2_dlgn (self, DLGN_obj, train_data_curr,vali_data_curr,test_data_curr,
+    def train_dlgn (self, DLGN_obj, train_data_curr,vali_data_curr,test_data_curr,
                     train_labels_curr,test_labels_curr,vali_labels_curr,
                     parameter_mask=dict()):
         # DLGN_obj is the initial network
@@ -222,7 +140,7 @@ class trainDLGN:
     
     
     
-        optimizer = optim.SGD(DLGN_obj.parameters(), lr=self.lr)
+        optimizer = optim.Adam(DLGN_obj.parameters(), lr=self.lr)
     
     
     
@@ -260,16 +178,31 @@ class trainDLGN:
                 print("Total path abs value", torch.abs(DLGN_obj.value_layers.cpu().detach()).sum().numpy())
     
                 ew = DLGN_obj.return_gating_functions()
-                cp_feat1 = sigmoid(self.beta*np.dot(train_data_curr,ew[0].cpu().T).reshape(-1,self.num_neuron,1,1,1))
-                cp_feat2 = sigmoid(self.beta*np.dot(train_data_curr,ew[1].cpu().T).reshape(-1,1,self.num_neuron,1,1))
-                cp_feat3 = sigmoid(self.beta*np.dot(train_data_curr,ew[2].cpu().T).reshape(-1,1,1,self.num_neuron,1))
-                cp_feat4 = sigmoid(self.beta*np.dot(train_data_curr,ew[3].cpu().T).reshape(-1,1,1,1,self.num_neuron))
-                cp_feat = cp_feat1 * cp_feat2 * cp_feat3 * cp_feat4
+                cp_feat = None
+                for i in range(self.num_layer):
+                    args = [1]*(self.num_layer + 1)
+                    args[0] = -1
+                    args[i+1] = self.num_neuron
+                    cp_feati = sigmoid(self.beta*np.dot(train_data_curr,ew[i].cpu().T).reshape(*args))
+                    if i == 0:
+                        cp_feat = cp_feati
+                    else:
+                        cp_feat = cp_feat * cp_feati
+                
+                
+                # cp_feat1 = sigmoid(self.beta*np.dot(train_data_curr,ew[0].cpu().T).reshape(-1,self.num_neuron,1,1,1))
+                # cp_feat2 = sigmoid(self.beta*np.dot(train_data_curr,ew[1].cpu().T).reshape(-1,1,self.num_neuron,1,1))
+                # cp_feat3 = sigmoid(self.beta*np.dot(train_data_curr,ew[2].cpu().T).reshape(-1,1,1,self.num_neuron,1))
+                # cp_feat4 = sigmoid(self.beta*np.dot(train_data_curr,ew[3].cpu().T).reshape(-1,1,1,1,self.num_neuron))
+                # cp_feat = cp_feat1 * cp_feat2 * cp_feat3 * cp_feat4
                 cp_feat_vec = cp_feat.reshape((len(cp_feat),-1))
     
                 clf = LogisticRegression(C=0.03, fit_intercept=False,max_iter=1000, penalty="l1", solver='liblinear')
                 clf.fit(2*cp_feat_vec, train_labels_curr)
-                value_wts  = clf.decision_function(np.eye(self.num_neuron**self.num_layer)).reshape(1,self.num_neuron,self.num_neuron,self.num_neuron, self.num_neuron)
+                shape_args = [self.num_neuron]*(self.num_layer + 1)
+                shape_args[0] = 1
+                value_wts  = clf.decision_function(np.eye(self.num_neuron**self.num_layer)).reshape(*shape_args)
+                # value_wts  = clf.decision_function(np.eye(self.num_neuron**self.num_layer)).reshape(1,self.num_neuron,self.num_neuron,self.num_neuron, self.num_neuron)
                 
                 A= DLGN_obj.value_layers.detach()
                 A[:] = torch.Tensor(value_wts)
@@ -321,7 +254,7 @@ class trainDLGN:
             outputs = torch.cat((-1*train_preds,train_preds), dim=1)
             targets = torch.tensor(train_labels_curr, dtype=torch.int64).to(device)
             train_loss = criterion(outputs, targets)
-            if epoch%5 == 0:
+            if epoch%25 == 0:
                 print("Loss after updating at epoch ", epoch, " is ", train_loss)
                 test_preds =DLGN_obj(test_data_torch.to(device)).reshape(-1,1)
                 test_preds = test_preds.detach().cpu().numpy()
@@ -370,7 +303,7 @@ class trainDLGN:
             train_parameter_masks[name].to(device)
 
         set_torchseed(5000)
-        train_losses, DLGN_obj_final, DLGN_obj_store = self.train_dlgn(train_data_curr=train_data,
+        train_losses, DLGN_obj_final, DLGN_obj_store, _, _ = self.train_dlgn(train_data_curr=train_data,
                                                     vali_data_curr=vali_data,
                                                     test_data_curr=test_data,
                                                     train_labels_curr=train_data_labels,
@@ -385,7 +318,7 @@ class trainDLGN:
         # print(len(DLGN_obj_store))
         # print("Hi")
         device=torch.device('cpu')
-        train_outputs_values, train_outputs_gate_scores =DLGN_obj_final(torch.Tensor(train_data).to(device))
+        train_outputs_values =DLGN_obj_final(torch.Tensor(train_data).to(device))
         train_preds = train_outputs_values[-1]
         criterion = nn.CrossEntropyLoss()
         outputs = torch.cat((-1*train_preds,train_preds), dim=1)

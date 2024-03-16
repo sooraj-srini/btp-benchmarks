@@ -55,8 +55,10 @@ if __name__ == '__main__':
         # model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
         
         print("DLGN Value Tensor performance")
-        model = dlgn.trainDLGN(args)
-        # model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
+        args.numnodes = 9
+        args.numlayer = 4
+        model = dlgn_vt.trainDLGN(args)
+        model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
 
         print("LCN performance")
         model = lcn.trainLCN(args)
