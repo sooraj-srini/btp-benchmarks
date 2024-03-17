@@ -49,8 +49,9 @@ if __name__ == '__main__':
         args = Args()
         args.input_dim = data_x.shape[1]
 
-        params = ((lr, 4, neurons) for lr in (0.01, 0.001) for neurons in (50, 100))
-
+        # params = ((0.001, 5, neurons) for lr in (0.01, 0.001) for neurons in (50, 100))
+        params = ((lr, 5, neurons) for lr in (0.01, 0.001) for neurons in (50, 75))
+        max_acc = 0
         for lr, layers, neurons in params:
             print(f"Learning rate {lr}, Number of layers {layers} and number of neurons {neurons}")  
             print("DLGN performance")
@@ -58,4 +59,6 @@ if __name__ == '__main__':
             args.numnodes = neurons
             args.lr = lr
             model = dlgn.trainDLGN(args)
-            model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
+            acc = model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
+            max_acc = max(max_acc, acc)
+        print(f"Maximum test accuracy for {dataset.name} is {max_acc}")

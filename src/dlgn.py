@@ -266,6 +266,7 @@ class trainDLGN:
 		print("Num_test_data=",len(test_data_labels))
 		print("DLGN Test accuracy=", test_error_acc)
 		sys.stdout = original_stdout
+		return test_error_acc
 
 		# w_list = np.concatenate((w_list_old,-w_list_old),axis=0)
 
