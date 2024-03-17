@@ -13,6 +13,7 @@ This is a repository intended to document the benchmarks of the following algori
 
 - [x] Benchmark on all 16 binary classification datasets provided in Tabular Benchmarks
 - [ ] Benchmark Soft Decision Trees
-- [ ] Find the existing benchmarks given in the paper for other models
-- [ ] Improve TAO to not throw liblinear convergence issues
+- [x] Find the existing benchmarks given in the paper for other models
+- [x] Improve TAO to not throw liblinear convergence issues
 - [ ] Improve TAO to use another obliue decision tree learning algorithm. 
+- [ ] Benchmark the Value Tensor implementation of the DLGN

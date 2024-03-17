@@ -15,7 +15,7 @@ if __name__ == '__main__':
         return task.get_X_and_y()[0].shape[1]
     arr = benchmark_suite.tasks.copy()
     arr.sort(key=lambda x: get_task_size(x))
-    for task_id in arr[12:]:
+    for task_id in arr[6:]:
         task = openml.tasks.get_task(task_id)
         count += 1
         print("Current task: ", count)
@@ -50,7 +50,7 @@ if __name__ == '__main__':
         args.input_dim = data_x.shape[1]
 
         # params = ((0.001, 5, neurons) for lr in (0.01, 0.001) for neurons in (50, 100))
-        params = ((lr, 5, neurons) for lr in (0.01, 0.001) for neurons in (50, 75))
+        params = ((lr, 3, neurons) for lr in (0.005, 0.001) for neurons in (50, 75))
         max_acc = 0
         for lr, layers, neurons in params:
             print(f"Learning rate {lr}, Number of layers {layers} and number of neurons {neurons}")  
