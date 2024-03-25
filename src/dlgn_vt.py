@@ -106,7 +106,7 @@ class trainDLGN:
         self.num_layer = args.numlayer
         self.num_neuron = args.numnodes
         self.beta = args.beta
-        self.no_of_batches=32 
+        self.no_of_batches=16 
         self.weight_decay=0.0
         self.num_hidden_nodes=[self.num_neuron]*self.num_layer
         # self.num_hidden_nodes=[12]*4
@@ -116,8 +116,9 @@ class trainDLGN:
         filename_suffix += "_"+format(self.lr,".1e")
         self.filename_suffix = filename_suffix
         self.input_dim = args.input_dim
-        self.saved_epochs = list(range(0,300,1)) + list(range(300,10001,50))
-        self.update_value_epochs = list(range(0,10001,100))# 
+        self.saved_epochs = list(range(0,300,1)) + list(range(300,2048,50))
+        self.update_value_epochs = list(range(0,2048,100))# 
+        self.C = args.C
 
     
     def train_dlgn (self, DLGN_obj, train_data_curr,vali_data_curr,test_data_curr,
@@ -174,8 +175,8 @@ class trainDLGN:
                 targets = torch.tensor(train_labels_curr, dtype=torch.int64).to(device)
                 
                 train_loss = criterion(outputs, targets)
-                print("Loss lefore updating value_net at epoch", epoch, " is ", train_loss)
-                print("Total path abs value", torch.abs(DLGN_obj.value_layers.cpu().detach()).sum().numpy())
+                # print("Loss lefore updating value_net at epoch", epoch, " is ", train_loss)
+                # print(/1"Total path abs value", torch.abs(DLGN_obj.value_layers.cpu().detach()).sum().numpy())
     
                 ew = DLGN_obj.return_gating_functions()
                 cp_feat = None
@@ -197,8 +198,9 @@ class trainDLGN:
                 # cp_feat = cp_feat1 * cp_feat2 * cp_feat3 * cp_feat4
                 cp_feat_vec = cp_feat.reshape((len(cp_feat),-1))
     
-                clf = LogisticRegression(C=0.03, fit_intercept=False,max_iter=1000, penalty="l1", solver='liblinear')
-                clf.fit(2*cp_feat_vec, train_labels_curr)
+                clf = LogisticRegression(C=self.C, fit_intercept=False,max_iter=1000, penalty="l1", solver='liblinear')
+                # print(cp_feat_vec.shape[:5000], train_labels_curr.shape)
+                clf.fit(2*cp_feat_vec[:5000], train_labels_curr[:5000])
                 shape_args = [self.num_neuron]*(self.num_layer + 1)
                 shape_args[0] = 1
                 value_wts  = clf.decision_function(np.eye(self.num_neuron**self.num_layer)).reshape(*shape_args)
@@ -254,11 +256,11 @@ class trainDLGN:
             outputs = torch.cat((-1*train_preds,train_preds), dim=1)
             targets = torch.tensor(train_labels_curr, dtype=torch.int64).to(device)
             train_loss = criterion(outputs, targets)
-            if epoch%25 == 0:
-                print("Loss after updating at epoch ", epoch, " is ", train_loss)
-                test_preds =DLGN_obj(test_data_torch.to(device)).reshape(-1,1)
-                test_preds = test_preds.detach().cpu().numpy()
-                print("Test error=",np.sum(test_labels_curr != (np.sign(test_preds[:,0])+1)//2 ))
+            # if epoch%25 == 0:
+            #     print("Loss after updating at epoch ", epoch, " is ", train_loss)
+            #     test_preds =DLGN_obj(test_data_torch.to(device)).reshape(-1,1)
+            #     test_preds = test_preds.detach().cpu().numpy()
+            #     print("Test error=",np.sum(test_labels_curr != (np.sign(test_preds[:,0])+1)//2 ))
             if train_loss < 0.005:
                 break
             if np.isnan(train_loss.detach().cpu().numpy()):
@@ -274,17 +276,7 @@ class trainDLGN:
             if vali_error < best_vali_error:
                 DLGN_obj_return = deepcopy(DLGN_obj)
                 best_vali_error = vali_error
-        plt.figure()
-        plt.title("DLGN loss vs epoch")
-        plt.plot(losses)
-        if not os.path.exists('figures'):
-            os.mkdir('figures')
-    
-        filename = 'figures/'+self.filename_suffix +'.pdf'
-        plt.savefig(filename)
-        DLGN_obj_return.to(torch.device('cpu'))
-        device = torch.device('cuda:1' if torch.cuda.is_available() else 'cpu')
-        # device = torch.device('cpu')
+        
         return train_losses, DLGN_obj_return, DLGN_obj_store, losses, debug_models
     
 
@@ -356,6 +348,7 @@ class trainDLGN:
         print("Test accuracy=", test_error_acc)
         sys.stdout = original_stdout
 
+        return test_error_acc
         # w_list = np.concatenate((w_list_old,-w_list_old),axis=0)
 
         # effective_weights, effective_biases = DLGN_obj_store[0].return_gating_functions()

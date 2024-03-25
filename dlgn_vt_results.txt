@@ -1,0 +1,58 @@
+4_50_3_1.0e-03
+cpu
+Current task:  6
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361060
+Task URL.............: https://www.openml.org/t/361060
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:electricity
+Logistic regression 0.03, Learning rate 0.001, Number of layers 3 and number of neurons 20
+DLGN performance
+Loss after updating value_net at epoch 0  is  tensor(0.5047, grad_fn=<NllLossBackward0>)
+Total path abs value 7.073279
+Loss after updating value_net at epoch 100  is  tensor(0.4779, grad_fn=<NllLossBackward0>)
+Total path abs value 5.5357747
+Loss after updating value_net at epoch 200  is  tensor(0.4720, grad_fn=<NllLossBackward0>)
+Total path abs value 4.953679
+Loss after updating value_net at epoch 300  is  tensor(0.4675, grad_fn=<NllLossBackward0>)
+Total path abs value 4.7251377
+Loss after updating value_net at epoch 400  is  tensor(0.4652, grad_fn=<NllLossBackward0>)
+Total path abs value 4.540349
+Loss after updating value_net at epoch 500  is  tensor(0.4635, grad_fn=<NllLossBackward0>)
+Total path abs value 4.418677
+Loss after updating value_net at epoch 600  is  tensor(0.4625, grad_fn=<NllLossBackward0>)
+Total path abs value 4.41019
+Loss after updating value_net at epoch 700  is  tensor(0.4618, grad_fn=<NllLossBackward0>)
+Total path abs value 4.4400086
+Loss after updating value_net at epoch 800  is  tensor(0.4611, grad_fn=<NllLossBackward0>)
+Total path abs value 4.460825
+Loss after updating value_net at epoch 900  is  tensor(0.4605, grad_fn=<NllLossBackward0>)
+Total path abs value 4.496688
+Loss after updating value_net at epoch 1000  is  tensor(0.4603, grad_fn=<NllLossBackward0>)
+Total path abs value 4.49806
+Loss after updating value_net at epoch 1100  is  tensor(0.4597, grad_fn=<NllLossBackward0>)
+Total path abs value 4.54035
+Loss after updating value_net at epoch 1200  is  tensor(0.4596, grad_fn=<NllLossBackward0>)
+Total path abs value 4.550934
+Loss after updating value_net at epoch 1300  is  tensor(0.4588, grad_fn=<NllLossBackward0>)
+Total path abs value 4.603878
+Loss after updating value_net at epoch 1400  is  tensor(0.4580, grad_fn=<NllLossBackward0>)
+Total path abs value 4.675479
+Loss after updating value_net at epoch 1500  is  tensor(0.4577, grad_fn=<NllLossBackward0>)
+Total path abs value 4.700145
+Loss after updating value_net at epoch 1600  is  tensor(0.4572, grad_fn=<NllLossBackward0>)
+Total path abs value 4.7111087
+Loss after updating value_net at epoch 1700  is  tensor(0.4567, grad_fn=<NllLossBackward0>)
+Total path abs value 4.7424936
+Loss after updating value_net at epoch 1800  is  tensor(0.4560, grad_fn=<NllLossBackward0>)
+Total path abs value 4.8255005
+Loss after updating value_net at epoch 1900  is  tensor(0.4549, grad_fn=<NllLossBackward0>)
+Total path abs value 4.9523067
+Loss after updating value_net at epoch 2000  is  tensor(0.4543, grad_fn=<NllLossBackward0>)
+Total path abs value 4.996708
