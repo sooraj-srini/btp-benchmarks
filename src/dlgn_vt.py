@@ -277,6 +277,7 @@ class trainDLGN:
                 DLGN_obj_return = deepcopy(DLGN_obj)
                 best_vali_error = vali_error
         
+        DLGN_obj_return.to(torch.device('cpu'))
         return train_losses, DLGN_obj_return, DLGN_obj_store, losses, debug_models
     
 
