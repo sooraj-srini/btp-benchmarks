@@ -1,8 +1,7 @@
 import dlgn
-from data_gen import Args, data_gen_decision_tree 
+from data_gen import Args 
 import openml
 import numpy as np
-import dlgn, lcn, latent, tao, kernel
 from sklearn.preprocessing import StandardScaler
 
 SUITE_ID = 337
