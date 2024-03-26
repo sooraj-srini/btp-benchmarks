@@ -310,6 +310,7 @@ class trainDLGN:
         # print(len(DLGN_obj_store))
         # print("Hi")
         # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        device = torch.device('cpu')
         train_preds =DLGN_obj_final(torch.Tensor(train_data).to(device)).reshape(-1,1)
         criterion = nn.CrossEntropyLoss()
         outputs = torch.cat((-1*train_preds,train_preds), dim=1)
