@@ -78,7 +78,7 @@ class DLGN_FC(nn.Module):
 
         for el in self.parameters():
             if el.is_cuda:
-                device = torch.device('cuda:1')
+                device = torch.device('cuda')
             else:
                 device = torch.device('cpu')
         values=[torch.ones(x.shape).to(device)]
@@ -132,7 +132,7 @@ class trainDLGN:
         
         # Speed up of a factor of over 40 by using GPU instead of CPU
         # Final train loss of 0.02 and test acc of 74%
-        device = torch.device('cuda:1' if torch.cuda.is_available() else 'cpu')
+        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         # device = torch.device('cpu')
         DLGN_obj.to(device)
     
@@ -312,7 +312,7 @@ class trainDLGN:
         # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         train_outputs_values =DLGN_obj_final(torch.Tensor(train_data).to(device))
         train_preds = train_outputs_values[-1]
-        criterion = nn.CrossEntropyLoss()
+        criterion = nn.CrossntropyLoss()
         outputs = torch.cat((-1*train_preds,train_preds), dim=1)
         targets = torch.tensor(train_data_labels, dtype=torch.int64)
         train_loss = criterion(outputs, targets)
