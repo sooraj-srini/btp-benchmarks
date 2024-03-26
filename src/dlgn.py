@@ -228,7 +228,7 @@ class trainDLGN:
 			os.mkdir('outputs')
 		# print(len(DLGN_obj_store))
 		# print("Hi")
-		device=torch.device('cpu')
+		device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 		train_outputs_values, train_outputs_gate_scores =DLGN_obj_final(torch.Tensor(train_data).to(device))
 		train_preds = train_outputs_values[-1]
 		criterion = nn.CrossEntropyLoss()
