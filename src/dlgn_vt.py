@@ -310,14 +310,13 @@ class trainDLGN:
         # print(len(DLGN_obj_store))
         # print("Hi")
         # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        train_outputs_values =DLGN_obj_final(torch.Tensor(train_data).to(device))
-        train_preds = train_outputs_values[-1]
+        train_preds =DLGN_obj_final(torch.Tensor(train_data).to(device)).reshape(-1,1)
         criterion = nn.CrossEntropyLoss()
         outputs = torch.cat((-1*train_preds,train_preds), dim=1)
         targets = torch.tensor(train_data_labels, dtype=torch.int64)
         train_loss = criterion(outputs, targets)
         train_preds = train_preds.detach().numpy()
-        filename = 'outputs/'+self.filename_suffix+'.txt'
+        # filename = 'outputs/'+filename_suffix+'.txt'
         original_stdout = sys.stdout
         # with open(filename,'w') as f:
             # sys.stdout = f
@@ -334,10 +333,9 @@ class trainDLGN:
         sys.stdout = original_stdout
 
 
-        test_outputs_values, test_outputs_gate_scores =DLGN_obj_final(torch.Tensor(test_data))
-        test_preds = test_outputs_values[-1]
+        test_preds =DLGN_obj_final(torch.Tensor(test_data)).reshape(-1,1)
         test_preds = test_preds.detach().numpy()
-        filename = 'outputs/'+self.filename_suffix+'.txt'
+        # filename = 'outputs/'+self.filename_suffix+'.txt'
         original_stdout = sys.stdout
         # with open(filename,'a') as f:
             # sys.stdout = f
