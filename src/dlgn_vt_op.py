@@ -22,6 +22,8 @@ if __name__ == '__main__':
         dataset = task.get_dataset()
         print(f"Current Dataset:{dataset.name}")
         X, y, _, _ = dataset.get_data(target=task.target_name)
+        if X.shape[0] > 100_000:
+            continue
         np.random.seed(42)
         rng = np.random.permutation(X.shape[0])
         scaler = StandardScaler()
