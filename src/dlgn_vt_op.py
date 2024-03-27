@@ -63,7 +63,7 @@ if __name__ == '__main__':
             model = dlgn_vt.trainDLGN(args)
             acc = model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
             max_acc = max(max_acc, acc)
-        params = ((C, 4, neurons) for C in (0.03, 0.06) for neurons in (10, 12))
+        params = ((C, 4, neurons) for C in (0.03, 0.06, 1.0) for neurons in [11])
         for C, layers, neurons in params:
             print(f"Logistic regression {C}, Learning rate {0.001}, Number of layers {layers} and number of neurons {neurons}")  
             print("DLGN performance")
