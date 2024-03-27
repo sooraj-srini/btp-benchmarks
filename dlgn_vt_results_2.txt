@@ -1,0 +1,357 @@
+4_50_3_1.0e-03
+cuda
+Current task:  6
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361060
+Task URL.............: https://www.openml.org/t/361060
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:electricity
+Logistic regression 0.1, Learning rate 0.001, Number of layers 3 and number of neurons 20
+DLGN performance
+Setup:
+Num neurons :  [7, 20, 20, 20, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 5531
+Train loss =  tensor(0.4340, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1716
+Num_test_data= 8081
+Test accuracy= 78.76500433114714
+Logistic regression 0.1, Learning rate 0.001, Number of layers 3 and number of neurons 22
+DLGN performance
+Setup:
+Num neurons :  [7, 22, 22, 22, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 5326
+Train loss =  tensor(0.4239, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1678
+Num_test_data= 8081
+Test accuracy= 79.23524316297488
+Logistic regression 0.06, Learning rate 0.001, Number of layers 3 and number of neurons 20
+DLGN performance
+Setup:
+Num neurons :  [7, 20, 20, 20, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 5506
+Train loss =  tensor(0.4331, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1686
+Num_test_data= 8081
+Test accuracy= 79.13624551416903
+Logistic regression 0.06, Learning rate 0.001, Number of layers 3 and number of neurons 22
+DLGN performance
+Setup:
+Num neurons :  [7, 22, 22, 22, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 5648
+Train loss =  tensor(0.4418, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1736
+Num_test_data= 8081
+Test accuracy= 78.51751020913252
+Logistic regression 0.03, Learning rate 0.001, Number of layers 4 and number of neurons 10
+DLGN performance
+Setup:
+Num neurons :  [7, 10, 10, 10, 10, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 5928
+Train loss =  tensor(0.4574, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1787
+Num_test_data= 8081
+Test accuracy= 77.8864001979953
+Logistic regression 0.03, Learning rate 0.001, Number of layers 4 and number of neurons 12
+DLGN performance
+Setup:
+Num neurons :  [7, 12, 12, 12, 12, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 5895
+Train loss =  tensor(0.4542, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1803
+Num_test_data= 8081
+Test accuracy= 77.68840490038362
+Logistic regression 0.06, Learning rate 0.001, Number of layers 4 and number of neurons 10
+DLGN performance
+Setup:
+Num neurons :  [7, 10, 10, 10, 10, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 5770
+Train loss =  tensor(0.4451, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1752
+Num_test_data= 8081
+Test accuracy= 78.31951491152086
+Logistic regression 0.06, Learning rate 0.001, Number of layers 4 and number of neurons 12
+DLGN performance
+Setup:
+Num neurons :  [7, 12, 12, 12, 12, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 5545
+Train loss =  tensor(0.4362, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1722
+Num_test_data= 8081
+Test accuracy= 78.69075609454276
+Maximum test accuracy for electricity is 79.23524316297488
+Current task:  7
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361066
+Task URL.............: https://www.openml.org/t/361066
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: Class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:bank-marketing
+Logistic regression 0.1, Learning rate 0.001, Number of layers 3 and number of neurons 20
+DLGN performance
+Setup:
+Num neurons :  [7, 20, 20, 20, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 1430
+Train loss =  tensor(0.4329, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 498
+Num_test_data= 2222
+Test accuracy= 77.58775877587759
+Logistic regression 0.1, Learning rate 0.001, Number of layers 3 and number of neurons 22
+DLGN performance
+Setup:
+Num neurons :  [7, 22, 22, 22, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 1460
+Train loss =  tensor(0.4386, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 491
+Num_test_data= 2222
+Test accuracy= 77.9027902790279
+Logistic regression 0.06, Learning rate 0.001, Number of layers 3 and number of neurons 20
+DLGN performance
+Setup:
+Num neurons :  [7, 20, 20, 20, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 1476
+Train loss =  tensor(0.4411, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 494
+Num_test_data= 2222
+Test accuracy= 77.76777677767777
+Logistic regression 0.06, Learning rate 0.001, Number of layers 3 and number of neurons 22
+DLGN performance
+Setup:
+Num neurons :  [7, 22, 22, 22, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 1435
+Train loss =  tensor(0.4336, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 504
+Num_test_data= 2222
+Test accuracy= 77.31773177317731
+Logistic regression 0.03, Learning rate 0.001, Number of layers 4 and number of neurons 10
+DLGN performance
+Setup:
+Num neurons :  [7, 10, 10, 10, 10, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 1473
+Train loss =  tensor(0.4402, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 511
+Num_test_data= 2222
+Test accuracy= 77.002700270027
+Logistic regression 0.03, Learning rate 0.001, Number of layers 4 and number of neurons 12
+DLGN performance
+Setup:
+Num neurons :  [7, 12, 12, 12, 12, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 1512
+Train loss =  tensor(0.4468, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 494
+Num_test_data= 2222
+Test accuracy= 77.76777677767777
+Logistic regression 0.06, Learning rate 0.001, Number of layers 4 and number of neurons 10
+DLGN performance
+Setup:
+Num neurons :  [7, 10, 10, 10, 10, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 1495
+Train loss =  tensor(0.4424, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 493
+Num_test_data= 2222
+Test accuracy= 77.81278127812782
+Logistic regression 0.06, Learning rate 0.001, Number of layers 4 and number of neurons 12
+DLGN performance
+Setup:
+Num neurons :  [7, 12, 12, 12, 12, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 1500
+Train loss =  tensor(0.4438, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 496
+Num_test_data= 2222
+Test accuracy= 77.67776777677767
+Maximum test accuracy for bank-marketing is 77.9027902790279
+Current task:  8
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361273
+Task URL.............: https://www.openml.org/t/361273
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: readmitted
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:Diabetes130US
+Logistic regression 0.1, Learning rate 0.001, Number of layers 3 and number of neurons 20
+DLGN performance
+Setup:
+Num neurons :  [7, 20, 20, 20, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 19385
+Train loss =  tensor(0.6542, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 5837
+Num_test_data= 14929
+Test accuracy= 60.90160091097863
+Logistic regression 0.1, Learning rate 0.001, Number of layers 3 and number of neurons 22
+DLGN performance
+Setup:
+Num neurons :  [7, 22, 22, 22, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 19512
+Train loss =  tensor(0.6559, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 5857
+Num_test_data= 14929
+Test accuracy= 60.76763346506799
+Logistic regression 0.06, Learning rate 0.001, Number of layers 3 and number of neurons 20
+DLGN performance
+Setup:
+Num neurons :  [7, 20, 20, 20, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 19581
+Train loss =  tensor(0.6577, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 5835
+Num_test_data= 14929
+Test accuracy= 60.9149976555697
+Logistic regression 0.06, Learning rate 0.001, Number of layers 3 and number of neurons 22
+DLGN performance
+Setup:
+Num neurons :  [7, 22, 22, 22, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 19523
+Train loss =  tensor(0.6565, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 5812
+Num_test_data= 14929
+Test accuracy= 61.069060218366936
+Logistic regression 0.03, Learning rate 0.001, Number of layers 4 and number of neurons 10
+DLGN performance
+Setup:
+Num neurons :  [7, 10, 10, 10, 10, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[]
+==========Best validated model=============
+Train error= 19641
+Train loss =  tensor(0.6597, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 5855
+Num_test_data= 14929
+Test accuracy= 60.78103020965905
+Logistic regression 0.03, Learning rate 0.001, Number of layers 4 and number of neurons 12
+DLGN performance
