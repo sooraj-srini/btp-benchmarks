@@ -14,7 +14,7 @@ if __name__ == '__main__':
         return task.get_X_and_y()[0].shape[1]
     arr = benchmark_suite.tasks.copy()
     arr.sort(key=lambda x: get_task_size(x))
-    for task_id in arr[6:]:
+    for task_id in arr:
         task = openml.tasks.get_task(task_id)
         count += 1
         print("Current task: ", count)
@@ -51,11 +51,22 @@ if __name__ == '__main__':
         args = Args()
         args.input_dim = data_x.shape[1]
 
-        # params = ((0.001, 5, neurons) for lr in (0.01, 0.001) for neurons in (50, 100))
-        params = ((beta, 4, neurons) for beta in (1., 5.) for neurons in (200, 30))
         max_acc = 0
+        # params = ((0.001, 5, neurons) for lr in (0.01, 0.001) for neurons in (50, 100))
+        params = ((beta, 4, neurons) for beta in (1., 10.) for neurons in (30, 150))
         for beta, layers, neurons in params:
-            print(f"Learning rate {beta}, Number of layers {layers} and number of neurons {neurons}")  
+            print(f"Beta {beta}, Number of layers {layers} and number of neurons {neurons}")  
+            print("DLGN performance")
+            args.numlayer = layers
+            args.numnodes = neurons
+            args.beta = beta
+            args.lr = 0.001
+            model = dlgn.trainDLGN(args)
+            acc = model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
+            max_acc = max(max_acc, acc)
+        params = ((beta, 5, neurons) for beta in (1., 10.) for neurons in (30, 50))
+        for beta, layers, neurons in params:
+            print(f"Beta {beta}, Number of layers {layers} and number of neurons {neurons}")  
             print("DLGN performance")
             args.numlayer = layers
             args.numnodes = neurons
