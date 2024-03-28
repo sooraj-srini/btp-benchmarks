@@ -148,7 +148,7 @@ class trainDLGN:
 		# print(DLGN_params)
 		train_losses = []
 		running_loss = 0.7*num_batches # initial random loss = 0.7 
-		self.saved_epochs = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16, 32,64,128,256,512,1024,2048]
+		self.saved_epochs = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16, 32,64,128,256,512,1024,4000]
 		for epoch in tqdm(range(self.saved_epochs[-1])):  # loop over the dataset multiple times
 			if epoch in self.saved_epochs:
 				DLGN_obj_copy = deepcopy(DLGN_obj)
@@ -185,14 +185,7 @@ class trainDLGN:
 			if vali_error < best_vali_error:
 				DLGN_obj_return = deepcopy(DLGN_obj)
 				best_vali_error = vali_error
-		plt.figure()
-		plt.title("DLGN loss vs epoch")
-		plt.plot(losses)
-		if not os.path.exists('figures'):
-			os.mkdir('figures')
 
-		filename = 'figures/'+self.filename_suffix +'.pdf'
-		plt.savefig(filename)
 		DLGN_obj_return.to(torch.device('cpu'))
 		device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -229,6 +222,7 @@ class trainDLGN:
 		# print(len(DLGN_obj_store))
 		# print("Hi")
 		# device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+		device = torch.device('cpu')
 		train_outputs_values, train_outputs_gate_scores =DLGN_obj_final(torch.Tensor(train_data).to(device))
 		train_preds = train_outputs_values[-1]
 		criterion = nn.CrossEntropyLoss()
@@ -236,7 +230,7 @@ class trainDLGN:
 		targets = torch.tensor(train_data_labels, dtype=torch.int64)
 		train_loss = criterion(outputs, targets)
 		train_preds = train_preds.detach().numpy()
-		filename = 'outputs/'+self.filename_suffix+'.txt'
+		# filename = 'outputs/'+self.filename_suffix+'.txt'
 		original_stdout = sys.stdout
 		# with open(filename,'w') as f:
 			# sys.stdout = f
@@ -256,7 +250,7 @@ class trainDLGN:
 		test_outputs_values, test_outputs_gate_scores =DLGN_obj_final(torch.Tensor(test_data))
 		test_preds = test_outputs_values[-1]
 		test_preds = test_preds.detach().numpy()
-		filename = 'outputs/'+self.filename_suffix+'.txt'
+		# filename = 'outputs/'+self.filename_suffix+'.txt'
 		original_stdout = sys.stdout
 		# with open(filename,'a') as f:
 			# sys.stdout = f

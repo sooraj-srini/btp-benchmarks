@@ -52,14 +52,15 @@ if __name__ == '__main__':
         args.input_dim = data_x.shape[1]
 
         # params = ((0.001, 5, neurons) for lr in (0.01, 0.001) for neurons in (50, 100))
-        params = ((lr, 3, neurons) for lr in (0.005, 0.001) for neurons in (50, 75))
+        params = ((beta, 4, neurons) for beta in (1., 5.) for neurons in (200, 30))
         max_acc = 0
-        for lr, layers, neurons in params:
-            print(f"Learning rate {lr}, Number of layers {layers} and number of neurons {neurons}")  
+        for beta, layers, neurons in params:
+            print(f"Learning rate {beta}, Number of layers {layers} and number of neurons {neurons}")  
             print("DLGN performance")
             args.numlayer = layers
             args.numnodes = neurons
-            args.lr = lr
+            args.beta = beta
+            args.lr = 0.001
             model = dlgn.trainDLGN(args)
             acc = model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
             max_acc = max(max_acc, acc)
