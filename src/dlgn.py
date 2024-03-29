@@ -138,8 +138,8 @@ class trainDLGN:
 		vali_labels_torch = torch.tensor(vali_labels_curr, dtype=torch.int64)
 
 		num_batches = self.no_of_batches
-		# batch_size = len(train_data_curr)//num_batches
-		batch_size  = 64
+		batch_size = len(train_data_curr)//num_batches
+		# batch_size  = 256
 		losses=[]
 		DLGN_obj_store = []
 		best_vali_error = len(vali_labels_curr)
