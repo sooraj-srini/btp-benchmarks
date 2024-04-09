@@ -2,7 +2,7 @@ import dlgn
 from data_gen import Args, data_gen_decision_tree 
 import openml
 import numpy as np
-import dlgn, dlgn_vt, lcn, latent, tao, kernel
+import dlgn, dlgn_vt, lcn,  tao, kernel, sdt
 from sklearn.preprocessing import StandardScaler
 
 SUITE_ID = 337
@@ -50,26 +50,30 @@ if __name__ == '__main__':
         args.input_dim = data_x.shape[1]
 
 
-        print("DLGN performance")
-        model = dlgn.trainDLGN(args)
+        # print("DLGN performance")
+        # model = dlgn.trainDLGN(args)
         # model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
         
-        print("DLGN Value Tensor performance")
+        # print("DLGN Value Tensor performance")
         # args.numnodes = 9
         # args.numlayer = 4
         # model = dlgn_vt.trainDLGN(args)
         # model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
 
-        print("LCN performance")
-        model = lcn.trainLCN(args)
+        # print("LCN performance")
+        # model = lcn.trainLCN(args)
         # model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
 
 
-        print("Latent Tree performance")
-        model = latent.trainLatentTree(args)
+        # print("Latent Tree performance")
+        # model = latent.trainLatentTree(args)
         # model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
 
 
-        print("TAO performance")
-        model = tao.trainTAO(args)
+        # print("TAO performance")
+        # model = tao.trainTAO(args)
         # model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
+
+        print("SDT performance")
+        model = sdt.trainSDT(args)
+        model.train(train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels)
