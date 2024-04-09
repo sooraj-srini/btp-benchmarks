@@ -26,6 +26,8 @@ if __name__ == '__main__':
         np.random.seed(42)
         rng = np.random.permutation(X.shape[0])
         scaler = StandardScaler()
+        if X.shape[0] > 100_000:
+            continue
 
         labels = y.to_numpy()
         classes = np.unique(labels)

@@ -17,8 +17,8 @@ class trainSDT:
 
     def train(self, train_data, train_data_labels, vali_data, vali_data_labels, test_data, test_data_labels, w_list_old = None, b_list_old = None):
 
-        input_dim = 28 * 28    # the number of input dimensions
-        output_dim = 10        # the number of outputs (i.e., # classes on MNIST)
+        input_dim = train_data.shape[1]    # the number of input dimensions
+        output_dim = 2        # the number of outputs (i.e., # classes on MNIST)
         depth = 5              # tree depth
         lamda = 1e-3           # coefficient of the regularization term
         lr = 1e-3              # learning rate
@@ -26,7 +26,7 @@ class trainSDT:
         batch_size = 128       # batch size
         epochs = 50            # the number of training epochs
         log_interval = 100     # the number of batches to wait before printing logs
-        use_cuda = False       # whether to use GPU
+        use_cuda = True       # whether to use GPU
 
         tree = SDT(input_dim, output_dim, depth, lamda, use_cuda)
         
@@ -35,20 +35,21 @@ class trainSDT:
                                  weight_decay=weight_decaly)
         
 
+        # train_data = torch.from_numpy(train)
         train_loader = torch.utils.data.DataLoader(
-        torch.utils.data.TensorDataset(train_data, train_data_labels),
+        torch.utils.data.TensorDataset(torch.from_numpy(train_data).to(torch.float32), torch.from_numpy(train_data_labels)),
         batch_size=batch_size,
         shuffle=True,
         )
 
         vali_loader = torch.utils.data.DataLoader(
-        torch.utils.data.TensorDataset(vali_data, vali_data_labels),
+        torch.utils.data.TensorDataset(torch.from_numpy(vali_data).to(torch.float32), torch.from_numpy(vali_data_labels)),
         batch_size=batch_size,
         shuffle=True,
         )
 
         test_loader = torch.utils.data.DataLoader(
-        torch.utils.data.TensorDataset(test_data, test_data_labels),
+        torch.utils.data.TensorDataset(torch.from_numpy(test_data).to(torch.float32), torch.from_numpy(test_data_labels)),
         batch_size=batch_size,
         shuffle=True,
         )
@@ -58,6 +59,7 @@ class trainSDT:
         training_loss_list = []
         criterion = nn.CrossEntropyLoss()
         device = torch.device("cuda" if use_cuda else "cpu")
+        tree = tree.to(device)
 
 
         for epoch in range(epochs):
@@ -68,10 +70,12 @@ class trainSDT:
 
                 batch_size = data.size()[0]
                 data, target = data.to(device), target.to(device)
-                target_onehot = onehot_coding(target, device, output_dim)
+                # target_onehot = onehot_coding(target, device, output_dim)
 
                 output, penalty = tree.forward(data, is_training_data=True)
     
+                # print(output.dtype, target.dtype)
+                # print(output.shape, target.shape)
                 loss = criterion(output, target.view(-1))
                 loss += penalty
 
