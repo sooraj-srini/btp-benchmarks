@@ -218,11 +218,6 @@ class trainDLGN:
 													parameter_mask=train_parameter_masks)
 		torch.cuda.empty_cache() 
 
-		if not os.path.exists('outputs'):
-			os.mkdir('outputs')
-		# print(len(DLGN_obj_store))
-		# print("Hi")
-		# device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 		device = torch.device('cpu')
 		train_outputs_values, train_outputs_gate_scores =DLGN_obj_final(torch.Tensor(train_data).to(device))
 		train_preds = train_outputs_values[-1]
@@ -251,10 +246,7 @@ class trainDLGN:
 		test_outputs_values, test_outputs_gate_scores =DLGN_obj_final(torch.Tensor(test_data))
 		test_preds = test_outputs_values[-1]
 		test_preds = test_preds.detach().numpy()
-		# filename = 'outputs/'+self.filename_suffix+'.txt'
 		original_stdout = sys.stdout
-		# with open(filename,'a') as f:
-			# sys.stdout = f
 		test_error = np.sum(test_data_labels != (np.sign(test_preds[:,0])+1)//2 )
 		test_error_acc = 100 - (test_error/len(test_data_labels))*100
 		print("Test error=",np.sum(test_data_labels != (np.sign(test_preds[:,0])+1)//2 ))
@@ -262,27 +254,4 @@ class trainDLGN:
 		print("DLGN Test accuracy=", test_error_acc)
 		sys.stdout = original_stdout
 		return test_error_acc
-
-		# w_list = np.concatenate((w_list_old,-w_list_old),axis=0)
-
-		# effective_weights, effective_biases = DLGN_obj_store[0].return_gating_functions()
-		# wts_list_init=[]
-		# for layer in range(0,len(effective_weights)):
-		# 	wts =  np.array(effective_weights[layer].data.detach().numpy())
-		# 	wts /= np.linalg.norm(wts, axis=1)[:,None]
-		# 	wts_list_init.append(wts)
-		# wts_list_init = np.concatenate(wts_list_init)
-
-
-		# effective_weights, effective_biases = DLGN_obj_final.return_gating_functions()
-
-		# wts_list=[]
-		# for layer in range(len(effective_weights)):
-		# 	wts =  np.array(effective_weights[layer].data.detach().numpy())
-		# 	wts /= np.linalg.norm(wts, axis=1)[:,None]
-		# 	wts_list.append(wts)
-		# wts_list = np.concatenate(wts_list)
-
-		# pd0 =  pairwise_distances(w_list,wts_list_init)
-		# pd1 =  pairwise_distances(w_list,wts_list)
 
