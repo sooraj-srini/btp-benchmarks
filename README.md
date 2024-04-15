@@ -15,5 +15,8 @@ This is a repository intended to document the benchmarks of the following algori
 - [x] Benchmark Soft Decision Trees
 - [x] Find the existing benchmarks given in the paper for other models
 - [x] Improve TAO to not throw liblinear convergence issues
-- [ ] Improve TAO to use another obliue decision tree learning algorithm. 
+- [x] Improve TAO to use another obliue decision tree learning algorithm. 
 - [x] Benchmark the Value Tensor implementation of the DLGN
+- [ ] Benchmark the DLGN over the datasets by removing some percent of the unimportant features
+- [ ] Benchmark the DLGN by smoothing the target function (or whatever)
+- [ ] Benchmark the DLGN by rotating the dataset.
