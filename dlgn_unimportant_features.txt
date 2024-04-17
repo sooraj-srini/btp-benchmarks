@@ -1,0 +1,2030 @@
+4_50_3_1.0e-03
+cuda
+Current task:  6
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361060
+Task URL.............: https://www.openml.org/t/361060
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:electricity
+[2]
+Percentage useful features is 0.1; Current shape of data is (38474, 1)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [1, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6917173326015472, 0.6860320866107941, 0.6685424149036407, 0.6213829338550567, 0.5604796707630157, 0.5527542471885681, 0.5467073559761048, 0.5460196256637573, 0.5454988121986389, 0.5449707448482514, 0.5446800529956818, 0.5444465041160583, 0.5442388415336609, 0.5440688908100129, 0.5439332544803619, 0.5438179612159729, 0.5429941415786743, 0.5272148489952088, 0.5264912843704224, 0.5255394279956818, 0.5238883256912231, 0.5217483222484589]
+==========Best validated model=============
+Train error= 7115
+Train loss =  tensor(0.5215, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 2133
+Num_test_data= 8081
+DLGN Test accuracy= 73.60475188714268
+Maximum test accuracy for electricity is 73.60475188714268
+[2 0]
+Percentage useful features is 0.2; Current shape of data is (38474, 2)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [2, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6917726695537567, 0.6864317238330842, 0.6705010652542114, 0.6286831974983216, 0.5633400917053223, 0.5429440796375274, 0.5385278165340424, 0.5353141069412232, 0.533415561914444, 0.531930822134018, 0.5307655513286591, 0.5299998104572297, 0.5293712139129638, 0.528801441192627, 0.5281907200813294, 0.5274753868579865, 0.5143472164869308, 0.46798197627067567, 0.45655779242515565, 0.4518926292657852, 0.44535844922065737, 0.4370990753173828]
+==========Best validated model=============
+Train error= 5436
+Train loss =  tensor(0.4224, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1634
+Num_test_data= 8081
+DLGN Test accuracy= 79.779730231407
+Maximum test accuracy for electricity is 79.779730231407
+[2 0 3]
+Percentage useful features is 0.30000000000000004; Current shape of data is (38474, 3)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [3, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.692008912563324, 0.6870227634906769, 0.6716079175472259, 0.6344295620918274, 0.5827169477939605, 0.5475529968738556, 0.5253314733505249, 0.5196812748908997, 0.5181489229202271, 0.515682977437973, 0.5141645669937134, 0.5131182610988617, 0.5123457401990891, 0.5117727637290954, 0.5112333297729492, 0.5106673538684845, 0.49733647108078005, 0.4633502274751663, 0.4517390012741089, 0.442709481716156, 0.4344949424266815, 0.42506261765956876]
+==========Best validated model=============
+Train error= 5451
+Train loss =  tensor(0.4269, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1665
+Num_test_data= 8081
+DLGN Test accuracy= 79.39611434228436
+Maximum test accuracy for electricity is 79.39611434228436
+[2 0 3]
+Percentage useful features is 0.4; Current shape of data is (38474, 3)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [3, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.692008912563324, 0.6870227634906769, 0.6716079175472259, 0.6344295620918274, 0.5827169477939605, 0.5475529968738556, 0.5253314733505249, 0.5196812748908997, 0.5181489229202271, 0.515682977437973, 0.5141645669937134, 0.5131182610988617, 0.5123457401990891, 0.5117727637290954, 0.5112333297729492, 0.5106673538684845, 0.49733647108078005, 0.4633502274751663, 0.4517390012741089, 0.442709481716156, 0.4344949424266815, 0.42506261765956876]
+==========Best validated model=============
+Train error= 5451
+Train loss =  tensor(0.4269, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1665
+Num_test_data= 8081
+DLGN Test accuracy= 79.39611434228436
+Maximum test accuracy for electricity is 79.39611434228436
+[2 0 3 1]
+Percentage useful features is 0.5; Current shape of data is (38474, 4)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [4, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6920855224132538, 0.6866653800010681, 0.6696328759193421, 0.6263253211975097, 0.5780060350894928, 0.5442789852619171, 0.5239293515682221, 0.5196762979030609, 0.5163803994655609, 0.5140267431735992, 0.5121555507183075, 0.5109076738357544, 0.5099965989589691, 0.5093005061149597, 0.5085904687643051, 0.507868230342865, 0.49462229907512667, 0.45304164886474607, 0.4287023365497589, 0.4184310048818588, 0.41047435700893403, 0.3971297860145569]
+==========Best validated model=============
+Train error= 4939
+Train loss =  tensor(0.3913, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1606
+Num_test_data= 8081
+DLGN Test accuracy= 80.12622200222745
+Maximum test accuracy for electricity is 80.12622200222745
+[2 0 3 1 4]
+Percentage useful features is 0.6000000000000001; Current shape of data is (38474, 5)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [5, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6923140823841095, 0.6874275624752044, 0.6721248209476471, 0.631740266084671, 0.5835977733135224, 0.5567559003829956, 0.5357373654842377, 0.5262304365634918, 0.5205437421798706, 0.5175316333770752, 0.5155703663825989, 0.5138517916202545, 0.5125899374485016, 0.5116413295269012, 0.5107822418212891, 0.5099453359842301, 0.49380511343479155, 0.465088477730751, 0.43481769859790803, 0.4215830206871033, 0.40956267416477204, 0.39582488834857943]
+==========Best validated model=============
+Train error= 4972
+Train loss =  tensor(0.3905, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1552
+Num_test_data= 8081
+DLGN Test accuracy= 80.79445613166688
+Maximum test accuracy for electricity is 80.79445613166688
+[2 0 3 1 4]
+Percentage useful features is 0.7000000000000001; Current shape of data is (38474, 5)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [5, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6923140823841095, 0.6874275624752044, 0.6721248209476471, 0.631740266084671, 0.5835977733135224, 0.5567559003829956, 0.5357373654842377, 0.5262304365634918, 0.5205437421798706, 0.5175316333770752, 0.5155703663825989, 0.5138517916202545, 0.5125899374485016, 0.5116413295269012, 0.5107822418212891, 0.5099453359842301, 0.49380511343479155, 0.465088477730751, 0.43481769859790803, 0.4215830206871033, 0.40956267416477204, 0.39582488834857943]
+==========Best validated model=============
+Train error= 4972
+Train loss =  tensor(0.3905, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1552
+Num_test_data= 8081
+DLGN Test accuracy= 80.79445613166688
+Maximum test accuracy for electricity is 80.79445613166688
+[2 0 3 1 4 5]
+Percentage useful features is 0.8; Current shape of data is (38474, 6)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [6, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6922231316566467, 0.6883104324340821, 0.6760743498802185, 0.6408673405647278, 0.5864872872829437, 0.5506872594356537, 0.5235646545886994, 0.5165062516927719, 0.5135563790798188, 0.5124658465385437, 0.5114892452955246, 0.5106914520263672, 0.5099195420742035, 0.5092415452003479, 0.50854711830616, 0.5078536123037338, 0.4944122463464737, 0.4675354272127151, 0.43557038307189944, 0.4183938801288605, 0.4015774756669998, 0.3848229318857193]
+==========Best validated model=============
+Train error= 4613
+Train loss =  tensor(0.3743, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1550
+Num_test_data= 8081
+DLGN Test accuracy= 80.81920554386834
+Maximum test accuracy for electricity is 80.81920554386834
+[2 0 3 1 4 5 6]
+Percentage useful features is 0.9; Current shape of data is (38474, 7)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [7, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6923088967800141, 0.6885119795799255, 0.674921864271164, 0.6368878662586213, 0.5937041759490966, 0.5578294634819031, 0.5265384197235108, 0.5195671916007996, 0.5157605648040772, 0.514141422510147, 0.5125194162130355, 0.511361587047577, 0.5103572010993958, 0.5094119280576705, 0.5084907948970795, 0.507500234246254, 0.4908785432577133, 0.4679490149021149, 0.4414104700088501, 0.4054778695106506, 0.38168680369853974, 0.3612856090068817]
+==========Best validated model=============
+Train error= 4110
+Train loss =  tensor(0.3348, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1510
+Num_test_data= 8081
+DLGN Test accuracy= 81.31419378789754
+Maximum test accuracy for electricity is 81.31419378789754
+[2 0 3 1 4 5 6]
+Percentage useful features is 1.0; Current shape of data is (38474, 7)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [7, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6923088967800141, 0.6885119795799255, 0.674921864271164, 0.6368878662586213, 0.5937041759490966, 0.5578294634819031, 0.5265384197235108, 0.5195671916007996, 0.5157605648040772, 0.514141422510147, 0.5125194162130355, 0.511361587047577, 0.5103572010993958, 0.5094119280576705, 0.5084907948970795, 0.507500234246254, 0.4908785432577133, 0.4679490149021149, 0.4414104700088501, 0.4054778695106506, 0.38168680369853974, 0.3612856090068817]
+==========Best validated model=============
+Train error= 4110
+Train loss =  tensor(0.3348, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1510
+Num_test_data= 8081
+DLGN Test accuracy= 81.31419378789754
+Maximum test accuracy for electricity is 81.31419378789754
+Current task:  7
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361066
+Task URL.............: https://www.openml.org/t/361066
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: Class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:bank-marketing
+[3]
+Percentage useful features is 0.1; Current shape of data is (10578, 1)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [1, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6911102533340454, 0.6834884583950043, 0.6619415938854217, 0.6108421325683594, 0.5503072738647461, 0.544579166173935, 0.5379843533039093, 0.535760223865509, 0.5339210093021393, 0.53355193734169, 0.5325646042823792, 0.5316007673740387, 0.5310290604829788, 0.5303893446922302, 0.5296682626008987, 0.5290721923112869, 0.5248040288686753, 0.524412316083908, 0.5242435485124588, 0.5240440458059311, 0.5235597342252731, 0.5220807403326034]
+==========Best validated model=============
+Train error= 2064
+Train loss =  tensor(0.5232, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 643
+Num_test_data= 2222
+DLGN Test accuracy= 71.06210621062107
+Maximum test accuracy for bank-marketing is 71.06210621062107
+[3 1]
+Percentage useful features is 0.2; Current shape of data is (10578, 2)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [2, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6914768159389496, 0.6849506020545959, 0.666004991531372, 0.6183860123157501, 0.5541077733039856, 0.540534520149231, 0.532296621799469, 0.5298909366130828, 0.5280697107315063, 0.5275116622447967, 0.5266720980405808, 0.5259414345026017, 0.5255151569843293, 0.5249867707490921, 0.5244680732488632, 0.5240448713302612, 0.519186943769455, 0.5092454612255096, 0.50541672706604, 0.5018658608198165, 0.49807058870792387, 0.49196492731571195]
+==========Best validated model=============
+Train error= 1861
+Train loss =  tensor(0.4907, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 618
+Num_test_data= 2222
+DLGN Test accuracy= 72.18721872187218
+Maximum test accuracy for bank-marketing is 72.18721872187218
+[3 1 0]
+Percentage useful features is 0.30000000000000004; Current shape of data is (10578, 3)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [3, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6919290482997894, 0.6869819760322571, 0.6720400214195251, 0.6323952674865723, 0.5692731618881226, 0.5424927949905396, 0.534034126996994, 0.530193281173706, 0.5280188292264938, 0.5267647743225098, 0.5251527100801467, 0.5237162053585053, 0.522413718700409, 0.5209522068500518, 0.5193237811326981, 0.5175623208284378, 0.5013803660869598, 0.4923614501953125, 0.4837746053934097, 0.4747889220714569, 0.45924378335475924, 0.4333930373191833]
+==========Best validated model=============
+Train error= 1621
+Train loss =  tensor(0.4427, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 587
+Num_test_data= 2222
+DLGN Test accuracy= 73.58235823582358
+Maximum test accuracy for bank-marketing is 73.58235823582358
+[3 1 0]
+Percentage useful features is 0.4; Current shape of data is (10578, 3)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+4_50_3_1.0e-03
+cuda
+Current task:  6
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361066
+Task URL.............: https://www.openml.org/t/361066
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: Class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:bank-marketing
+[3]
+Percentage useful features is 0.1; Current shape of data is (10578, 1)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+4_50_3_1.0e-03
+cuda
+Current task:  6
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361066
+Task URL.............: https://www.openml.org/t/361066
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: Class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:bank-marketing
+[3]
+Percentage useful features is 0.1; Current shape of data is (10578, 1)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [1, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6911102533340454, 0.6834884583950043, 0.6619415938854217, 0.6108421325683594, 0.5503072738647461, 0.544579166173935, 0.5379843533039093, 0.535760223865509, 0.5339210093021393, 0.53355193734169, 0.5325646042823792, 0.5316007673740387, 0.5310290604829788, 0.5303893446922302, 0.5296682626008987, 0.5290721923112869, 0.5248040288686753, 0.524412316083908, 0.5242435485124588, 0.5240440458059311, 0.5235597342252731, 0.5220807403326034]
+==========Best validated model=============
+Train error= 2064
+Train loss =  tensor(0.5232, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 643
+Num_test_data= 2222
+DLGN Test accuracy= 71.06210621062107
+Maximum test accuracy for bank-marketing is 71.06210621062107
+[3 1]
+Percentage useful features is 0.2; Current shape of data is (10578, 2)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [2, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6914768159389496, 0.6849506020545959, 0.666004991531372, 0.6183860123157501, 0.5541077733039856, 0.540534520149231, 0.532296621799469, 0.5298909366130828, 0.5280697107315063, 0.5275116622447967, 0.5266720980405808, 0.5259414345026017, 0.5255151569843293, 0.5249867707490921, 0.5244680732488632, 0.5240448713302612, 0.519186943769455, 0.5092454612255096, 0.50541672706604, 0.5018658608198165, 0.49807058870792387, 0.49196492731571195]
+==========Best validated model=============
+Train error= 1861
+Train loss =  tensor(0.4907, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 618
+Num_test_data= 2222
+DLGN Test accuracy= 72.18721872187218
+Maximum test accuracy for bank-marketing is 72.18721872187218
+[3 1 0]
+Percentage useful features is 0.30000000000000004; Current shape of data is (10578, 3)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [3, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6919290482997894, 0.6869819760322571, 0.6720400214195251, 0.6323952674865723, 0.5692731618881226, 0.5424927949905396, 0.534034126996994, 0.530193281173706, 0.5280188292264938, 0.5267647743225098, 0.5251527100801467, 0.5237162053585053, 0.522413718700409, 0.5209522068500518, 0.5193237811326981, 0.5175623208284378, 0.5013803660869598, 0.4923614501953125, 0.4837746053934097, 0.4747889220714569, 0.45924378335475924, 0.4333930373191833]
+==========Best validated model=============
+Train error= 1621
+Train loss =  tensor(0.4427, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 587
+Num_test_data= 2222
+DLGN Test accuracy= 73.58235823582358
+Maximum test accuracy for bank-marketing is 73.58235823582358
+[3 1 0]
+Percentage useful features is 0.4; Current shape of data is (10578, 3)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [3, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6919290482997894, 0.6869819760322571, 0.6720400214195251, 0.6323952674865723, 0.5692731618881226, 0.5424927949905396, 0.534034126996994, 0.530193281173706, 0.5280188292264938, 0.5267647743225098, 0.5251527100801467, 0.5237162053585053, 0.522413718700409, 0.5209522068500518, 0.5193237811326981, 0.5175623208284378, 0.5013803660869598, 0.4923614501953125, 0.4837746053934097, 0.4747889220714569, 0.45924378335475924, 0.4333930373191833]
+==========Best validated model=============
+Train error= 1621
+Train loss =  tensor(0.4427, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 587
+Num_test_data= 2222
+DLGN Test accuracy= 73.58235823582358
+Maximum test accuracy for bank-marketing is 73.58235823582358
+[3 1 0 2]
+Percentage useful features is 0.5; Current shape of data is (10578, 4)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [4, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6918520212173462, 0.6868121743202209, 0.6726520240306855, 0.6354998230934144, 0.569170606136322, 0.5353422164916992, 0.5313171565532684, 0.5278981387615204, 0.5250376671552658, 0.5224241852760315, 0.51948861181736, 0.5153489947319031, 0.5108183473348618, 0.5075647681951523, 0.5061394721269608, 0.505608731508255, 0.5008069992065429, 0.4898746460676193, 0.48358062505722044, 0.47328164577484133, 0.44223511815071104, 0.3751754105091095]
+==========Best validated model=============
+Train error= 1543
+Train loss =  tensor(0.4312, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 586
+Num_test_data= 2222
+DLGN Test accuracy= 73.62736273627362
+Maximum test accuracy for bank-marketing is 73.62736273627362
+[3 1 0 2 5]
+Percentage useful features is 0.6000000000000001; Current shape of data is (10578, 5)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [5, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6921320259571075, 0.6872577428817749, 0.6727560698986054, 0.6383608460426331, 0.5840258061885834, 0.5350832343101501, 0.5215607076883316, 0.5147424399852752, 0.5133827835321426, 0.5117159277200699, 0.5100979894399643, 0.5084708362817765, 0.5065888822078705, 0.5042972326278686, 0.5015577495098114, 0.49850613474845884, 0.46925345361232756, 0.4544148564338684, 0.44038430154323577, 0.42168000638484954, 0.379493436217308, 0.3097261995077133]
+==========Best validated model=============
+Train error= 1470
+Train loss =  tensor(0.4412, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 482
+Num_test_data= 2222
+DLGN Test accuracy= 78.30783078307832
+Maximum test accuracy for bank-marketing is 78.30783078307832
+[3 1 0 2 5]
+Percentage useful features is 0.7000000000000001; Current shape of data is (10578, 5)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [5, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6921320259571075, 0.6872577428817749, 0.6727560698986054, 0.6383608460426331, 0.5840258061885834, 0.5350832343101501, 0.5215607076883316, 0.5147424399852752, 0.5133827835321426, 0.5117159277200699, 0.5100979894399643, 0.5084708362817765, 0.5065888822078705, 0.5042972326278686, 0.5015577495098114, 0.49850613474845884, 0.46925345361232756, 0.4544148564338684, 0.44038430154323577, 0.42168000638484954, 0.379493436217308, 0.3097261995077133]
+==========Best validated model=============
+Train error= 1470
+Train loss =  tensor(0.4412, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 482
+Num_test_data= 2222
+DLGN Test accuracy= 78.30783078307832
+Maximum test accuracy for bank-marketing is 78.30783078307832
+[3 1 0 2 5 4]
+Percentage useful features is 0.8; Current shape of data is (10578, 6)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [6, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6921588718891144, 0.687805050611496, 0.6741659581661225, 0.6371877908706665, 0.5756296992301941, 0.530069625377655, 0.5182553112506867, 0.5100976765155792, 0.5067710459232331, 0.5058259338140487, 0.5051823824644088, 0.5044994950294495, 0.5039267718791962, 0.5033582538366318, 0.5026967406272889, 0.5019889116287232, 0.47009366750717163, 0.4477236866950989, 0.4336038112640381, 0.40979339480400084, 0.34828915894031526, 0.2693193957209587]
+==========Best validated model=============
+Train error= 1497
+Train loss =  tensor(0.4420, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 491
+Num_test_data= 2222
+DLGN Test accuracy= 77.9027902790279
+Maximum test accuracy for bank-marketing is 77.9027902790279
+[3 1 0 2 5 4 6]
+Percentage useful features is 0.9; Current shape of data is (10578, 7)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [7, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6922917842864991, 0.6887155055999756, 0.6762732267379761, 0.6352890968322754, 0.5529316425323486, 0.5105696529150009, 0.5018369913101196, 0.49950863122940065, 0.497603765130043, 0.49694372415542604, 0.4962003082036972, 0.4954287946224213, 0.4948520690202713, 0.4942311108112335, 0.49350383281707766, 0.4927099496126175, 0.4702847212553024, 0.4514277994632721, 0.4399894744157791, 0.4025988787412643, 0.33567461669445037, 0.27786587178707123]
+==========Best validated model=============
+Train error= 1448
+Train loss =  tensor(0.4314, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 487
+Num_test_data= 2222
+DLGN Test accuracy= 78.08280828082809
+Maximum test accuracy for bank-marketing is 78.08280828082809
+[3 1 0 2 5 4 6]
+Percentage useful features is 1.0; Current shape of data is (10578, 7)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [7, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6922917842864991, 0.6887155055999756, 0.6762732267379761, 0.6352890968322754, 0.5529316425323486, 0.5105696529150009, 0.5018369913101196, 0.49950863122940065, 0.497603765130043, 0.49694372415542604, 0.4962003082036972, 0.4954287946224213, 0.4948520690202713, 0.4942311108112335, 0.49350383281707766, 0.4927099496126175, 0.4702847212553024, 0.4514277994632721, 0.4399894744157791, 0.4025988787412643, 0.33567461669445037, 0.27786587178707123]
+==========Best validated model=============
+Train error= 1448
+Train loss =  tensor(0.4314, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 487
+Num_test_data= 2222
+DLGN Test accuracy= 78.08280828082809
+Maximum test accuracy for bank-marketing is 78.08280828082809
+Current task:  7
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361273
+Task URL.............: https://www.openml.org/t/361273
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: readmitted
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:Diabetes130US
+[1]
+Percentage useful features is 0.1; Current shape of data is (71090, 1)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [1, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6930948734283447, 0.6928551912307739, 0.6925738215446472, 0.6924203634262085, 0.6924559831619262, 0.6924411118030548, 0.6924227952957154, 0.6924149453639984, 0.6924125134944916, 0.6924089550971985, 0.6924038171768189, 0.6923981130123138, 0.6923932611942292, 0.6923895716667176, 0.6923863172531128, 0.6923834443092346, 0.6923702418804168, 0.692358523607254, 0.6922486603260041, 0.6920047700405121, 0.6917873382568359, 0.6915684998035431]
+==========Best validated model=============
+Train error= 23809
+Train loss =  tensor(0.6915, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 7222
+Num_test_data= 14929
+DLGN Test accuracy= 51.62435528166655
+Maximum test accuracy for Diabetes130US is 51.62435528166655
+[1 2]
+Percentage useful features is 0.2; Current shape of data is (71090, 2)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [2, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6929930567741394, 0.6925827145576477, 0.6917715013027191, 0.690762209892273, 0.6899819254875184, 0.68933385014534, 0.6890690803527832, 0.688954871892929, 0.6888369202613831, 0.6887598752975463, 0.6887020111083985, 0.6886470317840576, 0.6886036276817322, 0.6885659456253052, 0.6885340929031372, 0.6885095298290252, 0.6882942140102386, 0.6880282521247864, 0.6877447605133057, 0.6876163244247436, 0.6866609811782837, 0.6847005724906922]
+==========Best validated model=============
+Train error= 22987
+Train loss =  tensor(0.6886, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 6847
+Num_test_data= 14929
+DLGN Test accuracy= 54.13624489249113
+Maximum test accuracy for Diabetes130US is 54.13624489249113
+[1 2 0]
+Percentage useful features is 0.30000000000000004; Current shape of data is (71090, 3)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [3, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6930093824863434, 0.6925889015197754, 0.6916584134101867, 0.6904640436172486, 0.6899842202663422, 0.6895703554153443, 0.6893031179904938, 0.6891213178634643, 0.6889575898647309, 0.6887823224067688, 0.6886074125766755, 0.6884440779685974, 0.6882858991622924, 0.6881281554698944, 0.6879725456237793, 0.6878170967102051, 0.6872440278530121, 0.6869662702083588, 0.6866128027439118, 0.6858582079410553, 0.6826861679553986, 0.675311928987503]
+==========Best validated model=============
+Train error= 22666
+Train loss =  tensor(0.6872, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 6735
+Num_test_data= 14929
+DLGN Test accuracy= 54.88646258959073
+Maximum test accuracy for Diabetes130US is 54.88646258959073
+[1 2 0]
+Percentage useful features is 0.4; Current shape of data is (71090, 3)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [3, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6930093824863434, 0.6925889015197754, 0.6916584134101867, 0.6904640436172486, 0.6899842202663422, 0.6895703554153443, 0.6893031179904938, 0.6891213178634643, 0.6889575898647309, 0.6887823224067688, 0.6886074125766755, 0.6884440779685974, 0.6882858991622924, 0.6881281554698944, 0.6879725456237793, 0.6878170967102051, 0.6872440278530121, 0.6869662702083588, 0.6866128027439118, 0.6858582079410553, 0.6826861679553986, 0.675311928987503]
+==========Best validated model=============
+Train error= 22666
+Train loss =  tensor(0.6872, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 6735
+Num_test_data= 14929
+DLGN Test accuracy= 54.88646258959073
+Maximum test accuracy for Diabetes130US is 54.88646258959073
+[1 2 0 6]
+Percentage useful features is 0.5; Current shape of data is (71090, 4)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [4, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.692973279953003, 0.692001736164093, 0.6896045863628387, 0.6867331802845001, 0.6865342080593109, 0.6861560821533204, 0.6860304772853851, 0.6859160840511322, 0.6858399093151093, 0.6857545018196106, 0.6856757581233979, 0.685607272386551, 0.6855338871479034, 0.6854589998722076, 0.6853757202625275, 0.6852758526802063, 0.6834449291229248, 0.6830105543136596, 0.6819977343082428, 0.6791325271129608, 0.6734484672546387, 0.6644302845001221]
+==========Best validated model=============
+Train error= 21876
+Train loss =  tensor(0.6824, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 6500
+Num_test_data= 14929
+DLGN Test accuracy= 56.460580079040795
+Maximum test accuracy for Diabetes130US is 56.460580079040795
+[1 2 0 6 5]
+Percentage useful features is 0.6000000000000001; Current shape of data is (71090, 5)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [5, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6929026663303375, 0.6913027405738831, 0.686254370212555, 0.6751552999019623, 0.6697835803031922, 0.6672088861465454, 0.6660669088363648, 0.6656982839107514, 0.6655408918857575, 0.6654907405376435, 0.6654832303524018, 0.6654187619686127, 0.6653825759887695, 0.6653594255447388, 0.6653287470340729, 0.6652995944023132, 0.6640242278575897, 0.6636380136013031, 0.6631722033023835, 0.6617396175861359, 0.6541360378265381, 0.642228239774704]
+==========Best validated model=============
+Train error= 20269
+Train loss =  tensor(0.6630, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 6041
+Num_test_data= 14929
+DLGN Test accuracy= 59.53513296269007
+Maximum test accuracy for Diabetes130US is 59.53513296269007
+[1 2 0 6 5]
+Percentage useful features is 0.7000000000000001; Current shape of data is (71090, 5)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [5, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6929026663303375, 0.6913027405738831, 0.686254370212555, 0.6751552999019623, 0.6697835803031922, 0.6672088861465454, 0.6660669088363648, 0.6656982839107514, 0.6655408918857575, 0.6654907405376435, 0.6654832303524018, 0.6654187619686127, 0.6653825759887695, 0.6653594255447388, 0.6653287470340729, 0.6652995944023132, 0.6640242278575897, 0.6636380136013031, 0.6631722033023835, 0.6617396175861359, 0.6541360378265381, 0.642228239774704]
+==========Best validated model=============
+Train error= 20269
+Train loss =  tensor(0.6630, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 6041
+Num_test_data= 14929
+DLGN Test accuracy= 59.53513296269007
+Maximum test accuracy for Diabetes130US is 59.53513296269007
+[1 2 0 6 5 3]
+Percentage useful features is 0.8; Current shape of data is (71090, 6)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [6, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6927513241767883, 0.6909279584884643, 0.6857718646526336, 0.6754024982452392, 0.6688218593597413, 0.6651040315628052, 0.6643643915653229, 0.663802319765091, 0.663625955581665, 0.6635070621967316, 0.6634214818477631, 0.6633381068706512, 0.6632776260375977, 0.6632173418998718, 0.6631632924079895, 0.6631173610687255, 0.6621718227863311, 0.6608886897563935, 0.6597494423389435, 0.6582634091377259, 0.6496695339679718, 0.634245616197586]
+==========Best validated model=============
+Train error= 19821
+Train loss =  tensor(0.6597, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 5928
+Num_test_data= 14929
+DLGN Test accuracy= 60.2920490320852
+Maximum test accuracy for Diabetes130US is 60.2920490320852
+[1 2 0 6 5 3 4]
+Percentage useful features is 0.9; Current shape of data is (71090, 7)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [7, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6929013669490814, 0.6917344748973846, 0.6880044400691986, 0.6776733458042145, 0.6672428905963897, 0.6626500427722931, 0.6618168294429779, 0.6609951496124268, 0.6608588337898255, 0.660767239332199, 0.660673463344574, 0.6605854749679565, 0.6605298459529877, 0.6604896605014801, 0.6604451537132263, 0.6604041814804077, 0.6594386339187622, 0.6580343246459961, 0.6568409442901612, 0.6548180758953095, 0.6456554710865021, 0.629862242937088]
+==========Best validated model=============
+Train error= 19524
+Train loss =  tensor(0.6555, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 5854
+Num_test_data= 14929
+DLGN Test accuracy= 60.78772858195459
+Maximum test accuracy for Diabetes130US is 60.78772858195459
+[1 2 0 6 5 3 4]
+Percentage useful features is 1.0; Current shape of data is (71090, 7)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [7, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6929013669490814, 0.6917344748973846, 0.6880044400691986, 0.6776733458042145, 0.6672428905963897, 0.6626500427722931, 0.6618168294429779, 0.6609951496124268, 0.6608588337898255, 0.660767239332199, 0.660673463344574, 0.6605854749679565, 0.6605298459529877, 0.6604896605014801, 0.6604451537132263, 0.6604041814804077, 0.6594386339187622, 0.6580343246459961, 0.6568409442901612, 0.6548180758953095, 0.6456554710865021, 0.629862242937088]
+==========Best validated model=============
+Train error= 19524
+Train loss =  tensor(0.6555, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 5854
+Num_test_data= 14929
+DLGN Test accuracy= 60.78772858195459
+Maximum test accuracy for Diabetes130US is 60.78772858195459
+Current task:  8
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361277
+Task URL.............: https://www.openml.org/t/361277
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: price_above_median
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:california
+[0]
+Percentage useful features is 0.1; Current shape of data is (20634, 1)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [1, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.690820837020874, 0.6818601489067078, 0.6552539646625519, 0.59047150015831, 0.5163275331258774, 0.5113929152488709, 0.5039455890655518, 0.5037946581840516, 0.5024208694696426, 0.502109694480896, 0.5018620938062668, 0.5016616016626358, 0.501551502943039, 0.5014782339334488, 0.5014053761959076, 0.5013449162244796, 0.5007219076156616, 0.499023026227951, 0.4984003484249115, 0.4981584459543228, 0.497640985250473, 0.49633604288101196]
+==========Best validated model=============
+Train error= 3685
+Train loss =  tensor(0.4959, grad_fn=<NllLossBackward0>)
+Num_train_data= 14443
+Test error= 1090
+Num_test_data= 4334
+DLGN Test accuracy= 74.85002307337334
+Maximum test accuracy for california is 74.85002307337334
+[0 7]
+Percentage useful features is 0.2; Current shape of data is (20634, 2)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [2, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.691063791513443, 0.6829232811927796, 0.6591300904750824, 0.5999858379364014, 0.5214673340320587, 0.5083597332239151, 0.5030347913503647, 0.5019257515668869, 0.5008364021778107, 0.5004226446151734, 0.5001337826251984, 0.49996710419654844, 0.49984288215637207, 0.49974146783351897, 0.49967206716537477, 0.49961644113063813, 0.4991575390100479, 0.4973546117544174, 0.43708879351615904, 0.41916019916534425, 0.40743984282016754, 0.39793272912502287]
+==========Best validated model=============
+Train error= 2690
+Train loss =  tensor(0.3916, grad_fn=<NllLossBackward0>)
+Num_train_data= 14443
+Test error= 859
+Num_test_data= 4334
+DLGN Test accuracy= 80.17997231195201
+Maximum test accuracy for california is 80.17997231195201
+[0 7 6]
+Percentage useful features is 0.30000000000000004; Current shape of data is (20634, 3)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [3, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6914072453975677, 0.6850611865520477, 0.6661364436149597, 0.619439709186554, 0.5518690168857574, 0.49248062670230863, 0.4706059455871582, 0.44966632723808286, 0.43461557328701017, 0.4204315274953842, 0.40901285111904145, 0.40160785913467406, 0.39872499108314513, 0.39809003174304963, 0.3974921673536301, 0.3970317840576172, 0.38668449521064757, 0.3625669479370117, 0.34665851294994354, 0.325101962685585, 0.29371960163116456, 0.27398700416088106]
+==========Best validated model=============
+Train error= 1617
+Train loss =  tensor(0.2535, grad_fn=<NllLossBackward0>)
+Num_train_data= 14443
+Test error= 543
+Num_test_data= 4334
+DLGN Test accuracy= 87.47115828334103
+Maximum test accuracy for california is 87.47115828334103
+[0 7 6 5]
+Percentage useful features is 0.4; Current shape of data is (20634, 4)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [4, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6913454949855804, 0.6849890351295471, 0.6654493331909179, 0.6132987082004547, 0.5231256186962128, 0.4645086139440536, 0.4433166116476059, 0.42290554344654085, 0.4059187114238739, 0.3917904168367386, 0.38421517610549927, 0.381280454993248, 0.3784265756607056, 0.37590002715587617, 0.3738029956817627, 0.3718550980091095, 0.35928123593330386, 0.3280160307884216, 0.3031645238399506, 0.28306706845760343, 0.2625922366976738, 0.24122616201639174]
+==========Best validated model=============
+Train error= 1469
+Train loss =  tensor(0.2347, grad_fn=<NllLossBackward0>)
+Num_train_data= 14443
+Test error= 488
+Num_test_data= 4334
+DLGN Test accuracy= 88.74019381633595
+Maximum test accuracy for california is 88.74019381633595
+[0 7 6 5 2]
+Percentage useful features is 0.5; Current shape of data is (20634, 5)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [5, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.691956615447998, 0.6863563537597657, 0.6697124004364013, 0.628331208229065, 0.5623295485973359, 0.5123993188142777, 0.48196802139282224, 0.44780162870883944, 0.4177382946014404, 0.39672174751758577, 0.38700381517410276, 0.37930159270763397, 0.37397828698158264, 0.37076544761657715, 0.36852931380271914, 0.3668202668428421, 0.35211855471134185, 0.3350118637084961, 0.2897352308034897, 0.2685199722647667, 0.2555361181497574, 0.2312168672680855]
+==========Best validated model=============
+Train error= 1614
+Train loss =  tensor(0.2605, grad_fn=<NllLossBackward0>)
+Num_train_data= 14443
+Test error= 520
+Num_test_data= 4334
+DLGN Test accuracy= 88.00184586986617
+Maximum test accuracy for california is 88.00184586986617
+[0 7 6 5 2]
+Percentage useful features is 0.6000000000000001; Current shape of data is (20634, 5)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [5, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.691956615447998, 0.6863563537597657, 0.6697124004364013, 0.628331208229065, 0.5623295485973359, 0.5123993188142777, 0.48196802139282224, 0.44780162870883944, 0.4177382946014404, 0.39672174751758577, 0.38700381517410276, 0.37930159270763397, 0.37397828698158264, 0.37076544761657715, 0.36852931380271914, 0.3668202668428421, 0.35211855471134185, 0.3350118637084961, 0.2897352308034897, 0.2685199722647667, 0.2555361181497574, 0.2312168672680855]
+==========Best validated model=============
+Train error= 1614
+Train loss =  tensor(0.2605, grad_fn=<NllLossBackward0>)
+Num_train_data= 14443
+Test error= 520
+Num_test_data= 4334
+DLGN Test accuracy= 88.00184586986617
+Maximum test accuracy for california is 88.00184586986617
+[0 7 6 5 2 1]
+Percentage useful features is 0.7000000000000001; Current shape of data is (20634, 6)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [6, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6923076689243317, 0.6882571041584015, 0.6752946078777313, 0.6358070969581604, 0.5547130227088928, 0.4892061442136765, 0.45777281522750857, 0.42546187341213226, 0.4007235586643219, 0.38321536779403687, 0.37538275122642517, 0.3705512583255768, 0.36614722907543185, 0.36300531923770907, 0.3605370670557022, 0.35858382284641266, 0.3462983757257462, 0.3369168430566788, 0.2967194378376007, 0.2592251643538475, 0.22790590971708297, 0.2083437353372574]
+==========Best validated model=============
+Train error= 1247
+Train loss =  tensor(0.1993, grad_fn=<NllLossBackward0>)
+Num_train_data= 14443
+Test error= 501
+Num_test_data= 4334
+DLGN Test accuracy= 88.4402399630826
+Maximum test accuracy for california is 88.4402399630826
+[0 7 6 5 2 1 3]
+Percentage useful features is 0.8; Current shape of data is (20634, 7)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [7, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6920008361339569, 0.6874766767024993, 0.671075415611267, 0.6153522431850433, 0.5035993307828903, 0.4472834199666977, 0.4199492037296295, 0.4005078345537186, 0.3852794349193573, 0.376713627576828, 0.37238464057445525, 0.36958816945552825, 0.3669626384973526, 0.36482539474964143, 0.3629086256027222, 0.36114529371261594, 0.34921407997608184, 0.33371296226978303, 0.29908107221126556, 0.2716241404414177, 0.2366987496614456, 0.20612564831972122]
+==========Best validated model=============
+Train error= 1604
+Train loss =  tensor(0.2556, grad_fn=<NllLossBackward0>)
+Num_train_data= 14443
+Test error= 510
+Num_test_data= 4334
+DLGN Test accuracy= 88.23257960313798
+Maximum test accuracy for california is 88.23257960313798
+[0 7 6 5 2 1 3 4]
+Percentage useful features is 0.9; Current shape of data is (20634, 8)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [8, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6924582302570343, 0.6883804202079773, 0.6749572217464447, 0.6360882580280304, 0.5643881559371948, 0.5048067301511765, 0.47072282135486604, 0.4438893496990204, 0.4211534708738327, 0.3984621077775955, 0.3782472491264343, 0.36848225593566897, 0.3637241661548615, 0.3598205953836441, 0.35684708654880526, 0.35481069087982176, 0.3406341105699539, 0.3272436857223511, 0.28569895923137667, 0.25724387913942337, 0.22422378659248351, 0.1971852734684944]
+==========Best validated model=============
+Train error= 1074
+Train loss =  tensor(0.1752, grad_fn=<NllLossBackward0>)
+Num_train_data= 14443
+Test error= 537
+Num_test_data= 4334
+DLGN Test accuracy= 87.6095985233041
+Maximum test accuracy for california is 87.6095985233041
+[0 7 6 5 2 1 3 4]
+Percentage useful features is 1.0; Current shape of data is (20634, 8)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [8, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6924582302570343, 0.6883804202079773, 0.6749572217464447, 0.6360882580280304, 0.5643881559371948, 0.5048067301511765, 0.47072282135486604, 0.4438893496990204, 0.4211534708738327, 0.3984621077775955, 0.3782472491264343, 0.36848225593566897, 0.3637241661548615, 0.3598205953836441, 0.35684708654880526, 0.35481069087982176, 0.3406341105699539, 0.3272436857223511, 0.28569895923137667, 0.25724387913942337, 0.22422378659248351, 0.1971852734684944]
+==========Best validated model=============
+Train error= 1074
+Train loss =  tensor(0.1752, grad_fn=<NllLossBackward0>)
+Num_train_data= 14443
+Test error= 537
+Num_test_data= 4334
+DLGN Test accuracy= 87.6095985233041
+Maximum test accuracy for california is 87.6095985233041
+Current task:  9
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361055
+Task URL.............: https://www.openml.org/t/361055
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: SeriousDlqin2yrs
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:credit
+[0 3]
+Percentage useful features is 0.1; Current shape of data is (16714, 2)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [2, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6931348025798798, 0.693106722831726, 0.6931015253067017, 0.693097060918808, 0.693093067407608, 0.6930889964103699, 0.6930851101875305, 0.6930808782577514, 0.6930761873722077, 0.693071323633194, 0.6930660128593444, 0.6930601239204407, 0.6930535078048706, 0.6930463075637817, 0.6930383980274201, 0.6930297195911408, 0.6927592515945434, 0.6825808465480805, 0.5760582745075226, 0.575024139881134, 0.5745722115039825, 0.5733997046947479]
+==========Best validated model=============
+Train error= 3284
+Train loss =  tensor(0.5788, grad_fn=<NllLossBackward0>)
+Num_train_data= 11699
+Test error= 1015
+Num_test_data= 3511
+DLGN Test accuracy= 71.09085730561094
+Maximum test accuracy for credit is 71.09085730561094
+[0 3 4]
+Percentage useful features is 0.2; Current shape of data is (16714, 3)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [3, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6930387079715729, 0.6926506638526917, 0.6918370962142945, 0.6898616492748261, 0.6863105356693268, 0.6844650566577911, 0.6839350402355194, 0.683669263124466, 0.683487594127655, 0.6833481669425965, 0.6832442462444306, 0.6831651389598846, 0.683095109462738, 0.6830330133438111, 0.6829771637916565, 0.682929003238678, 0.6822046220302582, 0.6794283032417298, 0.5875825524330139, 0.5826268017292022, 0.5834179818630219, 0.5727340877056122]
+==========Best validated model=============
+Train error= 3316
+Train loss =  tensor(0.5929, grad_fn=<NllLossBackward0>)
+Num_train_data= 11699
+Test error= 1026
+Num_test_data= 3511
+DLGN Test accuracy= 70.77755625178013
+Maximum test accuracy for credit is 70.77755625178013
+[0 3 4 1]
+Percentage useful features is 0.30000000000000004; Current shape of data is (16714, 4)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [4, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6924052119255066, 0.6902096748352051, 0.6843645870685577, 0.6724814534187317, 0.6670238614082337, 0.6652496933937073, 0.6648014783859253, 0.6642319738864899, 0.6637379705905915, 0.6632666468620301, 0.6629111230373382, 0.6625923037528991, 0.6623347997665405, 0.662142014503479, 0.6619807660579682, 0.6618301510810852, 0.6603627741336823, 0.6588383913040161, 0.6560547649860382, 0.5775930404663085, 0.5713933706283569, 0.565175324678421]
+==========Best validated model=============
+Train error= 3243
+Train loss =  tensor(0.5615, grad_fn=<NllLossBackward0>)
+Num_train_data= 11699
+Test error= 1008
+Num_test_data= 3511
+DLGN Test accuracy= 71.29023070350328
+Maximum test accuracy for credit is 71.29023070350328
+[0 3 4 1 2]
+Percentage useful features is 0.4; Current shape of data is (16714, 5)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [5, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6921946227550506, 0.6894026637077332, 0.6821816265583038, 0.6671843707561493, 0.6560249865055084, 0.6513061702251435, 0.6463771402835846, 0.6394958257675171, 0.6274003028869629, 0.6078200876712799, 0.5928873419761658, 0.5909894168376922, 0.588074517250061, 0.587274295091629, 0.5865908324718475, 0.5860290706157685, 0.5838056683540345, 0.5816503465175629, 0.575286078453064, 0.5268426716327668, 0.5229204058647156, 0.5209772169589997]
+==========Best validated model=============
+Train error= 2954
+Train loss =  tensor(0.5172, grad_fn=<NllLossBackward0>)
+Num_train_data= 11699
+Test error= 933
+Num_test_data= 3511
+DLGN Test accuracy= 73.42637425234976
+Maximum test accuracy for credit is 73.42637425234976
+[0 3 4 1 2 5]
+Percentage useful features is 0.5; Current shape of data is (16714, 6)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [6, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6926006495952606, 0.6910256445407867, 0.6871659159660339, 0.6779341697692871, 0.6637549102306366, 0.6562122642993927, 0.6502885818481445, 0.6444879114627838, 0.634703803062439, 0.618075031042099, 0.5971749782562256, 0.5876028299331665, 0.5852560222148895, 0.5833546876907348, 0.5824418187141418, 0.5819337844848633, 0.5759816348552704, 0.5673169612884521, 0.5593702316284179, 0.5212917804718018, 0.5169056832790375, 0.5136664420366287]
+==========Best validated model=============
+Train error= 2946
+Train loss =  tensor(0.5172, grad_fn=<NllLossBackward0>)
+Num_train_data= 11699
+Test error= 905
+Num_test_data= 3511
+DLGN Test accuracy= 74.22386784391911
+Maximum test accuracy for credit is 74.22386784391911
+[0 3 4 1 2 5 6]
+Percentage useful features is 0.6000000000000001; Current shape of data is (16714, 7)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [7, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6929010152816772, 0.6917233109474182, 0.6883030116558075, 0.6775941789150238, 0.6593839287757873, 0.651806366443634, 0.6436655879020691, 0.6329249620437623, 0.6107650578022004, 0.5724457025527954, 0.5512759327888489, 0.5477760434150696, 0.5437036454677582, 0.541895991563797, 0.5404936850070954, 0.5394903540611267, 0.5345633804798127, 0.5328842878341675, 0.5290558755397796, 0.5118867814540863, 0.4918650299310684, 0.4862065762281418]
+==========Best validated model=============
+Train error= 2626
+Train loss =  tensor(0.4736, grad_fn=<NllLossBackward0>)
+Num_train_data= 11699
+Test error= 871
+Num_test_data= 3511
+DLGN Test accuracy= 75.19225291939618
+Maximum test accuracy for credit is 75.19225291939618
+[0 3 4 1 2 5 6 8]
+Percentage useful features is 0.7000000000000001; Current shape of data is (16714, 8)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [8, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6925996005535126, 0.6904551148414612, 0.6846848428249359, 0.6710845291614532, 0.6559610188007354, 0.6462040781974793, 0.6360665738582612, 0.6209624886512757, 0.591030341386795, 0.550505405664444, 0.5375416457653046, 0.5333233118057251, 0.5296777606010437, 0.5270169734954834, 0.5247182488441468, 0.5235239684581756, 0.5168741464614868, 0.5144970774650574, 0.5096739619970322, 0.48756771981716157, 0.47601597011089325, 0.47094560265541074]
+==========Best validated model=============
+Train error= 2625
+Train loss =  tensor(0.4770, grad_fn=<NllLossBackward0>)
+Num_train_data= 11699
+Test error= 823
+Num_test_data= 3511
+DLGN Test accuracy= 76.55938479065793
+Maximum test accuracy for credit is 76.55938479065793
+[0 3 4 1 2 5 6 8 9]
+Percentage useful features is 0.8; Current shape of data is (16714, 9)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [9, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6930724442005157, 0.6920680582523346, 0.6885106146335602, 0.6762080073356629, 0.6606861829757691, 0.651796305179596, 0.6417372703552247, 0.6245522141456604, 0.5945987403392792, 0.5547717571258545, 0.5371168792247772, 0.5330645680427551, 0.5288663625717163, 0.5270773053169251, 0.5254058063030242, 0.5240262627601624, 0.5182882487773895, 0.5158684372901916, 0.5089635491371155, 0.49878001511096953, 0.47415541410446166, 0.46732687652111055]
+==========Best validated model=============
+Train error= 2689
+Train loss =  tensor(0.4845, grad_fn=<NllLossBackward0>)
+Num_train_data= 11699
+Test error= 846
+Num_test_data= 3511
+DLGN Test accuracy= 75.90430076901168
+Maximum test accuracy for credit is 75.90430076901168
+[0 3 4 1 2 5 6 8 9 7]
+Percentage useful features is 0.9; Current shape of data is (16714, 10)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [10, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6923587203025818, 0.6899817943572998, 0.6837488949298859, 0.6698130667209625, 0.654757970571518, 0.6474139034748078, 0.6398352444171905, 0.6291042029857635, 0.6100682497024537, 0.578152084350586, 0.5484058558940887, 0.5407363057136536, 0.5349285125732421, 0.5301552534103393, 0.5266274869441986, 0.5238279223442077, 0.51242316365242, 0.5073589622974396, 0.5000022023916244, 0.48310819268226624, 0.4694735050201416, 0.4581433176994324]
+==========Best validated model=============
+Train error= 2525
+Train loss =  tensor(0.4620, grad_fn=<NllLossBackward0>)
+Num_train_data= 11699
+Test error= 825
+Num_test_data= 3511
+DLGN Test accuracy= 76.50242096268869
+Maximum test accuracy for credit is 76.50242096268869
+[0 3 4 1 2 5 6 8 9 7]
+Percentage useful features is 1.0; Current shape of data is (16714, 10)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [10, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6923587203025818, 0.6899817943572998, 0.6837488949298859, 0.6698130667209625, 0.654757970571518, 0.6474139034748078, 0.6398352444171905, 0.6291042029857635, 0.6100682497024537, 0.578152084350586, 0.5484058558940887, 0.5407363057136536, 0.5349285125732421, 0.5301552534103393, 0.5266274869441986, 0.5238279223442077, 0.51242316365242, 0.5073589622974396, 0.5000022023916244, 0.48310819268226624, 0.4694735050201416, 0.4581433176994324]
+==========Best validated model=============
+Train error= 2525
+Train loss =  tensor(0.4620, grad_fn=<NllLossBackward0>)
+Num_train_data= 11699
+Test error= 825
+Num_test_data= 3511
+DLGN Test accuracy= 76.50242096268869
+Maximum test accuracy for credit is 76.50242096268869
+Current task:  10
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361061
+Task URL.............: https://www.openml.org/t/361061
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: Y
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:covertype
+[0 5]
+Percentage useful features is 0.1; Current shape of data is (566602, 2)
+[0 5 9]
+Percentage useful features is 0.2; Current shape of data is (566602, 3)
+[0 5 9 3]
+Percentage useful features is 0.30000000000000004; Current shape of data is (566602, 4)
+[0 5 9 3 4]
+Percentage useful features is 0.4; Current shape of data is (566602, 5)
+[0 5 9 3 4 1]
+Percentage useful features is 0.5; Current shape of data is (566602, 6)
+[0 5 9 3 4 1 7]
+Percentage useful features is 0.6000000000000001; Current shape of data is (566602, 7)
+[0 5 9 3 4 1 7 6]
+Percentage useful features is 0.7000000000000001; Current shape of data is (566602, 8)
+[0 5 9 3 4 1 7 6 8]
+Percentage useful features is 0.8; Current shape of data is (566602, 9)
+[0 5 9 3 4 1 7 6 8 2]
+Percentage useful features is 0.9; Current shape of data is (566602, 10)
+[0 5 9 3 4 1 7 6 8 2]
+Percentage useful features is 1.0; Current shape of data is (566602, 10)
+Current task:  11
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361065
+Task URL.............: https://www.openml.org/t/361065
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:MagicTelescope
+[8 0]
+Percentage useful features is 0.1; Current shape of data is (13376, 2)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [2, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.690936267375946, 0.682498824596405, 0.6578014433383942, 0.596876710653305, 0.5205998718738556, 0.5040630370378494, 0.4936858057975769, 0.48763165175914763, 0.48159004747867584, 0.475677901506424, 0.47082622945308683, 0.46712728440761564, 0.4647314131259918, 0.4633915930986404, 0.46244714558124544, 0.4616833508014679, 0.45580088496208193, 0.45229765474796296, 0.4506823092699051, 0.4499028205871582, 0.4489307075738907, 0.443744620680809]
+==========Best validated model=============
+Train error= 1937
+Train loss =  tensor(0.4331, grad_fn=<NllLossBackward0>)
+Num_train_data= 9363
+Test error= 628
+Num_test_data= 2810
+DLGN Test accuracy= 77.65124555160142
+Maximum test accuracy for MagicTelescope is 77.65124555160142
+[8 0 1]
+Percentage useful features is 0.2; Current shape of data is (13376, 3)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [3, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6918072938919068, 0.686096441745758, 0.6676253199577331, 0.6148494005203247, 0.5324138909578323, 0.5074757039546967, 0.4933050662279129, 0.48529217541217806, 0.4776072412729263, 0.47155233323574064, 0.46774607598781587, 0.465728098154068, 0.46473826467990875, 0.464195704460144, 0.4637041032314301, 0.4632568359375, 0.4527624875307083, 0.4282092243432999, 0.4192762017250061, 0.4139463484287262, 0.4038216292858124, 0.3871911734342575]
+==========Best validated model=============
+Train error= 1800
+Train loss =  tensor(0.3969, grad_fn=<NllLossBackward0>)
+Num_train_data= 9363
+Test error= 588
+Num_test_data= 2810
+DLGN Test accuracy= 79.07473309608541
+Maximum test accuracy for MagicTelescope is 79.07473309608541
+[8 0 1 2]
+Percentage useful features is 0.30000000000000004; Current shape of data is (13376, 4)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [4, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6917048156261444, 0.6847464680671692, 0.6643139004707337, 0.6129597783088684, 0.536760824918747, 0.5004606425762177, 0.48860977292060853, 0.4778544843196869, 0.47073585689067843, 0.4660435408353806, 0.46349560022354125, 0.46224206387996675, 0.4613496452569962, 0.46051459610462187, 0.4597334355115891, 0.45900851488113403, 0.44013104736804964, 0.37764213383197787, 0.3507813155651093, 0.33851949870586395, 0.3225998282432556, 0.29922134578228]
+==========Best validated model=============
+Train error= 1367
+Train loss =  tensor(0.3186, grad_fn=<NllLossBackward0>)
+Num_train_data= 9363
+Test error= 452
+Num_test_data= 2810
+DLGN Test accuracy= 83.91459074733096
+Maximum test accuracy for MagicTelescope is 83.91459074733096
+[8 0 1 2 6]
+Percentage useful features is 0.4; Current shape of data is (13376, 5)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [5, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6916427671909332, 0.6853358924388886, 0.6669564247131348, 0.6213863253593445, 0.5491024076938629, 0.49934682846069334, 0.4839756578207016, 0.4707758635282516, 0.4644041359424591, 0.4605845957994461, 0.4588173419237137, 0.4573810398578644, 0.4561317950487137, 0.45497715175151826, 0.4538791745901108, 0.4528374195098877, 0.4279534161090851, 0.36676678359508513, 0.3385802924633026, 0.32530560791492463, 0.30576651692390444, 0.2687927454710007]
+==========Best validated model=============
+Train error= 1396
+Train loss =  tensor(0.3329, grad_fn=<NllLossBackward0>)
+Num_train_data= 9363
+Test error= 428
+Num_test_data= 2810
+DLGN Test accuracy= 84.76868327402136
+Maximum test accuracy for MagicTelescope is 84.76868327402136
+[8 0 1 2 6 9]
+Percentage useful features is 0.5; Current shape of data is (13376, 6)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [6, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6923108577728272, 0.6886122703552247, 0.6761260330677032, 0.6366745293140411, 0.5538457274436951, 0.49515854120254515, 0.4793083667755127, 0.4653291702270508, 0.4571735292673111, 0.45260079205036163, 0.45107496380805967, 0.45021253526210786, 0.4491375654935837, 0.448100546002388, 0.44721620082855223, 0.44638176560401915, 0.4194392293691635, 0.3583988040685654, 0.3250543475151062, 0.31091150641441345, 0.2872757077217102, 0.240069580078125]
+==========Best validated model=============
+Train error= 1254
+Train loss =  tensor(0.3019, grad_fn=<NllLossBackward0>)
+Num_train_data= 9363
+Test error= 407
+Num_test_data= 2810
+DLGN Test accuracy= 85.51601423487544
+Maximum test accuracy for MagicTelescope is 85.51601423487544
+[8 0 1 2 6 9 3]
+Percentage useful features is 0.6000000000000001; Current shape of data is (13376, 7)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [7, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6923319101333618, 0.688561636209488, 0.6747259318828582, 0.6286637008190155, 0.5413745701313019, 0.49954848289489745, 0.4776822358369827, 0.4651544541120529, 0.45452375113964083, 0.44805421531200407, 0.4450578272342682, 0.4435113698244095, 0.44219752848148347, 0.44092087745666503, 0.4396243721246719, 0.43827070891857145, 0.3948979079723358, 0.36385632753372193, 0.32722229361534116, 0.2954047828912735, 0.2620969071984291, 0.21964589208364488]
+==========Best validated model=============
+Train error= 1194
+Train loss =  tensor(0.2837, grad_fn=<NllLossBackward0>)
+Num_train_data= 9363
+Test error= 386
+Num_test_data= 2810
+DLGN Test accuracy= 86.26334519572954
+Maximum test accuracy for MagicTelescope is 86.26334519572954
+[8 0 1 2 6 9 3 4]
+Percentage useful features is 0.7000000000000001; Current shape of data is (13376, 8)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [8, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6925575256347656, 0.6888251364231109, 0.6752507209777832, 0.6305224239826203, 0.5354524374008178, 0.47632916271686554, 0.45684787034988406, 0.4468398064374924, 0.4433521836996078, 0.4403622478246689, 0.4377851903438568, 0.4351706326007843, 0.4322808563709259, 0.4288860946893692, 0.4250364273786545, 0.420772859454155, 0.38975434601306913, 0.3613800793886185, 0.32750621140003205, 0.29475350975990294, 0.2670022487640381, 0.22598345428705216]
+==========Best validated model=============
+Train error= 1025
+Train loss =  tensor(0.2527, grad_fn=<NllLossBackward0>)
+Num_train_data= 9363
+Test error= 413
+Num_test_data= 2810
+DLGN Test accuracy= 85.30249110320284
+Maximum test accuracy for MagicTelescope is 85.30249110320284
+[8 0 1 2 6 9 3 4 5]
+Percentage useful features is 0.8; Current shape of data is (13376, 9)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [9, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6914800345897675, 0.6845199942588807, 0.6621340692043305, 0.6153917491436005, 0.5494923233985901, 0.49628153443336487, 0.4731609582901001, 0.45734056532382966, 0.45005747079849245, 0.44591803252696993, 0.44297239780426023, 0.44054951667785647, 0.4381920725107193, 0.4356443017721176, 0.4327808409929276, 0.429459810256958, 0.39190874695777894, 0.36600819528102874, 0.3357153296470642, 0.2962687313556671, 0.2657416969537735, 0.2081112951040268]
+==========Best validated model=============
+Train error= 1127
+Train loss =  tensor(0.2771, grad_fn=<NllLossBackward0>)
+Num_train_data= 9363
+Test error= 381
+Num_test_data= 2810
+DLGN Test accuracy= 86.44128113879003
+Maximum test accuracy for MagicTelescope is 86.44128113879003
+[8 0 1 2 6 9 3 4 5 7]
+Percentage useful features is 0.9; Current shape of data is (13376, 10)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [10, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6922159433364868, 0.6872622728347778, 0.6694282591342926, 0.611504852771759, 0.5110006868839264, 0.47799437642097475, 0.45922069251537323, 0.45275827646255495, 0.4475401073694229, 0.4454242825508118, 0.44426549673080445, 0.4433833062648773, 0.44240495264530183, 0.4414229243993759, 0.4404366135597229, 0.4394047915935516, 0.3957184702157974, 0.3660684645175934, 0.3383484959602356, 0.2962002694606781, 0.24889081567525864, 0.18704703450202942]
+==========Best validated model=============
+Train error= 1108
+Train loss =  tensor(0.2690, grad_fn=<NllLossBackward0>)
+Num_train_data= 9363
+Test error= 406
+Num_test_data= 2810
+DLGN Test accuracy= 85.55160142348754
+Maximum test accuracy for MagicTelescope is 85.55160142348754
+[8 0 1 2 6 9 3 4 5 7]
+Percentage useful features is 1.0; Current shape of data is (13376, 10)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [10, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6922159433364868, 0.6872622728347778, 0.6694282591342926, 0.611504852771759, 0.5110006868839264, 0.47799437642097475, 0.45922069251537323, 0.45275827646255495, 0.4475401073694229, 0.4454242825508118, 0.44426549673080445, 0.4433833062648773, 0.44240495264530183, 0.4414229243993759, 0.4404366135597229, 0.4394047915935516, 0.3957184702157974, 0.3660684645175934, 0.3383484959602356, 0.2962002694606781, 0.24889081567525864, 0.18704703450202942]
+==========Best validated model=============
+Train error= 1108
+Train loss =  tensor(0.2690, grad_fn=<NllLossBackward0>)
+Num_train_data= 9363
+Test error= 406
+Num_test_data= 2810
+DLGN Test accuracy= 85.55160142348754
+Maximum test accuracy for MagicTelescope is 85.55160142348754
+Current task:  12
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361063
+Task URL.............: https://www.openml.org/t/361063
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: binaryClass
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:house_16H
+[9 0]
+Percentage useful features is 0.1; Current shape of data is (13488, 2)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [2, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6917868077754974, 0.6866210997104645, 0.6717269718647003, 0.6353138625621796, 0.5929548680782318, 0.5855018198490143, 0.581023383140564, 0.5789510071277618, 0.5767931699752807, 0.5748258233070374, 0.572659432888031, 0.5704223930835723, 0.5679596364498138, 0.5649945914745331, 0.5614304602146148, 0.5571550965309143, 0.5267563462257385, 0.507654532790184, 0.5010619729757309, 0.4991431266069412, 0.49726155400276184, 0.4960483819246292]
+==========Best validated model=============
+Train error= 2194
+Train loss =  tensor(0.4955, grad_fn=<NllLossBackward0>)
+Num_train_data= 9441
+Test error= 672
+Num_test_data= 2834
+DLGN Test accuracy= 76.287932251235
+Maximum test accuracy for house_16H is 76.287932251235
+[ 9  0 10  4]
+Percentage useful features is 0.2; Current shape of data is (13488, 4)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [4, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6913415014743804, 0.6848272442817688, 0.6646608233451843, 0.6093629896640778, 0.531023895740509, 0.5104362308979035, 0.4990683913230896, 0.4920785307884216, 0.4838321626186371, 0.474629220366478, 0.4649367928504944, 0.45606488585472105, 0.44869260489940643, 0.4430124044418335, 0.43971793353557587, 0.4379937261343002, 0.4219080626964569, 0.41286246180534364, 0.38240388631820676, 0.3591204136610031, 0.35018247067928315, 0.33335939347743987]
+==========Best validated model=============
+Train error= 1473
+Train loss =  tensor(0.3655, grad_fn=<NllLossBackward0>)
+Num_train_data= 9441
+Test error= 482
+Num_test_data= 2834
+DLGN Test accuracy= 82.99223712067749
+Maximum test accuracy for house_16H is 82.99223712067749
+[ 9  0 10  4 13]
+Percentage useful features is 0.30000000000000004; Current shape of data is (13488, 5)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [5, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6913696885108948, 0.6854567527770996, 0.6679833769798279, 0.6265374660491944, 0.5629561960697174, 0.5050214141607284, 0.4786964178085327, 0.4654106289148331, 0.45759296119213105, 0.4503131628036499, 0.4435953378677368, 0.4371816873550415, 0.4313302606344223, 0.42615523338317873, 0.42170070111751556, 0.41819095611572266, 0.39301338493824006, 0.38081604838371275, 0.36347217559814454, 0.3138885885477066, 0.3017222940921783, 0.2845609813928604]
+==========Best validated model=============
+Train error= 1268
+Train loss =  tensor(0.3169, grad_fn=<NllLossBackward0>)
+Num_train_data= 9441
+Test error= 437
+Num_test_data= 2834
+DLGN Test accuracy= 84.58009880028229
+Maximum test accuracy for house_16H is 84.58009880028229
+[ 9  0 10  4 13 12 14]
+Percentage useful features is 0.4; Current shape of data is (13488, 7)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [7, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6924318969249725, 0.6887820601463318, 0.674755185842514, 0.6238479971885681, 0.5209323585033416, 0.47919806838035583, 0.4626815885305405, 0.4535795211791992, 0.4458637684583664, 0.4415700167417526, 0.43838840126991274, 0.43560891449451444, 0.4326593101024628, 0.4292610138654709, 0.4251721888780594, 0.4202843397855759, 0.39443747103214266, 0.3565119028091431, 0.31393793821334837, 0.2796748161315918, 0.25936848670244217, 0.22724656164646148]
+==========Best validated model=============
+Train error= 1191
+Train loss =  tensor(0.2928, grad_fn=<NllLossBackward0>)
+Num_train_data= 9441
+Test error= 403
+Num_test_data= 2834
+DLGN Test accuracy= 85.77981651376146
+Maximum test accuracy for house_16H is 85.77981651376146
+[ 9  0 10  4 13 12 14 11  2]
+Percentage useful features is 0.5; Current shape of data is (13488, 9)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [9, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6923475742340088, 0.6883117258548737, 0.674615204334259, 0.6321445524692535, 0.5554668366909027, 0.5076089233160019, 0.4797545462846756, 0.4651427954435349, 0.4557706117630005, 0.44906089305877683, 0.4443057686090469, 0.4400275141000748, 0.43612725734710694, 0.43240044713020326, 0.42823203206062316, 0.423487451672554, 0.38561846017837526, 0.3441990315914154, 0.3064440876245499, 0.2654053300619125, 0.23777203261852264, 0.20251628756523132]
+==========Best validated model=============
+Train error= 1079
+Train loss =  tensor(0.2702, grad_fn=<NllLossBackward0>)
+Num_train_data= 9441
+Test error= 389
+Num_test_data= 2834
+DLGN Test accuracy= 86.27381792519407
+Maximum test accuracy for house_16H is 86.27381792519407
+[ 9  0 10  4 13 12 14 11  2  7]
+Percentage useful features is 0.6000000000000001; Current shape of data is (13488, 10)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [10, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.691922914981842, 0.6874748289585113, 0.6724222123622894, 0.6284643411636353, 0.5520998537540436, 0.4930214434862137, 0.46054033637046815, 0.44772681295871736, 0.44049109518527985, 0.43503828942775724, 0.43029956221580506, 0.4265036195516586, 0.42272534370422366, 0.4184274137020111, 0.4133600503206253, 0.407512566447258, 0.3832668960094452, 0.35846554338932035, 0.3175411343574524, 0.26677522659301756, 0.2236105516552925, 0.17393981516361237]
+==========Best validated model=============
+Train error= 883
+Train loss =  tensor(0.2229, grad_fn=<NllLossBackward0>)
+Num_train_data= 9441
+Test error= 419
+Num_test_data= 2834
+DLGN Test accuracy= 85.2152434721242
+Maximum test accuracy for house_16H is 85.2152434721242
+[ 9  0 10  4 13 12 14 11  2  7  3  5]
+Percentage useful features is 0.7000000000000001; Current shape of data is (13488, 12)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [12, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6921442687511444, 0.6872617900371552, 0.6689824342727662, 0.6168700873851776, 0.5453056216239929, 0.5035391598939896, 0.4790611356496811, 0.45592947006225587, 0.437298920750618, 0.42465808391571047, 0.41715248823165896, 0.4130702704191208, 0.409779766201973, 0.4061465561389923, 0.4017665386199951, 0.39686854779720304, 0.37523444890975954, 0.34177627265453336, 0.29893009960651395, 0.25903659164905546, 0.21114443093538285, 0.1621629774570465]
+==========Best validated model=============
+Train error= 1286
+Train loss =  tensor(0.3151, grad_fn=<NllLossBackward0>)
+Num_train_data= 9441
+Test error= 439
+Num_test_data= 2834
+DLGN Test accuracy= 84.50952717007763
+Maximum test accuracy for house_16H is 84.50952717007763
+[ 9  0 10  4 13 12 14 11  2  7  3  5  1]
+Percentage useful features is 0.8; Current shape of data is (13488, 13)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [13, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6921188116073609, 0.6868935108184815, 0.6660644948482514, 0.6030485033988953, 0.5322478652000427, 0.49011774361133575, 0.4664658457040787, 0.4446812033653259, 0.4287737667560577, 0.4193805009126663, 0.41369220316410066, 0.4107167512178421, 0.4090088546276093, 0.40765145123004914, 0.4061997950077057, 0.4045769512653351, 0.37199862897396085, 0.3470257431268692, 0.3113453954458237, 0.2577340751886368, 0.2034657433629036, 0.1381198510527611]
+==========Best validated model=============
+Train error= 1181
+Train loss =  tensor(0.2933, grad_fn=<NllLossBackward0>)
+Num_train_data= 9441
+Test error= 420
+Num_test_data= 2834
+DLGN Test accuracy= 85.17995765702187
+Maximum test accuracy for house_16H is 85.17995765702187
+[ 9  0 10  4 13 12 14 11  2  7  3  5  1 15  8]
+Percentage useful features is 0.9; Current shape of data is (13488, 15)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [15, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.691860431432724, 0.6857167243957519, 0.6624900162220001, 0.5929424464702606, 0.5148432135581971, 0.46974711716175077, 0.43814314603805543, 0.41773452162742614, 0.40707884132862093, 0.4008618026971817, 0.39717348515987394, 0.3944721966981888, 0.39251907765865324, 0.39095984399318695, 0.389453661441803, 0.38794743120670316, 0.3560209333896637, 0.32844173312187197, 0.2914583057165146, 0.2509757593274117, 0.18847957253456116, 0.1143107533454895]
+==========Best validated model=============
+Train error= 933
+Train loss =  tensor(0.2322, grad_fn=<NllLossBackward0>)
+Num_train_data= 9441
+Test error= 373
+Num_test_data= 2834
+DLGN Test accuracy= 86.83839096683133
+Maximum test accuracy for house_16H is 86.83839096683133
+[ 9  0 10  4 13 12 14 11  2  7  3  5  1 15  8  6]
+Percentage useful features is 1.0; Current shape of data is (13488, 16)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [16, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6915353834629059, 0.6842912018299103, 0.6583016157150269, 0.5952191531658173, 0.5400283992290497, 0.49397301077842715, 0.4627766698598862, 0.43807226717472075, 0.417162024974823, 0.40221973359584806, 0.39370604753494265, 0.3894380658864975, 0.38597666621208193, 0.3821084380149841, 0.37819617986679077, 0.3749329537153244, 0.35023351311683654, 0.32332395315170287, 0.27813335359096525, 0.23242229968309402, 0.16983273774385452, 0.0821309246122837]
+==========Best validated model=============
+Train error= 1054
+Train loss =  tensor(0.2594, grad_fn=<NllLossBackward0>)
+Num_train_data= 9441
+Test error= 372
+Num_test_data= 2834
+DLGN Test accuracy= 86.87367678193367
+Maximum test accuracy for house_16H is 86.87367678193367
+Current task:  13
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361070
+Task URL.............: https://www.openml.org/t/361070
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: label
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:eye_movements
+[16 15  7]
+Percentage useful features is 0.1; Current shape of data is (7608, 3)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [3, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6931477129459381, 0.6930450797080994, 0.6929452300071717, 0.6928150713443756, 0.6926580905914307, 0.6925052344799042, 0.692396730184555, 0.6923284649848938, 0.6922683537006378, 0.6922138333320618, 0.6921665132045746, 0.6921215355396271, 0.6920791745185852, 0.6920400142669678, 0.6920031905174255, 0.6919685542583466, 0.6912637889385224, 0.6888337016105652, 0.6812148988246918, 0.6649365544319152, 0.6393057644367218, 0.6068121910095214]
+==========Best validated model=============
+Train error= 2276
+Train loss =  tensor(0.6669, grad_fn=<NllLossBackward0>)
+Num_train_data= 5325
+Test error= 789
+Num_test_data= 1599
+DLGN Test accuracy= 50.65666041275797
+Maximum test accuracy for eye_movements is 50.65666041275797
+[16 15  7  0  9]
+Percentage useful features is 0.2; Current shape of data is (7608, 5)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [5, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6931278526782989, 0.6929900765419006, 0.6928870856761933, 0.6927457928657532, 0.6925200521945953, 0.6921995103359222, 0.6918287813663483, 0.6914245188236237, 0.6910051047801972, 0.6906006455421447, 0.6902423858642578, 0.6899615705013276, 0.6897629976272583, 0.6896206259727478, 0.689515882730484, 0.6894326567649841, 0.6884526193141938, 0.6850434839725494, 0.6740458488464356, 0.6406523406505584, 0.5856911778450012, 0.5153776079416275]
+==========Best validated model=============
+Train error= 1859
+Train loss =  tensor(0.5913, grad_fn=<NllLossBackward0>)
+Num_train_data= 5325
+Test error= 787
+Num_test_data= 1599
+DLGN Test accuracy= 50.78173858661664
+Maximum test accuracy for eye_movements is 50.78173858661664
+[16 15  7  0  9 17 10]
+Percentage useful features is 0.30000000000000004; Current shape of data is (7608, 7)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [7, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6931792974472046, 0.6930661618709564, 0.6929569184780121, 0.6927735388278962, 0.6924180746078491, 0.6918041586875916, 0.6911249339580536, 0.6906161189079285, 0.6901591181755066, 0.6898640275001526, 0.6896697878837585, 0.6895365178585052, 0.6894353449344635, 0.6893468260765075, 0.6892676413059234, 0.6891933977603912, 0.688343858718872, 0.6842120051383972, 0.6687027156352997, 0.6235368132591248, 0.548477154970169, 0.45115008652210237]
+==========Best validated model=============
+Train error= 854
+Train loss =  tensor(0.3259, grad_fn=<NllLossBackward0>)
+Num_train_data= 5325
+Test error= 807
+Num_test_data= 1599
+DLGN Test accuracy= 49.530956848030016
+Maximum test accuracy for eye_movements is 49.530956848030016
+[16 15  7  0  9 17 10  6  8]
+Percentage useful features is 0.4; Current shape of data is (7608, 9)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [9, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6931171119213104, 0.6929151237010955, 0.6925952017307282, 0.6919898211956024, 0.6912366628646851, 0.6907662391662598, 0.6903441905975342, 0.6899530589580536, 0.6895476579666138, 0.6891357362270355, 0.6887183010578155, 0.6882962167263031, 0.6878715097904206, 0.6874521017074585, 0.6870475888252259, 0.6866690754890442, 0.6826303184032441, 0.6743263363838196, 0.6582265794277191, 0.5970587432384491, 0.4827325314283371, 0.33652027547359464]
+==========Best validated model=============
+Train error= 1797
+Train loss =  tensor(0.5899, grad_fn=<NllLossBackward0>)
+Num_train_data= 5325
+Test error= 763
+Num_test_data= 1599
+DLGN Test accuracy= 52.28267667292057
+Maximum test accuracy for eye_movements is 52.28267667292057
+[16 15  7  0  9 17 10  6  8  1 18]
+Percentage useful features is 0.5; Current shape of data is (7608, 11)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [11, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6928809583187103, 0.6921996772289276, 0.6908905148506165, 0.6885105848312378, 0.6864471971988678, 0.685707026720047, 0.6848916232585907, 0.6843394339084625, 0.6837899386882782, 0.6832299947738647, 0.6826412916183472, 0.6820036113262177, 0.681360411643982, 0.6807322800159454, 0.680159455537796, 0.6796724915504455, 0.675128036737442, 0.6635286569595337, 0.6397789478302002, 0.5718863308429718, 0.49028747379779813, 0.3548572897911072]
+==========Best validated model=============
+Train error= 1301
+Train loss =  tensor(0.4739, grad_fn=<NllLossBackward0>)
+Num_train_data= 5325
+Test error= 740
+Num_test_data= 1599
+DLGN Test accuracy= 53.721075672295186
+Maximum test accuracy for eye_movements is 53.721075672295186
+[16 15  7  0  9 17 10  6  8  1 18  5  2]
+Percentage useful features is 0.6000000000000001; Current shape of data is (7608, 13)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [13, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6930574178695679, 0.6926197469234466, 0.6915404558181762, 0.6888456165790557, 0.6862939894199371, 0.6857462465763092, 0.6848509132862091, 0.6843884110450744, 0.6838341653347015, 0.6832717537879944, 0.6826239228248596, 0.6819465100765228, 0.681201821565628, 0.6804332435131073, 0.6796776950359344, 0.6789923489093781, 0.6746699929237365, 0.6655368268489837, 0.6345360457897187, 0.5353737473487854, 0.3715112656354904, 0.22227788120508193]
+==========Best validated model=============
+Train error= 1774
+Train loss =  tensor(0.6016, grad_fn=<NllLossBackward0>)
+Num_train_data= 5325
+Test error= 727
+Num_test_data= 1599
+DLGN Test accuracy= 54.534083802376486
+Maximum test accuracy for eye_movements is 54.534083802376486
+[16 15  7  0  9 17 10  6  8  1 18  5  2  4 14]
+Percentage useful features is 0.7000000000000001; Current shape of data is (7608, 15)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [15, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6930536448955535, 0.6925680041313171, 0.6916480720043182, 0.6895687818527222, 0.6865381956100464, 0.6848189771175385, 0.6831178426742553, 0.6818670451641082, 0.6813615679740905, 0.6809706151485443, 0.6804906904697419, 0.6801083624362946, 0.6797349870204925, 0.6792926669120789, 0.678843104839325, 0.6783882796764373, 0.670078718662262, 0.6523635566234589, 0.5978080987930298, 0.5091061472892762, 0.4032066076993942, 0.2473667234182358]
+==========Best validated model=============
+Train error= 650
+Train loss =  tensor(0.2705, grad_fn=<NllLossBackward0>)
+Num_train_data= 5325
+Test error= 692
+Num_test_data= 1599
+DLGN Test accuracy= 56.722951844903065
+Maximum test accuracy for eye_movements is 56.722951844903065
+[16 15  7  0  9 17 10  6  8  1 18  5  2  4 14 19 12]
+Percentage useful features is 0.8; Current shape of data is (7608, 17)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [17, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6930967092514038, 0.6927864015102386, 0.6919963240623475, 0.6892997682094574, 0.6826184093952179, 0.6780207931995392, 0.6756578683853149, 0.6740417659282685, 0.6735206723213196, 0.6730031490325927, 0.6725594341754914, 0.6723660945892334, 0.6721124708652496, 0.67191761136055, 0.6716981172561646, 0.6714777171611785, 0.6644922435283661, 0.6437437236309052, 0.6080624163150787, 0.47834862768650055, 0.2998362362384796, 0.13269389122724534]
+==========Best validated model=============
+Train error= 1818
+Train loss =  tensor(0.5995, grad_fn=<NllLossBackward0>)
+Num_train_data= 5325
+Test error= 686
+Num_test_data= 1599
+DLGN Test accuracy= 57.09818636647905
+Maximum test accuracy for eye_movements is 57.09818636647905
+[16 15  7  0  9 17 10  6  8  1 18  5  2  4 14 19 12  3 11]
+Percentage useful features is 0.9; Current shape of data is (7608, 19)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [19, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6930856764316559, 0.6926886558532714, 0.6914961397647857, 0.6873595893383027, 0.6792360961437225, 0.6764760494232178, 0.6745946824550628, 0.6733159422874451, 0.6731011629104614, 0.6727243542671204, 0.6723197281360627, 0.6721651971340179, 0.6719370067119599, 0.6717375814914703, 0.6715423166751862, 0.6713288128376007, 0.6646671772003174, 0.6379235208034515, 0.599184787273407, 0.4680518567562103, 0.31544576585292816, 0.12347512394189834]
+==========Best validated model=============
+Train error= 1763
+Train loss =  tensor(0.5910, grad_fn=<NllLossBackward0>)
+Num_train_data= 5325
+Test error= 699
+Num_test_data= 1599
+DLGN Test accuracy= 56.28517823639775
+Maximum test accuracy for eye_movements is 56.28517823639775
+[16 15  7  0  9 17 10  6  8  1 18  5  2  4 14 19 12  3 11 13]
+Percentage useful features is 1.0; Current shape of data is (7608, 20)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [20, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6930349171161652, 0.6926047742366791, 0.6915566861629486, 0.6884049534797668, 0.682214492559433, 0.6784340679645539, 0.676229614019394, 0.6742054045200347, 0.6734452724456788, 0.6729998826980591, 0.6722823500633239, 0.6718868851661682, 0.6715199172496795, 0.6710340499877929, 0.6706027209758758, 0.6701371908187866, 0.657718425989151, 0.6475704312324524, 0.6153753519058227, 0.4847829580307007, 0.314616271853447, 0.15306610763072967]
+==========Best validated model=============
+Train error= 657
+Train loss =  tensor(0.2629, grad_fn=<NllLossBackward0>)
+Num_train_data= 5325
+Test error= 689
+Num_test_data= 1599
+DLGN Test accuracy= 56.91056910569105
+Maximum test accuracy for eye_movements is 56.91056910569105
+Current task:  14
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361275
+Task URL.............: https://www.openml.org/t/361275
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: y
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:default-of-credit-card-clients
+[2 1 0]
+Percentage useful features is 0.1; Current shape of data is (13272, 3)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [3, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6920087158679962, 0.6877436935901642, 0.675635576248169, 0.6501879155635834, 0.6191545248031616, 0.6009625911712646, 0.5974164843559265, 0.5939339518547058, 0.5913623154163361, 0.5894661009311676, 0.587702465057373, 0.5868223071098327, 0.5861044466495514, 0.5856638371944427, 0.585334050655365, 0.5850656151771545, 0.5826620876789093, 0.5793868243694306, 0.5783612251281738, 0.5773076593875885, 0.5727839708328247, 0.558935409784317]
+==========Best validated model=============
+Train error= 2824
+Train loss =  tensor(0.5751, grad_fn=<NllLossBackward0>)
+Num_train_data= 9290
+Test error= 899
+Num_test_data= 2788
+DLGN Test accuracy= 67.75466284074605
+Maximum test accuracy for default-of-credit-card-clients is 67.75466284074605
+[2 1 0 8 9]
+Percentage useful features is 0.2; Current shape of data is (13272, 5)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [5, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6922166407108307, 0.6884353816509247, 0.6781628012657166, 0.6570691227912903, 0.630029273033142, 0.6088535130023957, 0.5957194626331329, 0.5925187528133392, 0.5906214058399201, 0.5882160723209381, 0.5861685812473297, 0.5845906138420105, 0.5833205163478852, 0.5826773703098297, 0.5822824597358703, 0.5819786965847016, 0.5796244859695434, 0.5738926231861115, 0.5689400792121887, 0.5628989934921265, 0.5454157769680024, 0.5140816420316696]
+==========Best validated model=============
+Train error= 2751
+Train loss =  tensor(0.5599, grad_fn=<NllLossBackward0>)
+Num_train_data= 9290
+Test error= 895
+Num_test_data= 2788
+DLGN Test accuracy= 67.89813486370159
+Maximum test accuracy for default-of-credit-card-clients is 67.89813486370159
+[ 2  1  0  8  9 14 10]
+Percentage useful features is 0.30000000000000004; Current shape of data is (13272, 7)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [7, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6922226488590241, 0.6888418972492218, 0.6773127496242524, 0.6463541090488434, 0.6179052114486694, 0.6047288000583648, 0.5983085215091706, 0.5952739417552948, 0.593092405796051, 0.5913525700569153, 0.589829808473587, 0.5883362054824829, 0.5869913995265961, 0.5856528878211975, 0.5844411492347718, 0.5833977699279785, 0.5784776747226715, 0.5717270612716675, 0.5633090674877167, 0.5548506081104279, 0.5337707281112671, 0.4982481151819229]
+==========Best validated model=============
+Train error= 2628
+Train loss =  tensor(0.5403, grad_fn=<NllLossBackward0>)
+Num_train_data= 9290
+Test error= 901
+Num_test_data= 2788
+DLGN Test accuracy= 67.6829268292683
+Maximum test accuracy for default-of-credit-card-clients is 67.6829268292683
+[ 2  1  0  8  9 14 10 12 15]
+Percentage useful features is 0.4; Current shape of data is (13272, 9)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [9, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6929053664207458, 0.6913320660591126, 0.6863151967525483, 0.6696355879306793, 0.632779598236084, 0.611887001991272, 0.6006166577339173, 0.5951619148254395, 0.5909729659557342, 0.5886460065841674, 0.5867547273635865, 0.5850888133049011, 0.5837481200695038, 0.5826217889785766, 0.5816222369670868, 0.5807543933391571, 0.5744430184364319, 0.5649396717548371, 0.5584158539772034, 0.5495207488536835, 0.5313595294952392, 0.4876251548528671]
+==========Best validated model=============
+Train error= 2716
+Train loss =  tensor(0.5614, grad_fn=<NllLossBackward0>)
+Num_train_data= 9290
+Test error= 852
+Num_test_data= 2788
+DLGN Test accuracy= 69.44045911047345
+Maximum test accuracy for default-of-credit-card-clients is 69.44045911047345
+[ 2  1  0  8  9 14 10 12 15 11 16]
+Percentage useful features is 0.5; Current shape of data is (13272, 11)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [11, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6925757110118866, 0.6895851790904999, 0.6803424775600433, 0.655083692073822, 0.621803742647171, 0.6065057158470154, 0.5978483498096466, 0.593420022726059, 0.591319453716278, 0.5897839307785034, 0.5884542107582093, 0.5873686850070954, 0.5862215757369995, 0.5850666165351868, 0.583942586183548, 0.5830025136470794, 0.5736327350139618, 0.5653461694717408, 0.5592496156692505, 0.5474391520023346, 0.5148807317018509, 0.4718961000442505]
+==========Best validated model=============
+Train error= 2623
+Train loss =  tensor(0.5468, grad_fn=<NllLossBackward0>)
+Num_train_data= 9290
+Test error= 861
+Num_test_data= 2788
+DLGN Test accuracy= 69.11764705882354
+Maximum test accuracy for default-of-credit-card-clients is 69.11764705882354
+[ 2  1  0  8  9 14 10 12 15 11 16 13 19]
+Percentage useful features is 0.6000000000000001; Current shape of data is (13272, 13)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [13, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6928329765796661, 0.6907549619674682, 0.6819189548492431, 0.6500843048095704, 0.6116354048252106, 0.6005916118621826, 0.5960664987564087, 0.5932132482528687, 0.5915063679218292, 0.5899894773960114, 0.5888224959373474, 0.5877448439598083, 0.5868559300899505, 0.5859774827957154, 0.5850249648094177, 0.5840224683284759, 0.5738814294338226, 0.5644931197166443, 0.55678990483284, 0.5457245349884033, 0.5145005196332931, 0.45873413383960726]
+==========Best validated model=============
+Train error= 2604
+Train loss =  tensor(0.5413, grad_fn=<NllLossBackward0>)
+Num_train_data= 9290
+Test error= 864
+Num_test_data= 2788
+DLGN Test accuracy= 69.01004304160689
+Maximum test accuracy for default-of-credit-card-clients is 69.01004304160689
+[ 2  1  0  8  9 14 10 12 15 11 16 13 19 17  3]
+Percentage useful features is 0.7000000000000001; Current shape of data is (13272, 15)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [15, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6925479292869567, 0.6890894651412964, 0.6772936344146728, 0.6454624831676483, 0.6186017155647278, 0.6073866367340088, 0.600821453332901, 0.596752941608429, 0.594208014011383, 0.5919197499752045, 0.5902044534683227, 0.588787966966629, 0.5873913526535034, 0.5861013948917388, 0.5848435580730438, 0.5835156559944152, 0.5728455066680909, 0.5631624281406402, 0.5557142436504364, 0.5418765366077423, 0.492517301440239, 0.4369954228401184]
+==========Best validated model=============
+Train error= 2633
+Train loss =  tensor(0.5515, grad_fn=<NllLossBackward0>)
+Num_train_data= 9290
+Test error= 848
+Num_test_data= 2788
+DLGN Test accuracy= 69.58393113342899
+Maximum test accuracy for default-of-credit-card-clients is 69.58393113342899
+[ 2  1  0  8  9 14 10 12 15 11 16 13 19 17  3 18  5]
+Percentage useful features is 0.8; Current shape of data is (13272, 17)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [17, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.692379492521286, 0.6885344743728637, 0.6720500230789185, 0.6284130454063416, 0.6081401467323303, 0.599778288602829, 0.5960124552249908, 0.593640261888504, 0.5914448320865631, 0.5898380815982819, 0.5886253714561462, 0.5873182773590088, 0.586154294013977, 0.5850025594234467, 0.5837984204292297, 0.5825322210788727, 0.5683376550674438, 0.5588437855243683, 0.5470753252506256, 0.5242130041122437, 0.47758360803127287, 0.4270202934741974]
+==========Best validated model=============
+Train error= 2551
+Train loss =  tensor(0.5393, grad_fn=<NllLossBackward0>)
+Num_train_data= 9290
+Test error= 832
+Num_test_data= 2788
+DLGN Test accuracy= 70.15781922525107
+Maximum test accuracy for default-of-credit-card-clients is 70.15781922525107
+[ 2  1  0  8  9 14 10 12 15 11 16 13 19 17  3 18  5  4  6]
+Percentage useful features is 0.9; Current shape of data is (13272, 19)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [19, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6916799247264862, 0.685390418767929, 0.6685593068599701, 0.6429214775562286, 0.6195735037326813, 0.6041780173778534, 0.5968941748142242, 0.5928070366382598, 0.589431744813919, 0.5866545081138611, 0.5840638697147369, 0.5813603579998017, 0.5786829829216004, 0.5762300729751587, 0.574193024635315, 0.5725547313690186, 0.5631466567516327, 0.5527363181114197, 0.5434388518333435, 0.5168967366218566, 0.46489342153072355, 0.39852131605148317]
+==========Best validated model=============
+Train error= 2552
+Train loss =  tensor(0.5415, grad_fn=<NllLossBackward0>)
+Num_train_data= 9290
+Test error= 829
+Num_test_data= 2788
+DLGN Test accuracy= 70.26542324246772
+Maximum test accuracy for default-of-credit-card-clients is 70.26542324246772
+[ 2  1  0  8  9 14 10 12 15 11 16 13 19 17  3 18  5  4  6  7]
+Percentage useful features is 1.0; Current shape of data is (13272, 20)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [20, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6925614297389984, 0.6894546627998352, 0.6784533858299255, 0.6560416579246521, 0.6279051065444946, 0.6092252671718598, 0.6017192840576172, 0.5979038536548614, 0.5944599807262421, 0.5916056752204895, 0.5892332375049592, 0.5869801342487335, 0.584624582529068, 0.5822430551052094, 0.579928171634674, 0.5777528822422028, 0.5616713106632233, 0.5543555438518524, 0.5438224911689759, 0.5232265502214432, 0.48457170724868776, 0.42978287041187285]
+==========Best validated model=============
+Train error= 2460
+Train loss =  tensor(0.5256, grad_fn=<NllLossBackward0>)
+Num_train_data= 9290
+Test error= 816
+Num_test_data= 2788
+DLGN Test accuracy= 70.73170731707317
+Maximum test accuracy for default-of-credit-card-clients is 70.73170731707317
+Current task:  15
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361278
+Task URL.............: https://www.openml.org/t/361278
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: RiskPerformance
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:heloc
+[ 0 16  3]
+Percentage useful features is 0.1; Current shape of data is (10000, 3)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [3, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6923606693744659, 0.6886791706085205, 0.6773449718952179, 0.6494068145751953, 0.6169097423553467, 0.6075965583324432, 0.5995985805988312, 0.5955871105194092, 0.5902622461318969, 0.5855304419994354, 0.5811911761760712, 0.5779152274131775, 0.5759421229362488, 0.5752306520938874, 0.5748729825019836, 0.5745432734489441, 0.5722327530384064, 0.5713578045368195, 0.5694015681743622, 0.566668576002121, 0.5533520102500915, 0.5243179410696029]
+==========Best validated model=============
+Train error= 2070
+Train loss =  tensor(0.5749, grad_fn=<NllLossBackward0>)
+Num_train_data= 7000
+Test error= 655
+Num_test_data= 2100
+DLGN Test accuracy= 68.80952380952381
+Maximum test accuracy for heloc is 68.80952380952381
+[ 0 16  3  1 21]
+Percentage useful features is 0.2; Current shape of data is (10000, 5)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [5, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6918187260627746, 0.6859167337417602, 0.6694882988929749, 0.6342546045780182, 0.6112482249736786, 0.6053686916828156, 0.6021804094314576, 0.5993675768375397, 0.5962745904922485, 0.5929028630256653, 0.5892676174640655, 0.5853380262851715, 0.5816313982009887, 0.5784678518772125, 0.5759604513645172, 0.5742880225181579, 0.5714824080467225, 0.5699119567871094, 0.5670519948005677, 0.5570314228534698, 0.5124479860067368, 0.42675709128379824]
+==========Best validated model=============
+Train error= 2119
+Train loss =  tensor(0.5829, grad_fn=<NllLossBackward0>)
+Num_train_data= 7000
+Test error= 657
+Num_test_data= 2100
+DLGN Test accuracy= 68.71428571428572
+Maximum test accuracy for heloc is 68.71428571428572
+[ 0 16  3  1 21 12  4]
+Percentage useful features is 0.30000000000000004; Current shape of data is (10000, 7)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [7, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6910637795925141, 0.6840763509273529, 0.6627193570137024, 0.6236990869045258, 0.6082013666629791, 0.6030380487442016, 0.60070840716362, 0.5986865878105163, 0.5966812551021576, 0.5945273399353027, 0.5917852580547333, 0.5879776239395141, 0.5829877138137818, 0.5772667706012726, 0.5719670355319977, 0.5682238221168519, 0.5629059076309204, 0.5619915544986724, 0.5585656583309173, 0.5462923347949982, 0.4838921368122101, 0.33788263499736787]
+==========Best validated model=============
+Train error= 1992
+Train loss =  tensor(0.5536, grad_fn=<NllLossBackward0>)
+Num_train_data= 7000
+Test error= 632
+Num_test_data= 2100
+DLGN Test accuracy= 69.9047619047619
+Maximum test accuracy for heloc is 69.9047619047619
+[ 0 16  3  1 21 12  4  7 10]
+Percentage useful features is 0.4; Current shape of data is (10000, 9)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [9, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6925901889801025, 0.6891991257667541, 0.6760841906070709, 0.6373661994934082, 0.607629019021988, 0.598516720533371, 0.59483482837677, 0.5908334732055665, 0.5867130219936371, 0.5819134950637818, 0.5765483140945434, 0.5712260901927948, 0.5669650435447693, 0.5644298613071441, 0.5631724178791047, 0.5625150322914123, 0.5600140333175659, 0.5576459646224976, 0.5544426381587982, 0.5437098056077957, 0.440417543053627, 0.29844740927219393]
+==========Best validated model=============
+Train error= 1982
+Train loss =  tensor(0.5528, grad_fn=<NllLossBackward0>)
+Num_train_data= 7000
+Test error= 634
+Num_test_data= 2100
+DLGN Test accuracy= 69.80952380952381
+Maximum test accuracy for heloc is 69.80952380952381
+[ 0 16  3  1 21 12  4  7 10 13  2 17]
+Percentage useful features is 0.5; Current shape of data is (10000, 12)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [12, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.692581570148468, 0.689596700668335, 0.6798312604427338, 0.6518889307975769, 0.6142544209957123, 0.6030324101448059, 0.5958241581916809, 0.5896311163902282, 0.5839486062526703, 0.5770410180091858, 0.5705971121788025, 0.5648273527622223, 0.5612018585205079, 0.5596784114837646, 0.5590290248394012, 0.558557254076004, 0.5566064357757569, 0.5545553624629974, 0.5458147794008255, 0.5240203469991684, 0.421175941824913, 0.22440288364887237]
+==========Best validated model=============
+Train error= 1967
+Train loss =  tensor(0.5529, grad_fn=<NllLossBackward0>)
+Num_train_data= 7000
+Test error= 614
+Num_test_data= 2100
+DLGN Test accuracy= 70.76190476190476
+Maximum test accuracy for heloc is 70.76190476190476
+[ 0 16  3  1 21 12  4  7 10 13  2 17  8 18]
+Percentage useful features is 0.6000000000000001; Current shape of data is (10000, 14)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [14, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.692248272895813, 0.6881776571273803, 0.6737714767456054, 0.6387718737125396, 0.6078969776630402, 0.5993851244449615, 0.5932128608226777, 0.5902268767356873, 0.5876375019550324, 0.5847264885902405, 0.5811770677566528, 0.57628692984581, 0.570984947681427, 0.5661407709121704, 0.5623413920402527, 0.559601879119873, 0.5539103150367737, 0.5505884826183319, 0.5449951708316803, 0.5125134617090226, 0.38037756085395813, 0.1638386443257332]
+==========Best validated model=============
+Train error= 1945
+Train loss =  tensor(0.5464, grad_fn=<NllLossBackward0>)
+Num_train_data= 7000
+Test error= 607
+Num_test_data= 2100
+DLGN Test accuracy= 71.0952380952381
+Maximum test accuracy for heloc is 71.0952380952381
+[ 0 16  3  1 21 12  4  7 10 13  2 17  8 18 20  9]
+Percentage useful features is 0.7000000000000001; Current shape of data is (10000, 16)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [16, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.692519235610962, 0.6891194999217987, 0.6758219182491303, 0.6348252594470978, 0.6036695539951324, 0.5924448072910309, 0.5865356087684631, 0.580904233455658, 0.5743620693683624, 0.5682660639286041, 0.5631923377513885, 0.5599381148815155, 0.5582120656967163, 0.5572515785694122, 0.5565880119800568, 0.5560194551944733, 0.5510438770055771, 0.547546061873436, 0.5402366250753403, 0.5018927156925201, 0.3560683935880661, 0.308612696826458]
+==========Best validated model=============
+Train error= 1969
+Train loss =  tensor(0.5500, grad_fn=<NllLossBackward0>)
+Num_train_data= 7000
+Test error= 614
+Num_test_data= 2100
+DLGN Test accuracy= 70.76190476190476
+Maximum test accuracy for heloc is 70.76190476190476
+[ 0 16  3  1 21 12  4  7 10 13  2 17  8 18 20  9 19 11]
+Percentage useful features is 0.8; Current shape of data is (10000, 18)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [18, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.692502784729004, 0.6893804252147675, 0.6770185649394989, 0.6369819343090057, 0.5985544562339783, 0.5909019768238067, 0.5829067587852478, 0.5761806309223175, 0.570387452840805, 0.5648061871528626, 0.5610427141189576, 0.55902059674263, 0.5580145001411438, 0.5573184490203857, 0.5567600309848786, 0.5563591182231903, 0.5531695485115051, 0.5490894943475724, 0.541879466176033, 0.5149474918842316, 0.37630558013916016, 0.1536741301417351]
+==========Best validated model=============
+Train error= 1973
+Train loss =  tensor(0.5585, grad_fn=<NllLossBackward0>)
+Num_train_data= 7000
+Test error= 628
+Num_test_data= 2100
+DLGN Test accuracy= 70.0952380952381
+Maximum test accuracy for heloc is 70.0952380952381
+[ 0 16  3  1 21 12  4  7 10 13  2 17  8 18 20  9 19 11 14 15]
+Percentage useful features is 0.9; Current shape of data is (10000, 20)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance
+Setup:
+Num neurons :  [20, 30, 30, 30, 30, 1]
+ Beta : 1
+ lr : 0.001
+=======================
+[0.7, 0.6921211838722229, 0.6868798196315765, 0.6701271176338196, 0.6398240625858307, 0.6060712695121765, 0.5907942891120911, 0.5808440804481506, 0.5764368653297425, 0.5744072437286377, 0.5726051270961762, 0.5715639114379882, 0.5705061256885529, 0.5693108022212983, 0.5677574455738068, 0.5654175579547882, 0.5623371064662933, 0.5532510221004486, 0.550970447063446, 0.5433658063411713, 0.5150112748146057, 0.34895491898059844, 0.12700300216674804]
+==========Best validated model=============
+Train error= 1933
+Train loss =  tensor(0.5380, grad_fn=<NllLossBackward0>)
+Num_train_data= 7000
+Test error= 600
+Num_test_data= 2100
+DLGN Test accuracy= 71.42857142857143
+Maximum test accuracy for heloc is 71.42857142857143
+[ 0 16  3  1 21 12  4  7 10 13  2 17  8 18 20  9 19 11 14 15  5  6]
+Percentage useful features is 1.0; Current shape of data is (10000, 22)
+Beta 1, Number of layers 4 and number of neurons 30
+DLGN performance

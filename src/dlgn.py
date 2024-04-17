@@ -149,7 +149,7 @@ class trainDLGN:
 		# print(DLGN_params)
 		train_losses = []
 		running_loss = 0.7*num_batches # initial random loss = 0.7 
-		self.saved_epochs = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16, 32,64,128,256,512,1024,4000]
+		self.saved_epochs = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16, 32,64,128,256,512,1024,2048]
 		for epoch in tqdm(range(self.saved_epochs[-1])):  # loop over the dataset multiple times
 			if epoch in self.saved_epochs:
 				DLGN_obj_copy = deepcopy(DLGN_obj)
