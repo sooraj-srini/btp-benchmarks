@@ -1,0 +1,1464 @@
+4_50_3_1.0e-03
+cuda
+Current task:  1
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361060
+Task URL.............: https://www.openml.org/t/361060
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:electricity
+Percentage useless features is 0.2; Current shape of data is (38474, 9)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [9, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6905997097492218, 0.6643615663051605, 0.6141787588596344, 0.5676114976406097, 0.5254630088806153, 0.5136724144220353, 0.5076464027166366, 0.5042743533849716, 0.5006841242313385, 0.49738183319568635, 0.49360198378562925, 0.49002853631973264, 0.4865938276052475, 0.4829734623432159, 0.4798929184675217, 0.47767187356948854, 0.4580132693052292, 0.41251605153083803, 0.36171078085899355, 0.3191100746393204, 0.27991181910037993, 0.20910561084747314]
+==========Best validated model=============
+Train error= 4017
+Train loss =  tensor(0.3293, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1552
+Num_test_data= 8081
+DLGN Test accuracy= 80.79445613166688
+Maximum test accuracy for electricity is 80.79445613166688
+Random forest classifier test accuracy score is 86.51157035020418
+Percentage useless features is 0.4; Current shape of data is (38474, 10)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [10, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6909668266773223, 0.6656998515129089, 0.5984759628772736, 0.543554139137268, 0.5159431099891663, 0.5112776428461074, 0.5078451335430145, 0.5054113954305649, 0.5030658602714538, 0.5001090824604034, 0.49636157155036925, 0.49271235466003416, 0.4893153578042984, 0.48587048053741455, 0.4828548341989517, 0.48057693243026733, 0.46064352095127103, 0.4168767511844635, 0.3640993654727936, 0.32171445786952974, 0.2656868934631348, 0.21337964981794358]
+==========Best validated model=============
+Train error= 4251
+Train loss =  tensor(0.3501, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1603
+Num_test_data= 8081
+DLGN Test accuracy= 80.16334612052964
+Maximum test accuracy for electricity is 80.16334612052964
+Random forest classifier test accuracy score is 86.82093800272244
+Percentage useless features is 0.6000000000000001; Current shape of data is (38474, 12)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [12, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.69087153673172, 0.6621974587440491, 0.5925414204597473, 0.5429453730583191, 0.5188514769077301, 0.5123360395431519, 0.509064382314682, 0.5065218776464462, 0.5049268811941147, 0.5028708666563034, 0.5003921449184418, 0.49738714694976804, 0.4941831171512604, 0.49130536913871764, 0.48857438564300537, 0.48557043373584746, 0.45905775427818296, 0.41873234510421753, 0.35223534405231477, 0.2757530450820923, 0.189078389108181, 0.0976098358631134]
+==========Best validated model=============
+Train error= 4088
+Train loss =  tensor(0.3383, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1687
+Num_test_data= 8081
+DLGN Test accuracy= 79.1238708080683
+Maximum test accuracy for electricity is 79.1238708080683
+Random forest classifier test accuracy score is 86.01658210617498
+Percentage useless features is 0.8; Current shape of data is (38474, 13)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [13, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6910326957702637, 0.6645700395107269, 0.605287492275238, 0.5578023314476013, 0.5233515679836274, 0.5144811868667603, 0.5108038514852524, 0.5076469391584396, 0.505257198214531, 0.5027286469936371, 0.4998622089624405, 0.49618812203407286, 0.49158577620983124, 0.48669862747192383, 0.48224940001964567, 0.4788732349872589, 0.459182608127594, 0.4117426186800003, 0.3609060704708099, 0.2999681979417801, 0.22870994508266448, 0.3310855507850647]
+==========Best validated model=============
+Train error= 4464
+Train loss =  tensor(0.3632, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1618
+Num_test_data= 8081
+DLGN Test accuracy= 79.97772552901868
+Maximum test accuracy for electricity is 79.97772552901868
+Random forest classifier test accuracy score is 86.3506991708947
+Percentage useless features is 1.0; Current shape of data is (38474, 15)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [15, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6912167608737946, 0.6666094899177551, 0.6021947026252746, 0.5518094182014466, 0.5201455593109131, 0.5132503479719162, 0.5104703158140182, 0.5082402020692826, 0.506702509522438, 0.5050818085670471, 0.5030666768550873, 0.5005719244480134, 0.49745090007781984, 0.49377732872962954, 0.48997322618961336, 0.4866147875785828, 0.4581787347793579, 0.4125272542238235, 0.357075497508049, 0.2902701824903488, 0.2089039832353592, 0.11633547991514206]
+==========Best validated model=============
+Train error= 4638
+Train loss =  tensor(0.3780, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1651
+Num_test_data= 8081
+DLGN Test accuracy= 79.56936022769459
+Maximum test accuracy for electricity is 79.56936022769459
+Random forest classifier test accuracy score is 85.79383739636184
+Current task:  2
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361066
+Task URL.............: https://www.openml.org/t/361066
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: Class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:bank-marketing
+Percentage useless features is 0.2; Current shape of data is (10578, 9)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [9, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6913928210735321, 0.6671504199504852, 0.5557706028223037, 0.5108236789703369, 0.49491715133190156, 0.4880981624126434, 0.4811081409454346, 0.4743052840232849, 0.46901399195194243, 0.4648438572883606, 0.4623503923416138, 0.46051586270332334, 0.458868020772934, 0.4572932571172714, 0.4559946894645691, 0.45484177470207215, 0.43725991547107695, 0.40329096615314486, 0.287396177649498, 0.1518482744693756, 0.11729431375861168, 0.001278038782766089]
+==========Best validated model=============
+Train error= 1362
+Train loss =  tensor(0.4057, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 501
+Num_test_data= 2222
+DLGN Test accuracy= 77.45274527452744
+Maximum test accuracy for bank-marketing is 77.45274527452744
+Random forest classifier test accuracy score is 77.81278127812782
+Percentage useless features is 0.4; Current shape of data is (10578, 10)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [10, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6911688268184661, 0.6662983238697052, 0.556539598107338, 0.5137009680271148, 0.5001401215791702, 0.4930803835391998, 0.48845343589782714, 0.48386654555797576, 0.4791587620973587, 0.47333119809627533, 0.4676454961299896, 0.463212725520134, 0.4606338948011398, 0.4585785537958145, 0.4571423590183258, 0.4559343338012695, 0.4407824009656906, 0.4091246724128723, 0.25333309173583984, 0.0813538208603859, 0.009019812475889922, 2.2222427287488244e-05]
+==========Best validated model=============
+Train error= 1458
+Train loss =  tensor(0.4297, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 488
+Num_test_data= 2222
+DLGN Test accuracy= 78.03780378037804
+Maximum test accuracy for bank-marketing is 78.03780378037804
+Random forest classifier test accuracy score is 78.08280828082809
+Percentage useless features is 0.6000000000000001; Current shape of data is (10578, 12)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [12, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6906208276748658, 0.6592089056968689, 0.5443863421678543, 0.5094878673553467, 0.49722111523151397, 0.49299894869327543, 0.4894363105297089, 0.4862367004156113, 0.48255654871463777, 0.4781588286161423, 0.47339302897453306, 0.4687848061323166, 0.4650736302137375, 0.4618301898241043, 0.45905632972717286, 0.45677486062049866, 0.43602974712848663, 0.3798054903745651, 0.17575563937425615, 0.1250772088766098, 0.0004134585877181962, 6.586138215425308e-06]
+==========Best validated model=============
+Train error= 1526
+Train loss =  tensor(0.4539, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 507
+Num_test_data= 2222
+DLGN Test accuracy= 77.18271827182718
+Maximum test accuracy for bank-marketing is 77.18271827182718
+Random forest classifier test accuracy score is 78.62286228622862
+Percentage useless features is 0.8; Current shape of data is (10578, 13)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [13, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6912220120429993, 0.6659713685512543, 0.5630342066287994, 0.5151696830987931, 0.5002679407596589, 0.4966111838817596, 0.4925619900226593, 0.49009358286857607, 0.48709990084171295, 0.48369804918766024, 0.47918963730335234, 0.47438540756702424, 0.46999371647834776, 0.46664304435253146, 0.4635951042175293, 0.4610477387905121, 0.4297506719827652, 0.3745282769203186, 0.20648110657930374, 0.1287544436752796, 0.02628686707466841, 6.521434661408421e-05]
+==========Best validated model=============
+Train error= 1406
+Train loss =  tensor(0.4243, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 500
+Num_test_data= 2222
+DLGN Test accuracy= 77.4977497749775
+Maximum test accuracy for bank-marketing is 77.4977497749775
+Random forest classifier test accuracy score is 78.57785778577858
+Percentage useless features is 1.0; Current shape of data is (10578, 15)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [15, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6912288248538971, 0.6678727567195892, 0.5614161014556884, 0.5142349630594254, 0.502121165394783, 0.49569007456302644, 0.493169566988945, 0.48955112397670747, 0.48705239593982697, 0.48317561447620394, 0.4787622332572937, 0.4735352784395218, 0.46922952234745025, 0.46639358103275297, 0.4644608646631241, 0.46279293596744536, 0.43353584706783294, 0.36274232566356657, 0.14595920741558074, 0.05297435559332371, 0.0002414185888483189, 4.90855127281975e-06]
+==========Best validated model=============
+Train error= 1401
+Train loss =  tensor(0.4227, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 487
+Num_test_data= 2222
+DLGN Test accuracy= 78.08280828082809
+Maximum test accuracy for bank-marketing is 78.08280828082809
+Random forest classifier test accuracy score is 78.4878487848785
+Current task:  3
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361273
+Task URL.............: https://www.openml.org/t/361273
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: readmitted
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:Diabetes130US
+Percentage useless features is 0.2; Current shape of data is (71090, 9)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [9, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.692223709821701, 0.6823237895965576, 0.6652830302715301, 0.6620510339736938, 0.6607117176055908, 0.6606018424034119, 0.6599913597106933, 0.6595700085163116, 0.6592055320739746, 0.6589844465255738, 0.6588883578777314, 0.6587815701961517, 0.6586550533771515, 0.658495956659317, 0.6583416283130645, 0.6582068681716919, 0.6568845272064209, 0.6546200454235077, 0.6275415778160095, 0.5604494214057922, 0.4938278794288635, 0.42969549298286436]
+==========Best validated model=============
+Train error= 19477
+Train loss =  tensor(0.6552, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 5849
+Num_test_data= 14929
+DLGN Test accuracy= 60.821220443432246
+Maximum test accuracy for Diabetes130US is 60.821220443432246
+Random forest classifier test accuracy score is 59.052850157411754
+Percentage useless features is 0.4; Current shape of data is (71090, 10)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [10, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6922170281410217, 0.6826110661029816, 0.666044819355011, 0.6628522098064422, 0.6611336708068848, 0.6607769072055817, 0.6602564811706543, 0.6600505590438843, 0.6598219990730285, 0.6596086382865906, 0.659404867887497, 0.659151428937912, 0.658919632434845, 0.6587185382843017, 0.6585365235805511, 0.6583731830120086, 0.6567266941070556, 0.6527296125888824, 0.611981326341629, 0.5499265551567077, 0.4680910259485245, 0.3922558337450027]
+==========Best validated model=============
+Train error= 19329
+Train loss =  tensor(0.6501, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 5897
+Num_test_data= 14929
+DLGN Test accuracy= 60.499698573246704
+Maximum test accuracy for Diabetes130US is 60.499698573246704
+Random forest classifier test accuracy score is 59.628910174827524
+Percentage useless features is 0.6000000000000001; Current shape of data is (71090, 12)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [12, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.692346841096878, 0.6828412353992462, 0.6663143694400787, 0.6626908481121063, 0.6612364172935485, 0.6608340919017792, 0.6604039072990417, 0.6600625038146972, 0.659838730096817, 0.6596086740493774, 0.6594256639480591, 0.6592196822166443, 0.6589951395988465, 0.6587892591953277, 0.6585982024669648, 0.658423388004303, 0.6564726054668426, 0.6515556454658509, 0.6040312945842743, 0.5213658809661865, 0.433707594871521, 0.35111620724201204]
+==========Best validated model=============
+Train error= 19497
+Train loss =  tensor(0.6556, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 5875
+Num_test_data= 14929
+DLGN Test accuracy= 60.64706276374841
+Maximum test accuracy for Diabetes130US is 60.64706276374841
+Random forest classifier test accuracy score is 58.81170875477258
+Percentage useless features is 0.8; Current shape of data is (71090, 13)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [13, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6921095192432404, 0.6805473923683166, 0.6663727223873138, 0.662286353111267, 0.6610100388526916, 0.660661268234253, 0.660079938173294, 0.6598245620727539, 0.659697300195694, 0.6595075309276581, 0.6592890799045563, 0.6590728223323822, 0.658868008852005, 0.6586806237697601, 0.6585146307945251, 0.658346313238144, 0.6560052692890167, 0.6498476326465606, 0.6030580222606658, 0.5183990955352783, 0.4242061018943787, 0.3347584277391434]
+==========Best validated model=============
+Train error= 19612
+Train loss =  tensor(0.6571, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 5858
+Num_test_data= 14929
+DLGN Test accuracy= 60.760935092772456
+Maximum test accuracy for Diabetes130US is 60.760935092772456
+Random forest classifier test accuracy score is 58.972469689865356
+Percentage useless features is 1.0; Current shape of data is (71090, 15)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [15, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6925943732261658, 0.6861632466316223, 0.6710753679275513, 0.6641497850418091, 0.6617073535919189, 0.6611656427383423, 0.6607538104057312, 0.660422146320343, 0.659957480430603, 0.6593726336956024, 0.6590336918830871, 0.6587986767292022, 0.6585842788219451, 0.658377468585968, 0.6581570029258728, 0.6578972041606903, 0.6554700911045075, 0.6460340440273284, 0.5798896670341491, 0.4760680317878723, 0.36891278624534607, 0.2925707459449768]
+==========Best validated model=============
+Train error= 19442
+Train loss =  tensor(0.6550, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 5824
+Num_test_data= 14929
+DLGN Test accuracy= 60.98867975082055
+Maximum test accuracy for Diabetes130US is 60.98867975082055
+Random forest classifier test accuracy score is 58.81840712706812
+Current task:  4
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361277
+Task URL.............: https://www.openml.org/t/361277
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: price_above_median
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:california
+Percentage useless features is 0.2; Current shape of data is (20634, 10)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [10, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6907418370246887, 0.6619919598102569, 0.5234040915966034, 0.4529759079217911, 0.41588600873947146, 0.38482862114906313, 0.370051833987236, 0.36385605931282045, 0.35795411467552185, 0.3536736607551575, 0.349870428442955, 0.3464832305908203, 0.34345342218875885, 0.3407206773757935, 0.33838864266872404, 0.3364282786846161, 0.30547023117542266, 0.2708097994327545, 0.22095689922571182, 0.15919501781463624, 0.09450068920850754, 0.047484750486910345]
+==========Best validated model=============
+Train error= 1595
+Train loss =  tensor(0.2560, grad_fn=<NllLossBackward0>)
+Num_train_data= 14443
+Test error= 522
+Num_test_data= 4334
+DLGN Test accuracy= 87.95569912321182
+Maximum test accuracy for california is 87.95569912321182
+Random forest classifier test accuracy score is 90.7014305491463
+Percentage useless features is 0.4; Current shape of data is (20634, 12)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [12, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6900489926338196, 0.6540987491607666, 0.5286365479230881, 0.4547427386045456, 0.4217658668756485, 0.3905317038297653, 0.37131744623184204, 0.3632376044988632, 0.356533071398735, 0.3520429879426956, 0.3481047868728638, 0.3451320081949234, 0.34289415180683136, 0.34095712304115294, 0.33926492631435395, 0.33790008425712587, 0.31526916921138765, 0.27749318778514864, 0.2231329321861267, 0.13471065163612367, 0.09203335493803025, 0.00013895222145947627]
+==========Best validated model=============
+Train error= 1607
+Train loss =  tensor(0.2539, grad_fn=<NllLossBackward0>)
+Num_train_data= 14443
+Test error= 550
+Num_test_data= 4334
+DLGN Test accuracy= 87.30964467005076
+Maximum test accuracy for california is 87.30964467005076
+Random forest classifier test accuracy score is 89.91693585602215
+Percentage useless features is 0.6000000000000001; Current shape of data is (20634, 13)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [13, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6901171505451202, 0.6549075067043304, 0.5318607270717621, 0.44541890919208527, 0.40936654806137085, 0.38320275247097013, 0.3702307313680649, 0.36348276734352114, 0.35727609395980836, 0.3527425557374954, 0.34919812381267545, 0.34617321491241454, 0.34360318779945376, 0.34149639010429383, 0.339601668715477, 0.337941375374794, 0.31566978693008424, 0.2848125994205475, 0.23149791061878205, 0.15115835070610045, 0.09113789387047291, 0.00014260118550737388]
+==========Best validated model=============
+Train error= 1306
+Train loss =  tensor(0.2106, grad_fn=<NllLossBackward0>)
+Num_train_data= 14443
+Test error= 511
+Num_test_data= 4334
+DLGN Test accuracy= 88.2095062298108
+Maximum test accuracy for california is 88.2095062298108
+Random forest classifier test accuracy score is 89.96308260267651
+Percentage useless features is 0.8; Current shape of data is (20634, 15)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [15, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6914360225200653, 0.6678855836391449, 0.5430908858776092, 0.45839194655418397, 0.4244799941778183, 0.3941491454839706, 0.37562198340892794, 0.366608077287674, 0.36129952371120455, 0.3575399160385132, 0.3545920640230179, 0.35218235552310945, 0.35013080537319186, 0.34817755222320557, 0.3464028567075729, 0.34470989406108854, 0.3244496524333954, 0.2797966241836548, 0.21494268327951432, 0.11982571706175804, 0.04969962611794472, 3.0958828210714275e-05]
+==========Best validated model=============
+Train error= 1554
+Train loss =  tensor(0.2486, grad_fn=<NllLossBackward0>)
+Num_train_data= 14443
+Test error= 557
+Num_test_data= 4334
+DLGN Test accuracy= 87.14813105676049
+Maximum test accuracy for california is 87.14813105676049
+Random forest classifier test accuracy score is 89.66312874942317
+Percentage useless features is 1.0; Current shape of data is (20634, 17)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [17, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6911674618721009, 0.6640401601791381, 0.5701476991176605, 0.4741885334253311, 0.42830529510974885, 0.3971498817205429, 0.37615197598934175, 0.36694802939891813, 0.36097317934036255, 0.35659641921520235, 0.3533520191907883, 0.35112817883491515, 0.34907149970531465, 0.3472901821136475, 0.34576972126960753, 0.3443377077579498, 0.32648191452026365, 0.28328564763069153, 0.2235526144504547, 0.08452291414141655, 0.006832825904712081, 1.6296350895572687e-05]
+==========Best validated model=============
+Train error= 1561
+Train loss =  tensor(0.2471, grad_fn=<NllLossBackward0>)
+Num_train_data= 14443
+Test error= 609
+Num_test_data= 4334
+DLGN Test accuracy= 85.94831564374712
+Maximum test accuracy for california is 85.94831564374712
+Random forest classifier test accuracy score is 89.89386248269497
+Current task:  5
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361055
+Task URL.............: https://www.openml.org/t/361055
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: SeriousDlqin2yrs
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:credit
+Percentage useless features is 0.2; Current shape of data is (16714, 13)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [13, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6924928426742554, 0.6840575695037842, 0.6595513701438904, 0.640231990814209, 0.61171795129776, 0.5646621763706208, 0.5407575249671936, 0.5364952564239502, 0.5285675525665283, 0.5239248871803284, 0.5205577552318573, 0.5195220410823822, 0.5186231911182404, 0.5174717426300048, 0.5162014722824096, 0.5148189544677735, 0.5074600607156754, 0.4996738612651825, 0.47827168703079226, 0.3504193156957626, 0.12345069721341133, 0.002372557861963287]
+==========Best validated model=============
+Train error= 2793
+Train loss =  tensor(0.4922, grad_fn=<NllLossBackward0>)
+Num_train_data= 11699
+Test error= 902
+Num_test_data= 3511
+DLGN Test accuracy= 74.30931358587297
+Maximum test accuracy for credit is 74.30931358587297
+Random forest classifier test accuracy score is 76.10367416690401
+Percentage useless features is 0.4; Current shape of data is (16714, 15)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [15, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6917073786258697, 0.6790117859840393, 0.657134222984314, 0.6455557405948639, 0.6287886083126069, 0.5863912343978882, 0.5470345854759217, 0.5477605760097504, 0.5335172235965728, 0.528150600194931, 0.5230198204517365, 0.5198701024055481, 0.5184229373931885, 0.5166552662849426, 0.5154755473136902, 0.5147002816200257, 0.5061857998371124, 0.49879644215106966, 0.4799079358577728, 0.3043168008327484, 0.15069254785776137, 0.004479192150756717]
+==========Best validated model=============
+Train error= 2910
+Train loss =  tensor(0.5092, grad_fn=<NllLossBackward0>)
+Num_train_data= 11699
+Test error= 901
+Num_test_data= 3511
+DLGN Test accuracy= 74.33779549985759
+Maximum test accuracy for credit is 74.33779549985759
+Random forest classifier test accuracy score is 75.505553973227
+Percentage useless features is 0.6000000000000001; Current shape of data is (16714, 17)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [17, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6925567388534546, 0.6852746188640595, 0.6673007667064667, 0.656057494878769, 0.6417345881462098, 0.6077617764472961, 0.5580009877681732, 0.5510008752346038, 0.5396703600883483, 0.5306495368480683, 0.5267406344413758, 0.5234537661075592, 0.5208585321903229, 0.5192738115787506, 0.5177425503730774, 0.5164511561393738, 0.5073223143815995, 0.4975889056921005, 0.45586282908916476, 0.25554194301366806, 0.15096916407346725, 0.0031784411636181175]
+==========Best validated model=============
+Train error= 2683
+Train loss =  tensor(0.4788, grad_fn=<NllLossBackward0>)
+Num_train_data= 11699
+Test error= 903
+Num_test_data= 3511
+DLGN Test accuracy= 74.28083167188835
+Maximum test accuracy for credit is 74.28083167188835
+Random forest classifier test accuracy score is 74.96439760751923
+Percentage useless features is 0.8; Current shape of data is (16714, 19)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [19, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6924674153327942, 0.6850347518920898, 0.6632535934448243, 0.6440474927425385, 0.6236580729484558, 0.580711567401886, 0.5507461130619049, 0.5437183976173401, 0.534117329120636, 0.5276832103729248, 0.5242051422595978, 0.5205614805221558, 0.5191695511341095, 0.5178083717823029, 0.5162301003932953, 0.5150830388069153, 0.5066435754299163, 0.4964204579591751, 0.45902474522590636, 0.22790586203336716, 0.006034176796674728, 0.0028993636136874557]
+==========Best validated model=============
+Train error= 2731
+Train loss =  tensor(0.4868, grad_fn=<NllLossBackward0>)
+Num_train_data= 11699
+Test error= 892
+Num_test_data= 3511
+DLGN Test accuracy= 74.59413272571916
+Maximum test accuracy for credit is 74.59413272571916
+Random forest classifier test accuracy score is 75.90430076901168
+Percentage useless features is 1.0; Current shape of data is (16714, 21)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [21, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6921116173267364, 0.6816260576248169, 0.6555629968643188, 0.6372787117958069, 0.6170184731483459, 0.5820958375930786, 0.551282548904419, 0.546060585975647, 0.5325689613819122, 0.5257886588573456, 0.5224846541881562, 0.5194186091423034, 0.5170579433441163, 0.5161988139152527, 0.5148137748241425, 0.5134513854980469, 0.5039434254169464, 0.48849374055862427, 0.4364947348833084, 0.23190016001462938, 0.0059437228366732596, 3.0049199085624424e-05]
+==========Best validated model=============
+Train error= 2877
+Train loss =  tensor(0.5027, grad_fn=<NllLossBackward0>)
+Num_train_data= 11699
+Test error= 898
+Num_test_data= 3511
+DLGN Test accuracy= 74.42324124181145
+Maximum test accuracy for credit is 74.42324124181145
+Random forest classifier test accuracy score is 75.0498433494731
+Current task:  6
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361061
+Task URL.............: https://www.openml.org/t/361061
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: Y
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:covertype
+Percentage useless features is 0.2; Current shape of data is (566602, 13)
+Percentage useless features is 0.4; Current shape of data is (566602, 15)
+Percentage useless features is 0.6000000000000001; Current shape of data is (566602, 17)
+Percentage useless features is 0.8; Current shape of data is (566602, 19)
+Percentage useless features is 1.0; Current shape of data is (566602, 21)
+Current task:  7
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361065
+Task URL.............: https://www.openml.org/t/361065
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:MagicTelescope
+Percentage useless features is 0.2; Current shape of data is (13376, 13)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [13, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6886017501354218, 0.6463101923465728, 0.5468573868274689, 0.48291498720645903, 0.45313616693019865, 0.44248068034648896, 0.43748246133327484, 0.43272445201873777, 0.42578511536121366, 0.41653959155082704, 0.403449547290802, 0.3903577893972397, 0.3810507029294968, 0.3750252157449722, 0.37014038264751437, 0.3663110375404358, 0.3344493508338928, 0.2991472393274307, 0.23215117454528808, 0.07746044844388962, 0.034500043466687204, 1.7618463971302845e-05]
+==========Best validated model=============
+Train error= 1382
+Train loss =  tensor(0.3245, grad_fn=<NllLossBackward0>)
+Num_train_data= 9363
+Test error= 447
+Num_test_data= 2810
+DLGN Test accuracy= 84.09252669039145
+Maximum test accuracy for MagicTelescope is 84.09252669039145
+Random forest classifier test accuracy score is 85.69395017793595
+Percentage useless features is 0.4; Current shape of data is (13376, 15)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [15, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6909228324890136, 0.6602336347103119, 0.5485323995351792, 0.48972977697849274, 0.4573837459087372, 0.44175980389118197, 0.4353041410446167, 0.429153972864151, 0.4215989261865616, 0.41210804879665375, 0.4024211555719376, 0.3963702887296677, 0.3919351279735565, 0.3885180652141571, 0.3856088608503342, 0.3828339010477066, 0.3356670677661896, 0.2996465712785721, 0.20555950850248336, 0.05453949011862278, 0.0004715829942142591, 6.171277982502943e-06]
+==========Best validated model=============
+Train error= 1222
+Train loss =  tensor(0.2994, grad_fn=<NllLossBackward0>)
+Num_train_data= 9363
+Test error= 434
+Num_test_data= 2810
+DLGN Test accuracy= 84.55516014234875
+Maximum test accuracy for MagicTelescope is 84.55516014234875
+Random forest classifier test accuracy score is 85.12455516014235
+Percentage useless features is 0.6000000000000001; Current shape of data is (13376, 17)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [17, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6911940991878509, 0.6620495855808258, 0.5687777161598205, 0.4973977953195572, 0.45855665802955625, 0.44600732922554015, 0.4416873544454575, 0.4385299921035767, 0.4355174332857132, 0.4319955587387085, 0.4273243427276611, 0.4207709729671478, 0.41207086443901064, 0.4023290365934372, 0.3946894943714142, 0.38962687849998473, 0.3447558432817459, 0.30469363629817964, 0.19510907977819442, 0.09290092214941978, 0.00011271668336121365, 2.352871342736762e-06]
+==========Best validated model=============
+Train error= 1304
+Train loss =  tensor(0.3150, grad_fn=<NllLossBackward0>)
+Num_train_data= 9363
+Test error= 446
+Num_test_data= 2810
+DLGN Test accuracy= 84.12811387900356
+Maximum test accuracy for MagicTelescope is 84.12811387900356
+Random forest classifier test accuracy score is 84.73309608540926
+Percentage useless features is 0.8; Current shape of data is (13376, 19)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [19, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6904530584812164, 0.6566973268985749, 0.5361198276281357, 0.4752264887094498, 0.4530155181884766, 0.44444477260112764, 0.43762950897216796, 0.43208165764808654, 0.4257259637117386, 0.41753366887569426, 0.4081033140420914, 0.3993048220872879, 0.3934316039085388, 0.38928631842136385, 0.38547206223011016, 0.3819803327322006, 0.3410686910152435, 0.2953656643629074, 0.1678563043475151, 0.031009638495743275, 0.00016470268164994195, 3.6843344787484967e-06]
+==========Best validated model=============
+Train error= 1259
+Train loss =  tensor(0.2972, grad_fn=<NllLossBackward0>)
+Num_train_data= 9363
+Test error= 453
+Num_test_data= 2810
+DLGN Test accuracy= 83.87900355871886
+Maximum test accuracy for MagicTelescope is 83.87900355871886
+Random forest classifier test accuracy score is 85.08896797153025
+Percentage useless features is 1.0; Current shape of data is (13376, 21)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [21, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6906208455562591, 0.6579264104366302, 0.5272168189287185, 0.4700218319892883, 0.45285843312740326, 0.4467342644929886, 0.4416975140571594, 0.43822069466114044, 0.4346689999103546, 0.43069508373737336, 0.42614330947399137, 0.4203813225030899, 0.41330236494541167, 0.4052689164876938, 0.3973825633525848, 0.39173329472541807, 0.35230495035648346, 0.2970644623041153, 0.20112711191177368, 0.07293755747377872, 0.0001727638504235074, 3.330430695314135e-06]
+==========Best validated model=============
+Train error= 1423
+Train loss =  tensor(0.3388, grad_fn=<NllLossBackward0>)
+Num_train_data= 9363
+Test error= 453
+Num_test_data= 2810
+DLGN Test accuracy= 83.87900355871886
+Maximum test accuracy for MagicTelescope is 83.87900355871886
+Random forest classifier test accuracy score is 84.87544483985765
+Current task:  8
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361063
+Task URL.............: https://www.openml.org/t/361063
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: binaryClass
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:house_16H
+Percentage useless features is 0.2; Current shape of data is (13488, 20)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [20, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6887707710266113, 0.6435464501380921, 0.5319798409938812, 0.4588891416788101, 0.4221438467502594, 0.39589482843875884, 0.3808307945728302, 0.37245525419712067, 0.36504233479499815, 0.3587999284267426, 0.35293190479278563, 0.347746878862381, 0.3431807816028595, 0.3391714245080948, 0.33579540252685547, 0.3329636216163635, 0.29163843393325806, 0.22156226485967637, 0.11766310930252075, 0.0340557835996151, 0.0001185076056572143, 2.6074055767821847e-06]
+==========Best validated model=============
+Train error= 1160
+Train loss =  tensor(0.2819, grad_fn=<NllLossBackward0>)
+Num_train_data= 9441
+Test error= 400
+Num_test_data= 2834
+DLGN Test accuracy= 85.88567395906846
+Maximum test accuracy for house_16H is 85.88567395906846
+Random forest classifier test accuracy score is 87.79110797459421
+Percentage useless features is 0.4; Current shape of data is (13488, 23)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [23, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6880462467670441, 0.6358098924160004, 0.5240702211856842, 0.46583022773265836, 0.4245181083679199, 0.3944509834051132, 0.3796933889389038, 0.3713460236787796, 0.3647842913866043, 0.3588655710220337, 0.35329208374023435, 0.3482013732194901, 0.3434049814939499, 0.3392364472150803, 0.33551588356494905, 0.33211804926395416, 0.28563918769359586, 0.21825261861085893, 0.06515279822051526, 0.0023311111493967474, 4.95842639793409e-05, 1.4135768992673548e-06]
+==========Best validated model=============
+Train error= 1147
+Train loss =  tensor(0.2808, grad_fn=<NllLossBackward0>)
+Num_train_data= 9441
+Test error= 409
+Num_test_data= 2834
+DLGN Test accuracy= 85.5681016231475
+Maximum test accuracy for house_16H is 85.5681016231475
+Random forest classifier test accuracy score is 87.79110797459421
+Percentage useless features is 0.6000000000000001; Current shape of data is (13488, 26)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [26, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6903434276580811, 0.6522137999534607, 0.5660346865653991, 0.4847572922706604, 0.42628071308135984, 0.3991079717874527, 0.3823389708995819, 0.37645154297351835, 0.37110223770141604, 0.3658378094434738, 0.3616911232471466, 0.3585377007722855, 0.35637612342834474, 0.35471240878105165, 0.3530168741941452, 0.35107786655426027, 0.3070831120014191, 0.20776500403881074, 0.15171425864100457, 0.0006050955737009645, 2.9391933276201597e-05, 9.490726540661853e-07]
+==========Best validated model=============
+Train error= 1165
+Train loss =  tensor(0.2823, grad_fn=<NllLossBackward0>)
+Num_train_data= 9441
+Test error= 437
+Num_test_data= 2834
+DLGN Test accuracy= 84.58009880028229
+Maximum test accuracy for house_16H is 84.58009880028229
+Random forest classifier test accuracy score is 87.08539167254764
+Percentage useless features is 0.8; Current shape of data is (13488, 29)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [29, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.691585260629654, 0.6671960175037384, 0.5612774312496185, 0.47054862678050996, 0.41951917111873627, 0.39343891441822054, 0.37569874823093413, 0.36452455520629884, 0.3593797028064728, 0.35627064406871795, 0.3532897293567657, 0.350285542011261, 0.3472363829612732, 0.34406571090221405, 0.34077423214912417, 0.3374998301267624, 0.28805992603302, 0.2021682694554329, 0.050617658719420436, 0.0012817689217627048, 4.3667193676810714e-05, 1.3441120927382144e-06]
+==========Best validated model=============
+Train error= 1075
+Train loss =  tensor(0.2713, grad_fn=<NllLossBackward0>)
+Num_train_data= 9441
+Test error= 397
+Num_test_data= 2834
+DLGN Test accuracy= 85.99153140437544
+Maximum test accuracy for house_16H is 85.99153140437544
+Random forest classifier test accuracy score is 87.19124911785462
+Percentage useless features is 1.0; Current shape of data is (13488, 33)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [33, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.690311723947525, 0.655250096321106, 0.5583693623542786, 0.4792664647102356, 0.4332151234149933, 0.40089109241962434, 0.3806941032409668, 0.37190300822257993, 0.36548693776130675, 0.35940643548965456, 0.35435035526752473, 0.3496170848608017, 0.3453561574220657, 0.34204217195510866, 0.33931979537010193, 0.3369421690702438, 0.2820015549659729, 0.15576573610305786, 0.06184905581176281, 0.0003079511836403981, 2.011019369092537e-05, 6.984318702052406e-07]
+==========Best validated model=============
+Train error= 1143
+Train loss =  tensor(0.2770, grad_fn=<NllLossBackward0>)
+Num_train_data= 9441
+Test error= 412
+Num_test_data= 2834
+DLGN Test accuracy= 85.4622441778405
+Maximum test accuracy for house_16H is 85.4622441778405
+Random forest classifier test accuracy score is 87.43824982357093
+Current task:  9
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361070
+Task URL.............: https://www.openml.org/t/361070
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: label
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:eye_movements
+Percentage useless features is 0.2; Current shape of data is (7608, 25)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [25, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6929069578647613, 0.690263295173645, 0.6807129979133606, 0.6752795279026031, 0.6718737244606018, 0.6705959975719452, 0.6690349638462066, 0.6672312140464782, 0.6649543225765229, 0.662126076221466, 0.6587872743606568, 0.6551210463047028, 0.6515151679515838, 0.6481304228305816, 0.6450221478939057, 0.642242181301117, 0.5846439957618713, 0.35655166804790495, 0.0642493948340416, 0.0012419439968653022, 5.9381171377026475e-05, 1.8642028408066835e-06]
+==========Best validated model=============
+Train error= 1400
+Train loss =  tensor(0.4992, grad_fn=<NllLossBackward0>)
+Num_train_data= 5325
+Test error= 719
+Num_test_data= 1599
+DLGN Test accuracy= 55.03439649781113
+Maximum test accuracy for eye_movements is 55.03439649781113
+Random forest classifier test accuracy score is 60.10006253908693
+Percentage useless features is 0.4; Current shape of data is (7608, 29)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [29, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6928513944149017, 0.6893964171409607, 0.6783711850643158, 0.6746509552001954, 0.6710420250892639, 0.6685372471809388, 0.6663027048110962, 0.6645638644695282, 0.6629559755325317, 0.6608404397964478, 0.658222371339798, 0.6549203395843506, 0.6510022819042206, 0.6467480778694152, 0.6424767196178436, 0.6381438374519348, 0.5495437622070313, 0.3241320937871933, 0.05703276954591274, 0.0009726182441227138, 4.909738381684292e-05, 1.6144699770848092e-06]
+==========Best validated model=============
+Train error= 1193
+Train loss =  tensor(0.4271, grad_fn=<NllLossBackward0>)
+Num_train_data= 5325
+Test error= 750
+Num_test_data= 1599
+DLGN Test accuracy= 53.09568480300187
+Maximum test accuracy for eye_movements is 53.09568480300187
+Random forest classifier test accuracy score is 60.22514071294559
+Percentage useless features is 0.6000000000000001; Current shape of data is (7608, 33)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [33, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6930364727973938, 0.6914863646030426, 0.6834875881671906, 0.6760555267333984, 0.6720844030380249, 0.6684455335140228, 0.6659383237361908, 0.6635214924812317, 0.6607213020324707, 0.6571642637252808, 0.6529606878757477, 0.6483929634094239, 0.6437090575695038, 0.6388827621936798, 0.6337930619716644, 0.6282333195209503, 0.4989237546920776, 0.39264283776283265, 0.06719727888703346, 0.0013068214379018173, 0.00016053475574153708, 0.00013130847167985849]
+==========Best validated model=============
+Train error= 1295
+Train loss =  tensor(0.4545, grad_fn=<NllLossBackward0>)
+Num_train_data= 5325
+Test error= 752
+Num_test_data= 1599
+DLGN Test accuracy= 52.97060662914321
+Maximum test accuracy for eye_movements is 52.97060662914321
+Random forest classifier test accuracy score is 59.0368980612883
+Percentage useless features is 0.8; Current shape of data is (7608, 37)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [37, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6929195344448089, 0.6901545107364655, 0.6815859556198121, 0.677186268568039, 0.6724620878696441, 0.6695086479187011, 0.6674456179141999, 0.6653095006942749, 0.662646222114563, 0.6592825293540955, 0.6551923215389251, 0.6502265393733978, 0.6434067547321319, 0.6348707556724549, 0.6278906643390656, 0.6207300364971161, 0.4792925477027893, 0.2526807963848114, 0.024504991807043554, 0.0003126982075627893, 2.2648824597126804e-05, 8.1313076520928e-07]
+==========Best validated model=============
+Train error= 2007
+Train loss =  tensor(0.6353, grad_fn=<NllLossBackward0>)
+Num_train_data= 5325
+Test error= 718
+Num_test_data= 1599
+DLGN Test accuracy= 55.096935584740464
+Maximum test accuracy for eye_movements is 55.096935584740464
+Random forest classifier test accuracy score is 58.098811757348344
+Percentage useless features is 1.0; Current shape of data is (7608, 41)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [41, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6930738687515259, 0.6917784810066223, 0.6839782297611237, 0.6757269203662872, 0.6705621898174285, 0.6661261022090912, 0.6620770871639252, 0.6581689476966858, 0.6540213286876678, 0.6494722843170166, 0.644953989982605, 0.640714704990387, 0.6367598593235015, 0.6332337439060212, 0.6303389012813568, 0.6281280815601349, 0.5032587498426437, 0.1954954147338867, 0.004865924618206919, 0.00016702422144589945, 1.4591371927963337e-05, 5.461881556811932e-07]
+==========Best validated model=============
+Train error= 2225
+Train loss =  tensor(0.6669, grad_fn=<NllLossBackward0>)
+Num_train_data= 5325
+Test error= 719
+Num_test_data= 1599
+DLGN Test accuracy= 55.03439649781113
+Maximum test accuracy for eye_movements is 55.03439649781113
+Random forest classifier test accuracy score is 59.53721075672295
+Current task:  10
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361275
+Task URL.............: https://www.openml.org/t/361275
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: y
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:default-of-credit-card-clients
+Percentage useless features is 0.2; Current shape of data is (13272, 25)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [25, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6892504632472992, 0.6486874163150788, 0.6055071353912354, 0.5920969307422638, 0.5829594373703003, 0.5783874809741973, 0.5750212430953979, 0.5728140354156495, 0.5709780693054199, 0.5693619549274445, 0.5677601099014282, 0.5662145733833313, 0.5647100150585175, 0.5632168292999268, 0.5617886304855346, 0.5604248583316803, 0.5419948995113373, 0.49460925757884977, 0.34201751053333285, 0.1324455812573433, 0.025556055083870887, 0.00023279815795831382]
+==========Best validated model=============
+Train error= 2737
+Train loss =  tensor(0.5613, grad_fn=<NllLossBackward0>)
+Num_train_data= 9290
+Test error= 857
+Num_test_data= 2788
+DLGN Test accuracy= 69.26111908177906
+Maximum test accuracy for default-of-credit-card-clients is 69.26111908177906
+Random forest classifier test accuracy score is 68.07747489239598
+Percentage useless features is 0.4; Current shape of data is (13272, 29)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [29, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6908336460590363, 0.6618939936161041, 0.6093732714653015, 0.595345264673233, 0.5878636300563812, 0.5808640599250794, 0.5769320905208588, 0.573574012517929, 0.5712952136993408, 0.5693630397319793, 0.5675826668739319, 0.5659940600395202, 0.5645423710346222, 0.5632169961929321, 0.561924397945404, 0.5605962336063385, 0.5332777082920075, 0.4646525800228119, 0.2852566182613373, 0.10644103661179542, 0.0063865317963063715, 9.369897379656323e-05]
+==========Best validated model=============
+Train error= 2432
+Train loss =  tensor(0.5222, grad_fn=<NllLossBackward0>)
+Num_train_data= 9290
+Test error= 832
+Num_test_data= 2788
+DLGN Test accuracy= 70.15781922525107
+Maximum test accuracy for default-of-credit-card-clients is 70.15781922525107
+Random forest classifier test accuracy score is 67.75466284074605
+Percentage useless features is 0.6000000000000001; Current shape of data is (13272, 33)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [33, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6907140731811523, 0.658970445394516, 0.613890141248703, 0.6006471812725067, 0.5902924180030823, 0.582022899389267, 0.5777270913124084, 0.5736796081066131, 0.5703815519809723, 0.5677319884300231, 0.5653644144535065, 0.5633155524730682, 0.5613134682178498, 0.5593438446521759, 0.5575480937957764, 0.5559196710586548, 0.5295743882656098, 0.4237174868583679, 0.32913068383932115, 0.03224687296897173, 0.0005550651694647968, 9.187276737065985e-06]
+==========Best validated model=============
+Train error= 2745
+Train loss =  tensor(0.5611, grad_fn=<NllLossBackward0>)
+Num_train_data= 9290
+Test error= 872
+Num_test_data= 2788
+DLGN Test accuracy= 68.72309899569584
+Maximum test accuracy for default-of-credit-card-clients is 68.72309899569584
+Random forest classifier test accuracy score is 68.68723098995696
+Percentage useless features is 0.8; Current shape of data is (13272, 37)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [37, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6907565832138062, 0.659166818857193, 0.6116899073123931, 0.5976152420043945, 0.5890993654727936, 0.5820873856544495, 0.5776054620742798, 0.5739793658256531, 0.5711559653282166, 0.5689140856266022, 0.5668525040149689, 0.5649437665939331, 0.5630693554878234, 0.5612246036529541, 0.5595175862312317, 0.5579943060874939, 0.5277722716331482, 0.38207323253154757, 0.5491939216852189, 0.07361067198216915, 0.00025877730658976363, 5.922278978687245e-06]
+==========Best validated model=============
+Train error= 2704
+Train loss =  tensor(0.5574, grad_fn=<NllLossBackward0>)
+Num_train_data= 9290
+Test error= 861
+Num_test_data= 2788
+DLGN Test accuracy= 69.11764705882354
+Maximum test accuracy for default-of-credit-card-clients is 69.11764705882354
+Random forest classifier test accuracy score is 68.32855093256815
+Percentage useless features is 1.0; Current shape of data is (13272, 41)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [41, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.691179633140564, 0.6645964801311492, 0.6146721005439758, 0.5989091634750366, 0.5862733781337738, 0.5791404962539672, 0.574827516078949, 0.5712506353855134, 0.5680314600467682, 0.5652057707309723, 0.5626447975635529, 0.5602926552295685, 0.5580912709236145, 0.556038761138916, 0.553969407081604, 0.5519127130508423, 0.508222907781601, 0.3953351616859436, 0.4645064890384674, 0.004168096208013594, 9.380423871334642e-05, 2.7100651095679496e-06]
+==========Best validated model=============
+Train error= 2617
+Train loss =  tensor(0.5390, grad_fn=<NllLossBackward0>)
+Num_train_data= 9290
+Test error= 858
+Num_test_data= 2788
+DLGN Test accuracy= 69.22525107604017
+Maximum test accuracy for default-of-credit-card-clients is 69.22525107604017
+Random forest classifier test accuracy score is 68.75896700143473
+Current task:  11
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361278
+Task URL.............: https://www.openml.org/t/361278
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: RiskPerformance
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:heloc
+Percentage useless features is 0.2; Current shape of data is (10000, 27)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [27, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6888519525527954, 0.6547664046287537, 0.60899458527565, 0.5842216372489929, 0.5710828006267548, 0.5653119325637818, 0.561352652311325, 0.5589890956878663, 0.556988787651062, 0.5553066909313202, 0.5536522090435028, 0.5523455500602722, 0.5512540280818939, 0.5503279894590378, 0.5495515376329422, 0.5488899379968644, 0.5380930840969086, 0.47811155021190643, 0.22629783302545547, 0.03374838400632143, 0.031018603406846524, 0.02282697521150112]
+==========Best validated model=============
+Train error= 1925
+Train loss =  tensor(0.5378, grad_fn=<NllLossBackward0>)
+Num_train_data= 7000
+Test error= 599
+Num_test_data= 2100
+DLGN Test accuracy= 71.47619047619048
+Maximum test accuracy for heloc is 71.47619047619048
+Random forest classifier test accuracy score is 70.71428571428572
+Percentage useless features is 0.4; Current shape of data is (10000, 31)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [31, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6899760901927948, 0.6561133205890656, 0.5966832339763641, 0.5794194519519806, 0.5705778360366821, 0.5657006859779358, 0.5625815272331238, 0.5596363961696624, 0.557177597284317, 0.5546947419643402, 0.5525013148784638, 0.5505414605140686, 0.5490704357624054, 0.5479263812303543, 0.5469843178987503, 0.5461508274078369, 0.5327027857303619, 0.40760149359703063, 0.1047341287136078, 0.026149011217057705, 0.019474864285439254, 0.0002566008944995701]
+==========Best validated model=============
+Train error= 1860
+Train loss =  tensor(0.5249, grad_fn=<NllLossBackward0>)
+Num_train_data= 7000
+Test error= 610
+Num_test_data= 2100
+DLGN Test accuracy= 70.95238095238095
+Maximum test accuracy for heloc is 70.95238095238095
+Random forest classifier test accuracy score is 70.33333333333334
+Percentage useless features is 0.6000000000000001; Current shape of data is (10000, 36)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [36, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6905925393104553, 0.6559316754341126, 0.5927281260490418, 0.5741305947303772, 0.5653952062129974, 0.561844778060913, 0.5585070431232453, 0.5554640352725982, 0.5536588132381439, 0.5522130727767944, 0.5508972465991974, 0.549648466706276, 0.5485997289419174, 0.5476389765739441, 0.5467489510774612, 0.5458944290876389, 0.5310944765806198, 0.3872697025537491, 0.04956405498087406, 0.0099998963996768, 9.029664215631783e-05, 2.1424253304758167e-06]
+==========Best validated model=============
+Train error= 1906
+Train loss =  tensor(0.5401, grad_fn=<NllLossBackward0>)
+Num_train_data= 7000
+Test error= 600
+Num_test_data= 2100
+DLGN Test accuracy= 71.42857142857143
+Maximum test accuracy for heloc is 71.42857142857143
+Random forest classifier test accuracy score is 69.9047619047619
+Percentage useless features is 0.8; Current shape of data is (10000, 40)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [40, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6912241041660309, 0.666318702697754, 0.6055741488933564, 0.5822634935379029, 0.5701032936573028, 0.5635766565799714, 0.560222452878952, 0.5571186125278473, 0.5544191777706147, 0.5519391238689423, 0.5495517313480377, 0.5474532127380372, 0.5458820849657059, 0.5445001780986786, 0.543291786313057, 0.5421026557683944, 0.5120452314615249, 0.3135604828596115, 0.050129284337162974, 0.013394746836274863, 5.4016474678064696e-05, 1.5722684338470572e-06]
+==========Best validated model=============
+Train error= 1948
+Train loss =  tensor(0.5414, grad_fn=<NllLossBackward0>)
+Num_train_data= 7000
+Test error= 609
+Num_test_data= 2100
+DLGN Test accuracy= 71.0
+Maximum test accuracy for heloc is 71.0
+Random forest classifier test accuracy score is 70.28571428571428
+Percentage useless features is 1.0; Current shape of data is (10000, 45)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [45, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6919840276241302, 0.6701036334037781, 0.5995607852935791, 0.5778939008712769, 0.5672208964824677, 0.5605144619941711, 0.5576393783092499, 0.554655009508133, 0.5523231863975525, 0.5504833698272705, 0.5489848732948304, 0.5475016474723816, 0.5460748136043548, 0.5446483880281449, 0.5432804822921753, 0.5419551581144333, 0.5025159865617752, 0.3540565073490143, 0.13668350651860237, 0.016070795338600875, 7.38276525225956e-05, 2.043190090716962e-06]
+==========Best validated model=============
+Train error= 1865
+Train loss =  tensor(0.5314, grad_fn=<NllLossBackward0>)
+Num_train_data= 7000
+Test error= 624
+Num_test_data= 2100
+DLGN Test accuracy= 70.28571428571428
+Maximum test accuracy for heloc is 70.28571428571428
+Random forest classifier test accuracy score is 70.38095238095238
+Current task:  12
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361069
+Task URL.............: https://www.openml.org/t/361069
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: target
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:Higgs
+Percentage useless features is 0.2; Current shape of data is (940160, 29)
+Percentage useless features is 0.4; Current shape of data is (940160, 34)
+Percentage useless features is 0.6000000000000001; Current shape of data is (940160, 39)
+Percentage useless features is 0.8; Current shape of data is (940160, 44)
+Percentage useless features is 1.0; Current shape of data is (940160, 49)
+Current task:  13
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361062
+Task URL.............: https://www.openml.org/t/361062
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: binaryClass
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:pol
+Percentage useless features is 0.2; Current shape of data is (10082, 32)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [32, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6891848862171173, 0.6328936815261841, 0.45290487408638, 0.34094974100589753, 0.2943666309118271, 0.2691705659031868, 0.24365322887897492, 0.2086510956287384, 0.1638440102338791, 0.1295602798461914, 0.11174538061022758, 0.09884139448404312, 0.08806309178471565, 0.08006129190325736, 0.07378015518188477, 0.06829167120158672, 0.014866508776322007, 0.010281994589604437, 0.0028013208706397564, 0.00010808181323227473, 3.826164288511791e-06]
+==========Best validated model=============
+Train error= 6
+Train loss =  tensor(0.0040, grad_fn=<NllLossBackward0>)
+Num_train_data= 7057
+Test error= 47
+Num_test_data= 2118
+DLGN Test accuracy= 97.78092540132201
+Maximum test accuracy for pol is 97.78092540132201
+Random forest classifier test accuracy score is 98.3947119924457
+Percentage useless features is 0.4; Current shape of data is (10082, 37)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [37, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6895235419273377, 0.6364577651023865, 0.46575787961483, 0.3536487102508545, 0.30075899660587313, 0.26771582663059235, 0.24085107147693635, 0.20335460901260377, 0.15551141351461412, 0.12357187941670418, 0.1086970791220665, 0.09652092456817626, 0.08745270520448685, 0.07851035445928574, 0.07009851522743701, 0.06300336495041847, 0.014233166771009564, 0.012138481764122844, 0.0040615327947307375, 1.5642013772776407e-05, 1.5047585321781299e-06]
+==========Best validated model=============
+Train error= 17
+Train loss =  tensor(0.0083, grad_fn=<NllLossBackward0>)
+Num_train_data= 7057
+Test error= 27
+Num_test_data= 2118
+DLGN Test accuracy= 98.72521246458923
+Maximum test accuracy for pol is 98.72521246458923
+Random forest classifier test accuracy score is 98.34749763928234
+Percentage useless features is 0.6000000000000001; Current shape of data is (10082, 42)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [42, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6897854924201965, 0.6386015594005585, 0.45462644696235655, 0.3291244894266129, 0.2841128021478653, 0.2640132442116737, 0.24490172564983367, 0.22284661382436752, 0.1937626928091049, 0.16446003317832947, 0.1404372990131378, 0.12242859601974487, 0.10813373029232025, 0.09541909918189048, 0.08405381850898266, 0.07425562404096127, 0.02243498796597123, 0.009433297323994339, 0.00011444342198956292, 1.087098426069133e-05, 1.1355809078850144e-06]
+==========Best validated model=============
+Train error= 4
+Train loss =  tensor(0.0019, grad_fn=<NllLossBackward0>)
+Num_train_data= 7057
+Test error= 50
+Num_test_data= 2118
+DLGN Test accuracy= 97.63928234183192
+Maximum test accuracy for pol is 97.63928234183192
+Random forest classifier test accuracy score is 98.20585457979226
+Percentage useless features is 0.8; Current shape of data is (10082, 47)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [47, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6901911199092865, 0.6444321870803833, 0.46185612976551055, 0.33837067782878877, 0.3001851052045822, 0.2755043536424637, 0.2502732202410698, 0.22012629956007004, 0.18546989262104036, 0.14758844897150994, 0.1177849218249321, 0.10367534309625626, 0.09510441049933434, 0.08722376637160778, 0.08066070601344108, 0.07476546093821526, 0.02677622055634856, 0.0034142762422561647, 7.24004436051473e-05, 8.530846344001475e-06]
+==========Best validated model=============
+Train error= 13
+Train loss =  tensor(0.0085, grad_fn=<NllLossBackward0>)
+Num_train_data= 7057
+Test error= 45
+Num_test_data= 2118
+DLGN Test accuracy= 97.87535410764872
+Maximum test accuracy for pol is 97.87535410764872
+Random forest classifier test accuracy score is 98.25306893295563
+Percentage useless features is 1.0; Current shape of data is (10082, 53)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [53, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6891787707805633, 0.6307790577411652, 0.45031542181968687, 0.32876104712486265, 0.29439698457717894, 0.2724862962961197, 0.2559550017118454, 0.24189036041498185, 0.22554847300052644, 0.20391597896814345, 0.17756334394216539, 0.15185870081186295, 0.1304732568562031, 0.11317417025566101, 0.10110104158520698, 0.09131267964839936, 0.03915755320340395, 0.016294042859226466, 7.28113252989715e-05, 9.118593470702763e-06]
+==========Best validated model=============
+Train error= 7
+Train loss =  tensor(0.0076, grad_fn=<NllLossBackward0>)
+Num_train_data= 7057
+Test error= 46
+Num_test_data= 2118
+DLGN Test accuracy= 97.82813975448536
+Maximum test accuracy for pol is 97.82813975448536
+Random forest classifier test accuracy score is 98.11142587346554
+Current task:  14
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361068
+Task URL.............: https://www.openml.org/t/361068
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: signal
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:MiniBooNE
+Percentage useless features is 0.2; Current shape of data is (72998, 61)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [61, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.68882315158844, 0.6277311205863952, 0.4782674163579941, 0.4244037389755249, 0.39820286333560945, 0.38259475231170653, 0.3727783352136612, 0.3638445019721985, 0.3527906179428101, 0.3390068829059601, 0.32775248885154723, 0.3180466264486313, 0.30879616141319277, 0.29885701835155487, 0.29066280722618104, 0.2841107100248337, 0.23627361804246902, 0.20808406472206115, 0.19107469022274018, 0.1608424425125122, 0.11381280720233918, 0.05300736352801323]
+==========Best validated model=============
+Train error= 2831
+Train loss =  tensor(0.1408, grad_fn=<NllLossBackward0>)
+Num_train_data= 51098
+Test error= 1163
+Num_test_data= 15331
+DLGN Test accuracy= 92.41406300958842
+Maximum test accuracy for MiniBooNE is 92.41406300958842
+Random forest classifier test accuracy score is 94.14258691540017
+Percentage useless features is 0.4; Current shape of data is (72998, 71)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [71, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6903579235076904, 0.6424843192100524, 0.47090273499488833, 0.40925084948539736, 0.38901263773441314, 0.37880872189998627, 0.3729188770055771, 0.3674234628677368, 0.3613142430782318, 0.35255374312400817, 0.33889347314834595, 0.3206479847431183, 0.30591143667697906, 0.29744248688220976, 0.2901543080806732, 0.28422432243824003, 0.2413555398583412, 0.2132544606924057, 0.1897569328546524, 0.1619981572031975, 0.09993232563138008, 0.01939021274447441]
+==========Best validated model=============
+Train error= 2954
+Train loss =  tensor(0.1475, grad_fn=<NllLossBackward0>)
+Num_train_data= 51098
+Test error= 1178
+Num_test_data= 15331
+DLGN Test accuracy= 92.31622203378775
+Maximum test accuracy for MiniBooNE is 92.31622203378775
+Random forest classifier test accuracy score is 94.07083686647968
+Percentage useless features is 0.6000000000000001; Current shape of data is (72998, 81)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [81, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6891969263553619, 0.6273386836051941, 0.4600949645042419, 0.4113264292478561, 0.390425506234169, 0.3802844822406769, 0.37252716422080995, 0.36592203080654145, 0.35776357650756835, 0.34537340998649596, 0.3320992231369019, 0.32238659262657166, 0.3132017821073532, 0.3047340095043182, 0.2966530531644821, 0.29001840353012087, 0.24786995351314545, 0.2113006204366684, 0.18915882855653762, 0.13994669616222383, 0.06879076920449734, 0.06881587728857994]
+==========Best validated model=============
+Train error= 3603
+Train loss =  tensor(0.1763, grad_fn=<NllLossBackward0>)
+Num_train_data= 51098
+Test error= 1322
+Num_test_data= 15331
+DLGN Test accuracy= 91.37694866610136
+Maximum test accuracy for MiniBooNE is 91.37694866610136
+Random forest classifier test accuracy score is 93.95342769551888
+Percentage useless features is 0.8; Current shape of data is (72998, 91)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [91, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6908033907413482, 0.6450552582740784, 0.4776477813720703, 0.41373919546604154, 0.3912083923816681, 0.38044972717761993, 0.37395877540111544, 0.3683494567871094, 0.36134578585624694, 0.35089013278484343, 0.3354026049375534, 0.3194174289703369, 0.3079047232866287, 0.2989086270332336, 0.2909001767635345, 0.28492546677589414, 0.2422188937664032, 0.2133574977517128, 0.18774022161960602, 0.13720361590385438, 0.046612023189663884, 0.001881140226032585]
+==========Best validated model=============
+Train error= 3807
+Train loss =  tensor(0.1883, grad_fn=<NllLossBackward0>)
+Num_train_data= 51098
+Test error= 1324
+Num_test_data= 15331
+DLGN Test accuracy= 91.36390320266128
+Maximum test accuracy for MiniBooNE is 91.36390320266128
+Random forest classifier test accuracy score is 94.08388232991976
+Percentage useless features is 1.0; Current shape of data is (72998, 101)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [101, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6900966048240662, 0.6284374475479126, 0.45560250878334047, 0.4078169077634811, 0.38836888074874876, 0.3808406174182892, 0.3748271554708481, 0.3706189036369324, 0.3658287853002548, 0.3601475268602371, 0.3518499493598938, 0.33888531625270846, 0.3234850257635117, 0.3137286305427551, 0.30619784295558927, 0.2982466071844101, 0.25179731100797653, 0.20868230909109114, 0.18039731085300445, 0.15389489382505417, 0.14170573875308037, 0.0017028005328029393]
+==========Best validated model=============
+Train error= 4082
+Train loss =  tensor(0.2017, grad_fn=<NllLossBackward0>)
+Num_train_data= 51098
+Test error= 1402
+Num_test_data= 15331
+DLGN Test accuracy= 90.85513012849782
+Maximum test accuracy for MiniBooNE is 90.85513012849782
+Random forest classifier test accuracy score is 93.89472311003848
+Current task:  15
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361274
+Task URL.............: https://www.openml.org/t/361274
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:jannis
+Percentage useless features is 0.2; Current shape of data is (57580, 65)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [65, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6879977583885193, 0.6368379712104797, 0.581959730386734, 0.5571961045265198, 0.5400736570358277, 0.5296711087226867, 0.5250492930412293, 0.5220058977603912, 0.5195010721683502, 0.5179110169410706, 0.5159574627876282, 0.513333547115326, 0.5101598352193832, 0.5068480014801026, 0.503499886393547, 0.500249770283699, 0.45580231249332426, 0.39573957324028014, 0.28899704217910765, 0.12388824075460433, 0.015253490954637527, 7.789675000822172e-05]
+==========Best validated model=============
+Train error= 8154
+Train loss =  tensor(0.4299, grad_fn=<NllLossBackward0>)
+Num_train_data= 40306
+Test error= 2697
+Num_test_data= 12092
+DLGN Test accuracy= 77.69599735362223
+Maximum test accuracy for jannis is 77.69599735362223
+Random forest classifier test accuracy score is 78.25008269930532
+Percentage useless features is 0.4; Current shape of data is (57580, 76)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [76, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6885980188846588, 0.6450595557689667, 0.5800574481487274, 0.5503328084945679, 0.5353365182876587, 0.5274737417697907, 0.5219359695911407, 0.5176451325416564, 0.5138050079345703, 0.5107721298933029, 0.5081887662410736, 0.5059638410806656, 0.5038583189249038, 0.5017711281776428, 0.4997798979282379, 0.4979041665792465, 0.45865846872329713, 0.3798018753528595, 0.23021190017461776, 0.14838511422276496, 0.018392212502658368, 3.429032185522374e-05]
+==========Best validated model=============
+Train error= 7826
+Train loss =  tensor(0.4200, grad_fn=<NllLossBackward0>)
+Num_train_data= 40306
+Test error= 2782
+Num_test_data= 12092
+DLGN Test accuracy= 76.99305325835263
+Maximum test accuracy for jannis is 76.99305325835263
+Random forest classifier test accuracy score is 77.47270922924247
+Percentage useless features is 0.6000000000000001; Current shape of data is (57580, 87)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [87, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.685597038269043, 0.6173858642578125, 0.5727074563503265, 0.5503689348697662, 0.5369478225708008, 0.5290061891078949, 0.5244061887264252, 0.5213185667991638, 0.5186359822750092, 0.5165672719478607, 0.5144219994544983, 0.5120425939559936, 0.5092589795589447, 0.5061442703008652, 0.5028619557619095, 0.49950923323631286, 0.4424107223749161, 0.35516482293605806, 0.211053666472435, 0.10543123483657837, 0.0029399569844827055, 1.7401458899257703e-05]
+==========Best validated model=============
+Train error= 7582
+Train loss =  tensor(0.4079, grad_fn=<NllLossBackward0>)
+Num_train_data= 40306
+Test error= 2811
+Num_test_data= 12092
+DLGN Test accuracy= 76.75322527290771
+Maximum test accuracy for jannis is 76.75322527290771
+Random forest classifier test accuracy score is 77.97717499173007
+Percentage useless features is 0.8; Current shape of data is (57580, 98)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [98, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6885830760002136, 0.6279858231544495, 0.5765368044376373, 0.5525383830070496, 0.5377674162387848, 0.5273400962352752, 0.5213157296180725, 0.5166474461555481, 0.512832498550415, 0.5088899075984955, 0.5052848249673844, 0.5019592553377151, 0.4987577676773071, 0.49556640684604647, 0.4922771483659744, 0.48886272609233855, 0.43235048055648806, 0.3413477212190628, 0.20770552456378938, 0.08910527154803276, 0.024787685833871365, 2.7725616018869913e-05]
+==========Best validated model=============
+Train error= 8718
+Train loss =  tensor(0.4530, grad_fn=<NllLossBackward0>)
+Num_train_data= 40306
+Test error= 2885
+Num_test_data= 12092
+DLGN Test accuracy= 76.14125041349652
+Maximum test accuracy for jannis is 76.14125041349652
+Random forest classifier test accuracy score is 77.62156797882898
+Percentage useless features is 1.0; Current shape of data is (57580, 109)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [109, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.688825935125351, 0.6371457934379577, 0.5813179016113281, 0.5559783279895782, 0.5407780289649964, 0.5319246888160706, 0.5267613708972931, 0.5229507386684418, 0.5195103526115418, 0.5165814578533172, 0.5138704955577851, 0.5110383331775665, 0.5079583317041397, 0.5046615868806839, 0.5012200444936752, 0.4977444112300873, 0.4304479777812958, 0.3220834195613861, 0.22800544202327727, 0.04513503760099411, 0.00037586523103527725, 6.21806120761903e-06]
+==========Best validated model=============
+Train error= 7927
+Train loss =  tensor(0.4232, grad_fn=<NllLossBackward0>)
+Num_train_data= 40306
+Test error= 2825
+Num_test_data= 12092
+DLGN Test accuracy= 76.63744624545154
+Maximum test accuracy for jannis is 76.63744624545154
+Random forest classifier test accuracy score is 77.87793582533907
+Current task:  16
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361276
+Task URL.............: https://www.openml.org/t/361276
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: target
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:Bioresponse
+Percentage useless features is 0.2; Current shape of data is (3434, 503)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [503, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6808478355407714, 0.5894829154014587, 0.5324130833148957, 0.49192667901515963, 0.456642946600914, 0.4264408051967621, 0.3994189202785492, 0.3637279987335205, 0.32274553179740906, 0.2729144901037216, 0.21846761256456376, 0.1773984760046005, 0.18545933663845063, 0.3077993348240852, 0.24158798903226852, 0.2075030267238617, 0.001891782262828201, 4.436677736521233e-05, 9.83247405201837e-06]
+==========Best validated model=============
+Train error= 543
+Train loss =  tensor(0.4556, grad_fn=<NllLossBackward0>)
+Num_train_data= 2403
+Test error= 188
+Num_test_data= 722
+DLGN Test accuracy= 73.9612188365651
+Maximum test accuracy for Bioresponse is 73.9612188365651
+Random forest classifier test accuracy score is 75.62326869806094
+Percentage useless features is 0.4; Current shape of data is (3434, 587)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [587, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6829431533813477, 0.5934790551662446, 0.5204882681369781, 0.4697034478187561, 0.4187947750091553, 0.3771705627441406, 0.33453635573387147, 0.2870106428861618, 0.2348678708076477, 0.20750036239624023, 0.2016386106610298, 0.22831356078386306, 0.1402550980448723, 0.08023391515016556, 0.07095950059592723, 0.09822200182825327, 0.00035414238518569616, 5.294495022098999e-05, 1.1230897689529229e-05, 2.27364537295216e-06]
+==========Best validated model=============
+Train error= 22
+Train loss =  tensor(0.0364, grad_fn=<NllLossBackward0>)
+Num_train_data= 2403
+Test error= 206
+Num_test_data= 722
+DLGN Test accuracy= 71.46814404432133
+Maximum test accuracy for Bioresponse is 71.46814404432133
+Random forest classifier test accuracy score is 73.54570637119113
+Percentage useless features is 0.6000000000000001; Current shape of data is (3434, 671)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [671, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6767459332942962, 0.5693655967712402, 0.49699291586875916, 0.4423872888088226, 0.39994603395462036, 0.3502956122159958, 0.290983809530735, 0.22385843992233276, 0.17229132801294328, 0.18698416277766228, 0.23687079250812532, 0.2985862523317337, 0.1718932032585144, 0.09655493050813675, 0.040687612071633336, 0.015853911358863115, 0.0001386551361065358, 2.7897442851099186e-05, 6.111222364779678e-06]
+==========Best validated model=============
+Train error= 401
+Train loss =  tensor(0.3518, grad_fn=<NllLossBackward0>)
+Num_train_data= 2403
+Test error= 214
+Num_test_data= 722
+DLGN Test accuracy= 70.3601108033241
+Maximum test accuracy for Bioresponse is 70.3601108033241
+Random forest classifier test accuracy score is 75.62326869806094
+Percentage useless features is 0.8; Current shape of data is (3434, 755)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [755, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6830118715763092, 0.5731754660606384, 0.4843013763427734, 0.4327122986316681, 0.38320941627025606, 0.3222179502248764, 0.2543308436870575, 0.1880491629242897, 0.17290857061743736, 0.3764130905270576, 0.22179967910051346, 0.15049024000763894, 0.07740064486861228, 0.03468590211123228, 0.013727280776947737, 0.004734850907698274, 0.00011239824161748401, 2.357384091737913e-05, 5.366587856769911e-06]
+==========Best validated model=============
+Train error= 527
+Train loss =  tensor(0.4520, grad_fn=<NllLossBackward0>)
+Num_train_data= 2403
+Test error= 233
+Num_test_data= 722
+DLGN Test accuracy= 67.72853185595568
+Maximum test accuracy for Bioresponse is 67.72853185595568
+Random forest classifier test accuracy score is 72.57617728531855
+Percentage useless features is 1.0; Current shape of data is (3434, 839)
+Beta 1, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [839, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6803439259529114, 0.569988363981247, 0.45981977581977845, 0.38169228434562685, 0.3154157757759094, 0.23987147063016892, 0.1690549999475479, 0.18047709614038468, 0.2599085882306099, 0.22675634324550628, 0.17088867723941803, 0.07689261771738529, 0.02539699012413621, 0.006604237947613001, 0.0018545324797742068, 0.0007831999333575368, 7.84867697802838e-05, 1.8609436483529863e-05, 4.41975371359149e-06]
+==========Best validated model=============
+Train error= 299
+Train loss =  tensor(0.2556, grad_fn=<NllLossBackward0>)
+Num_train_data= 2403
+Test error= 242
+Num_test_data= 722
+DLGN Test accuracy= 66.4819944598338
+Maximum test accuracy for Bioresponse is 66.4819944598338
+Random forest classifier test accuracy score is 74.23822714681441

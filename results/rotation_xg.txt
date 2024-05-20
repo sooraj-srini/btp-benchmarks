@@ -1,0 +1,208 @@
+4_50_3_1.0e-03
+cpu
+Current task:  1
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361060
+Task URL.............: https://www.openml.org/t/361060
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:electricity
+XGBoost accuracy for electricity is 79.85397846801139
+Current task:  2
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361066
+Task URL.............: https://www.openml.org/t/361066
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: Class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:bank-marketing
+XGBoost accuracy for bank-marketing is 75.96759675967597
+Current task:  3
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361273
+Task URL.............: https://www.openml.org/t/361273
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: readmitted
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:Diabetes130US
+XGBoost accuracy for Diabetes130US is 58.87199410543238
+Current task:  4
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361277
+Task URL.............: https://www.openml.org/t/361277
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: price_above_median
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:california
+XGBoost accuracy for california is 85.20996769727735
+Current task:  5
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361055
+Task URL.............: https://www.openml.org/t/361055
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: SeriousDlqin2yrs
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:credit
+XGBoost accuracy for credit is 69.95158074622616
+Current task:  6
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361061
+Task URL.............: https://www.openml.org/t/361061
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: Y
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:covertype
+Current task:  7
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361065
+Task URL.............: https://www.openml.org/t/361065
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:MagicTelescope
+XGBoost accuracy for MagicTelescope is 82.95373665480426
+Current task:  8
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361063
+Task URL.............: https://www.openml.org/t/361063
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: binaryClass
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:house_16H
+XGBoost accuracy for house_16H is 85.39167254763585
+Current task:  9
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361070
+Task URL.............: https://www.openml.org/t/361070
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: label
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:eye_movements
+XGBoost accuracy for eye_movements is 55.22201375859912
+Current task:  10
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361275
+Task URL.............: https://www.openml.org/t/361275
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: y
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:default-of-credit-card-clients
+XGBoost accuracy for default-of-credit-card-clients is 68.11334289813486
+Current task:  11
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361278
+Task URL.............: https://www.openml.org/t/361278
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: RiskPerformance
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:heloc
+XGBoost accuracy for heloc is 67.23809523809524
+Current task:  12
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361069
+Task URL.............: https://www.openml.org/t/361069
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: target
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:Higgs
+Current task:  13
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361062
+Task URL.............: https://www.openml.org/t/361062
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: binaryClass
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:pol
+XGBoost accuracy for pol is 97.30878186968839
+Current task:  14
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361068
+Task URL.............: https://www.openml.org/t/361068
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: signal
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:MiniBooNE
+XGBoost accuracy for MiniBooNE is 90.11153871241275
+Current task:  15
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361274
+Task URL.............: https://www.openml.org/t/361274
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:jannis
+XGBoost accuracy for jannis is 73.36255375454847
+Current task:  16
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361276
+Task URL.............: https://www.openml.org/t/361276
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: target
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:Bioresponse
+XGBoost accuracy for Bioresponse is 76.17728531855957

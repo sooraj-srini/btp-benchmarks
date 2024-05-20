@@ -1,0 +1,418 @@
+4_50_3_1.0e-03
+cuda
+Current task:  1
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361060
+Task URL.............: https://www.openml.org/t/361060
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:electricity
+Learning rate 0.001, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [7, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6894490897655488, 0.6548193871974946, 0.5977967619895935, 0.5347596883773804, 0.5113262832164764, 0.5048813492059707, 0.5001393496990204, 0.49803402423858645, 0.49626849591732025, 0.49456450939178465, 0.49293860197067263, 0.491024786233902, 0.4885960131883621, 0.4857421278953552, 0.4828764975070953, 0.48058116137981416, 0.45972891747951505, 0.4012720763683319, 0.35457196533679963, 0.31707014739513395, 0.2711680978536606, 0.22047211229801178]
+==========Best validated model=============
+Train error= 3928
+Train loss =  tensor(0.3200, grad_fn=<NllLossBackward0>)
+Num_train_data= 26931
+Test error= 1572
+Num_test_data= 8081
+DLGN Test accuracy= 80.54696200965228
+Maximum test accuracy for electricity is 0
+Current task:  2
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361066
+Task URL.............: https://www.openml.org/t/361066
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: Class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:bank-marketing
+Learning rate 0.001, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [7, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6908791124820709, 0.6615449786186218, 0.5579981505870819, 0.5158348500728607, 0.4979913681745529, 0.48952800035476685, 0.4822358340024948, 0.47511962950229647, 0.4687243849039078, 0.4630215972661972, 0.4582252770662308, 0.4542937070131302, 0.4515743017196655, 0.449416446685791, 0.4476279020309448, 0.4461354285478592, 0.43292068839073183, 0.40264388024806974, 0.32537159621715545, 0.21075636595487596, 0.13322001695632935, 0.0976015530526638]
+==========Best validated model=============
+Train error= 1474
+Train loss =  tensor(0.4353, grad_fn=<NllLossBackward0>)
+Num_train_data= 7404
+Test error= 482
+Num_test_data= 2222
+DLGN Test accuracy= 78.30783078307832
+Maximum test accuracy for bank-marketing is 0
+Current task:  3
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361273
+Task URL.............: https://www.openml.org/t/361273
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: readmitted
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:Diabetes130US
+Learning rate 0.001, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [7, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6918365478515625, 0.6799212455749511, 0.6675447285175323, 0.6622766733169556, 0.6609558165073395, 0.6603496968746185, 0.6596659004688263, 0.6594726145267487, 0.6591659963130951, 0.6588682770729065, 0.6586740553379059, 0.6585353195667267, 0.658372312784195, 0.658208817243576, 0.6580687522888183, 0.6579441547393798, 0.6570034682750702, 0.6553103804588318, 0.6400927007198334, 0.6025143504142761, 0.5552034437656402, 0.49867146015167235]
+==========Best validated model=============
+Train error= 19588
+Train loss =  tensor(0.6572, grad_fn=<NllLossBackward0>)
+Num_train_data= 49763
+Test error= 5825
+Num_test_data= 14929
+DLGN Test accuracy= 60.98198137852502
+Maximum test accuracy for Diabetes130US is 0
+Current task:  4
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361277
+Task URL.............: https://www.openml.org/t/361277
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: price_above_median
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:california
+Learning rate 0.001, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [8, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6904822289943695, 0.6604487001895905, 0.5430412292480469, 0.4583712756633759, 0.421085986495018, 0.39446682333946226, 0.37655299007892606, 0.3661888003349304, 0.35981686413288116, 0.35435446798801423, 0.3494907855987549, 0.344741553068161, 0.3407845914363861, 0.3376070946455002, 0.3352101296186447, 0.33300599455833435, 0.3016645938158035, 0.2689874529838562, 0.2309550404548645, 0.1783553898334503, 0.12099475041031837, 0.04275972656905651]
+==========Best validated model=============
+Train error= 1640
+Train loss =  tensor(0.2587, grad_fn=<NllLossBackward0>)
+Num_train_data= 14443
+Test error= 540
+Num_test_data= 4334
+DLGN Test accuracy= 87.54037840332256
+Maximum test accuracy for california is 0
+Current task:  5
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361055
+Task URL.............: https://www.openml.org/t/361055
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: SeriousDlqin2yrs
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:credit
+Learning rate 0.001, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [10, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6918397665023803, 0.6794183135032654, 0.6561444580554963, 0.6389488458633423, 0.6112707555294037, 0.5687187790870667, 0.5455357670783997, 0.539381468296051, 0.5330645442008972, 0.5280831217765808, 0.5257751286029816, 0.523019152879715, 0.5209797322750092, 0.5192828178405762, 0.5178504526615143, 0.5167924523353576, 0.5085041284561157, 0.5039365768432618, 0.49673283398151397, 0.46438205540180205, 0.3753091931343079, 0.3173748403787613]
+==========Best validated model=============
+Train error= 2838
+Train loss =  tensor(0.5016, grad_fn=<NllLossBackward0>)
+Num_train_data= 11699
+Test error= 879
+Num_test_data= 3511
+DLGN Test accuracy= 74.96439760751923
+Maximum test accuracy for credit is 0
+Current task:  6
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361061
+Task URL.............: https://www.openml.org/t/361061
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: Y
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:covertype
+Current task:  7
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361065
+Task URL.............: https://www.openml.org/t/361065
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:MagicTelescope
+Learning rate 0.001, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [10, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6886676192283631, 0.643699336051941, 0.5162840723991394, 0.466437166929245, 0.44901995956897733, 0.4403965026140213, 0.4356109619140625, 0.4317652225494385, 0.4263407289981842, 0.41921706199645997, 0.4095013588666916, 0.3993596941232681, 0.39235012233257294, 0.3857114166021347, 0.37932419776916504, 0.37391668260097505, 0.332099711894989, 0.3004131972789764, 0.24121318459510804, 0.12350604310631752, 0.018100734800100327, 0.043337699770927426]
+==========Best validated model=============
+Train error= 1007
+Train loss =  tensor(0.2451, grad_fn=<NllLossBackward0>)
+Num_train_data= 9363
+Test error= 409
+Num_test_data= 2810
+DLGN Test accuracy= 85.44483985765125
+Maximum test accuracy for MagicTelescope is 0
+Current task:  8
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361063
+Task URL.............: https://www.openml.org/t/361063
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: binaryClass
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:house_16H
+Learning rate 0.001, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [16, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6894619941711426, 0.6499147057533264, 0.5501335024833679, 0.4737152099609375, 0.41844259202480316, 0.3936727553606033, 0.3794279843568802, 0.3710986733436584, 0.36466104686260226, 0.3582279920578003, 0.3515389412641525, 0.34516194760799407, 0.33932271897792815, 0.3342729687690735, 0.3299740612506866, 0.3262613147497177, 0.29481572806835177, 0.2566701740026474, 0.13940751701593398, 0.026586880907416344, 0.00019437459559412673, 3.5196390626879294e-06]
+==========Best validated model=============
+Train error= 1022
+Train loss =  tensor(0.2493, grad_fn=<NllLossBackward0>)
+Num_train_data= 9441
+Test error= 399
+Num_test_data= 2834
+DLGN Test accuracy= 85.92095977417078
+Maximum test accuracy for house_16H is 0
+Current task:  9
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361070
+Task URL.............: https://www.openml.org/t/361070
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: label
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:eye_movements
+Learning rate 0.001, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [20, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6926847338676453, 0.6890414655208588, 0.6814725220203399, 0.6757603228092194, 0.6719952464103699, 0.6700169503688812, 0.6679974555969238, 0.6650981366634369, 0.6617654025554657, 0.6584760546684265, 0.656350827217102, 0.6545792400836945, 0.6522515892982483, 0.649560272693634, 0.6468921422958374, 0.6445773661136627, 0.598869401216507, 0.41266978681087496, 0.1812688320875168, 0.040503890812397005, 0.00028815434634452684, 6.1842558352509515e-06]
+==========Best validated model=============
+Train error= 381
+Train loss =  tensor(0.1668, grad_fn=<NllLossBackward0>)
+Num_train_data= 5325
+Test error= 695
+Num_test_data= 1599
+DLGN Test accuracy= 56.53533458411507
+Maximum test accuracy for eye_movements is 0
+Current task:  10
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361275
+Task URL.............: https://www.openml.org/t/361275
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: y
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:default-of-credit-card-clients
+Learning rate 0.001, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [20, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6893543303012848, 0.6550721287727356, 0.6160249531269073, 0.5994129121303559, 0.5854833900928498, 0.5797805964946747, 0.5761713564395905, 0.5732010722160339, 0.5712466657161712, 0.569492906332016, 0.5679894924163819, 0.5664655029773712, 0.5648445725440979, 0.56329505443573, 0.5618812799453735, 0.5607022166252136, 0.5477135181427002, 0.5256243258714676, 0.44867314100265504, 0.31623816192150117, 0.2811529338359833, 0.13054439425468445]
+==========Best validated model=============
+Train error= 2599
+Train loss =  tensor(0.5446, grad_fn=<NllLossBackward0>)
+Num_train_data= 9290
+Test error= 837
+Num_test_data= 2788
+DLGN Test accuracy= 69.97847919655666
+Maximum test accuracy for default-of-credit-card-clients is 0
+Current task:  11
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361278
+Task URL.............: https://www.openml.org/t/361278
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: RiskPerformance
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:heloc
+Learning rate 0.001, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [22, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6903219997882843, 0.6574362933635711, 0.5922529876232148, 0.5745923638343811, 0.5632516860961914, 0.5563932359218597, 0.5538680016994476, 0.5521852195262908, 0.5509311765432358, 0.5496053904294967, 0.5487016469240189, 0.5481058388948441, 0.5476472496986389, 0.5471500277519226, 0.5466267794370652, 0.5461200416088104, 0.5378462791442871, 0.511208513379097, 0.29590179920196535, 0.04422017149627209, 0.03843785282224417, 0.03827974442392588]
+==========Best validated model=============
+Train error= 1966
+Train loss =  tensor(0.5503, grad_fn=<NllLossBackward0>)
+Num_train_data= 7000
+Test error= 610
+Num_test_data= 2100
+DLGN Test accuracy= 70.95238095238095
+Maximum test accuracy for heloc is 0
+Current task:  12
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361069
+Task URL.............: https://www.openml.org/t/361069
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: target
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:Higgs
+Current task:  13
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361062
+Task URL.............: https://www.openml.org/t/361062
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: binaryClass
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:pol
+Learning rate 0.001, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [26, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.690209436416626, 0.6472075462341309, 0.45731361508369445, 0.32818891406059264, 0.2908848151564598, 0.26572718620300295, 0.24357371181249618, 0.21973236948251723, 0.19643380790948867, 0.17206432670354843, 0.14370160028338433, 0.1207131490111351, 0.10727596506476403, 0.0965472087264061, 0.08589430674910545, 0.07560554593801498, 0.01802381742745638, 0.010807599872350693, 0.00774241688195616, 0.0057562212808988985, 0.0071666973875835534, 2.2235604774323292e-05]
+==========Best validated model=============
+Train error= 18
+Train loss =  tensor(0.0073, grad_fn=<NllLossBackward0>)
+Num_train_data= 7057
+Test error= 28
+Num_test_data= 2118
+DLGN Test accuracy= 98.67799811142588
+Maximum test accuracy for pol is 0
+Current task:  14
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361068
+Task URL.............: https://www.openml.org/t/361068
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: signal
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:MiniBooNE
+Learning rate 0.001, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [50, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6908195197582245, 0.6469174146652221, 0.4729820370674133, 0.4181318670511246, 0.3972697138786316, 0.3833717077970505, 0.36495707333087923, 0.34269885420799256, 0.32748058140277864, 0.3136076331138611, 0.3045324832201004, 0.30075208842754364, 0.29817230999469757, 0.2960775107145309, 0.293865492939949, 0.2918884098529816, 0.25486144572496416, 0.22058881670236588, 0.19828378409147263, 0.17886220216751098, 0.1529436394572258, 0.12127986997365951]
+==========Best validated model=============
+Train error= 3720
+Train loss =  tensor(0.1851, grad_fn=<NllLossBackward0>)
+Num_train_data= 51098
+Test error= 1140
+Num_test_data= 15331
+DLGN Test accuracy= 92.56408583914944
+Maximum test accuracy for MiniBooNE is 0
+Current task:  15
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361274
+Task URL.............: https://www.openml.org/t/361274
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: class
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:jannis
+Learning rate 0.001, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [54, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6887907445430755, 0.6309361159801483, 0.5719531953334809, 0.545477032661438, 0.5315404057502746, 0.5245214343070984, 0.5206283628940582, 0.5173610866069793, 0.5142752528190613, 0.5109490543603897, 0.5074744939804077, 0.5039078921079636, 0.5003268152475357, 0.49676631987094877, 0.49332852363586427, 0.4900559812784195, 0.43943285942077637, 0.38822852075099945, 0.2816957652568817, 0.14649156630039215, 0.05240695625543594, 0.0012414473458193243]
+==========Best validated model=============
+Train error= 7489
+Train loss =  tensor(0.4018, grad_fn=<NllLossBackward0>)
+Num_train_data= 40306
+Test error= 2561
+Num_test_data= 12092
+DLGN Test accuracy= 78.82070790605358
+Maximum test accuracy for jannis is 0
+Current task:  16
+OpenML Classification Task
+==========================
+Task Type Description: https://www.openml.org/tt/TaskType.SUPERVISED_CLASSIFICATION
+Task ID..............: 361276
+Task URL.............: https://www.openml.org/t/361276
+Estimation Procedure.: crossvalidation
+Evaluation Measure...: predictive_accuracy
+Target Feature.......: target
+# of Classes.........: 2
+Cost Matrix..........: Available
+Current Dataset:Bioresponse
+Learning rate 0.001, Number of layers 5 and number of neurons 50
+DLGN performance
+Setup:
+Num neurons :  [419, 50, 50, 50, 50, 50, 1]
+ Beta : 3.0
+ lr : 0.001
+=======================
+[0.7, 0.6791777670383453, 0.5913289844989776, 0.5421769678592682, 0.5013912439346313, 0.46500747203826903, 0.44065708518028257, 0.4130077660083771, 0.3832530677318573, 0.3493125826120377, 0.3098940163850784, 0.2816895067691803, 0.27292361557483674, 0.31542823165655137, 0.3484258741140366, 0.30398513078689576, 0.26243139058351517, 0.13413979932665826, 0.01350814481265843, 0.00036512367023533443, 7.8278181490532e-06]
+==========Best validated model=============
+Train error= 100
+Train loss =  tensor(0.0980, grad_fn=<NllLossBackward0>)
+Num_train_data= 2403
+Test error= 166
+Num_test_data= 722
+DLGN Test accuracy= 77.00831024930748
+Maximum test accuracy for Bioresponse is 0

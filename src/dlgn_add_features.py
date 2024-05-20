@@ -30,15 +30,20 @@ if __name__ == '__main__':
         # remove unimportant features
         X = X.to_numpy()
         clf = RandomForestClassifier(n_estimators=100, random_state=42)
-        clf.fit(X, y)
-        importances = clf.feature_importances_
-        indices = np.argsort(importances)[::-1]
+        # clf.fit(X, y)
+        # importances = clf.feature_importances_
+        # indices = np.argsort(importances)[::-1]
         for i in range(10):
+            if i % 2 == 0:
+                continue
             percent_features = (i + 1) * 0.1
-            print(indices[:int(percent_features*X.shape[1] + 1)])
-            X_trans = X[:, indices[:int(percent_features*X.shape[1] + 1)]]
+            random_features = np.random.standard_normal(size=(X.shape[0], int(percent_features*X.shape[1]) + 1))
+            X_trans = np.concatenate((X, random_features), axis=1)
+            # print(indices[:int(percent_features*X.shape[1] + 1)])
+            # X_trans = X[:, indices[:int(percent_features*X.shape[1] + 1)]]
+
             # X_trans = X[:, [2]]
-            print(f"Percentage useful features is {percent_features}; Current shape of data is {X_trans.shape}")
+            print(f"Percentage useless features is {percent_features}; Current shape of data is {X_trans.shape}")
 
             np.random.seed(42)
             rng = np.random.permutation(X.shape[0])

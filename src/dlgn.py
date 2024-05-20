@@ -220,6 +220,7 @@ class trainDLGN:
 
 		device = torch.device('cpu')
 		train_outputs_values, train_outputs_gate_scores =DLGN_obj_final(torch.Tensor(train_data).to(device))
+		self.model = DLGN_obj_final
 		train_preds = train_outputs_values[-1]
 		criterion = nn.CrossEntropyLoss()
 		outputs = torch.cat((-1*train_preds,train_preds), dim=1)
@@ -254,4 +255,11 @@ class trainDLGN:
 		print("DLGN Test accuracy=", test_error_acc)
 		sys.stdout = original_stdout
 		return test_error_acc
+	
+	def predict(self, data):
+		outputs_values, outputs_gate_scores = self.model(torch.Tensor(data))
+		preds = outputs_values[-1]
+		preds = preds.detach().numpy()
+		preds = (np.sign(preds[:,0])+1)//2
+		return preds
 

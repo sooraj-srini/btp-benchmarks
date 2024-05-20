@@ -3,20 +3,15 @@
 This is a repository intended to document the benchmarks of the following algorithms on the Tabular Benchmarks:
 
 - DLGN
+- DLGN VT
 - LCN
 - Latent Trees
 - TAO
 - Soft Decision Trees*
 
+The benchmarks are done on the 16 binary classification datasets provided in the Tabular Benchmarks. 
 
-# Todo
+The repository also contains the code for examining the performances of XGBoost versus the DLGN for these three criteria: robustness to uninformative features, ability to learn irregular features and sensitive to the orientation of the data. 
 
-- [x] Benchmark on all 16 binary classification datasets provided in Tabular Benchmarks
-- [x] Benchmark Soft Decision Trees
-- [x] Find the existing benchmarks given in the paper for other models
-- [x] Improve TAO to not throw liblinear convergence issues
-- [x] Improve TAO to use another obliue decision tree learning algorithm. 
-- [x] Benchmark the Value Tensor implementation of the DLGN
-- [ ] Benchmark the DLGN over the datasets by removing some percent of the unimportant features
-- [ ] Benchmark the DLGN by smoothing the target function (or whatever)
-- [ ] Benchmark the DLGN by rotating the dataset.
+All the code for the project is found in src/ . The results of these experiments is found in results/.
+
